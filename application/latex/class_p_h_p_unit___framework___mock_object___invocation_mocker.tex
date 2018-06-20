@@ -1,0 +1,215 @@
+\hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker Class Reference}
+\label{class_p_h_p_unit___framework___mock_object___invocation_mocker}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.586402cm]{class_p_h_p_unit___framework___mock_object___invocation_mocker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_ab20d70583bce1dc095fd863640fcad9d}{\+\_\+\+\_\+construct}} (array \$configurable\+Methods)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_aa69f965014eff38ff4c86a3e10a5420a}{add\+Matcher}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}} \$matcher)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a81f246fc919f5043e206cc59f9bd3ed1}{has\+Matchers}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1618f99693f7303270b2c569fdd602d4}{lookup\+Id}} (\$id)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a538bdd6eae589613c28cf0da0243a4d4}{register\+Id}} (\$id, \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}} \$builder)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1776bc980be5adac247b2a4ab1152128}{expects}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}} \$matcher)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_af2fc26e6704e08d95f2ea1d9c5ffb865}{invoke}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} \$invocation)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a4988c6fa11e275302172d0a4ae32dd3a}{matches}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} \$invocation)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_aa33600b6a1b28d0c4dfe4d468272aaa4}{verify}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a15c8eaa1637f78d33e7f2d47e86cb76e}{\$matchers}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a5ee6d0763adc965298ff920482b98c69}{\$builder\+Map}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mocker for invocations which are sent from \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___mock_object}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Mock\+Object}} objects.
+
+Keeps track of all expectations and stubs as well as registering identifications for builders.
+
+\begin{DoxySince}{Since}
+Class available since Release 1.\+0.\+0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_ab20d70583bce1dc095fd863640fcad9d}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_ab20d70583bce1dc095fd863640fcad9d}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$configurable\+Methods }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$configurable\+Methods} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_aa69f965014eff38ff4c86a3e10a5420a}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_aa69f965014eff38ff4c86a3e10a5420a}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!add\+Matcher@{add\+Matcher}}
+\index{add\+Matcher@{add\+Matcher}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{add\+Matcher()}{addMatcher()}}
+{\footnotesize\ttfamily add\+Matcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}}}]{\$matcher }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}} & {\em \$matcher} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___stub___matcher_collection_aa69f965014eff38ff4c86a3e10a5420a}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Matcher\+Collection}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1776bc980be5adac247b2a4ab1152128}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1776bc980be5adac247b2a4ab1152128}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!expects@{expects}}
+\index{expects@{expects}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{expects()}{expects()}}
+{\footnotesize\ttfamily expects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}}}]{\$matcher }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}} & {\em \$matcher} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___builder___invocation_mocker}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Invocation\+Mocker}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a81f246fc919f5043e206cc59f9bd3ed1}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a81f246fc919f5043e206cc59f9bd3ed1}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!has\+Matchers@{has\+Matchers}}
+\index{has\+Matchers@{has\+Matchers}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{has\+Matchers()}{hasMatchers()}}
+{\footnotesize\ttfamily has\+Matchers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxySince}{Since}
+Method available since Release 1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_af2fc26e6704e08d95f2ea1d9c5ffb865}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_af2fc26e6704e08d95f2ea1d9c5ffb865}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!invoke@{invoke}}
+\index{invoke@{invoke}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}}}]{\$invocation }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} & {\em \$invocation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invokable_af2fc26e6704e08d95f2ea1d9c5ffb865}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invokable}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1618f99693f7303270b2c569fdd602d4}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1618f99693f7303270b2c569fdd602d4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!lookup\+Id@{lookup\+Id}}
+\index{lookup\+Id@{lookup\+Id}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{lookup\+Id()}{lookupId()}}
+{\footnotesize\ttfamily lookup\+Id (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$\vert$null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___namespace_a1618f99693f7303270b2c569fdd602d4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a4988c6fa11e275302172d0a4ae32dd3a}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a4988c6fa11e275302172d0a4ae32dd3a}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!matches@{matches}}
+\index{matches@{matches}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}}}]{\$invocation }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} & {\em \$invocation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invokable_a4988c6fa11e275302172d0a4ae32dd3a}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invokable}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a538bdd6eae589613c28cf0da0243a4d4}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a538bdd6eae589613c28cf0da0243a4d4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!register\+Id@{register\+Id}}
+\index{register\+Id@{register\+Id}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{register\+Id()}{registerId()}}
+{\footnotesize\ttfamily register\+Id (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}}}]{\$builder }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}} & {\em \$builder} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___runtime_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Runtime\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___namespace_a538bdd6eae589613c28cf0da0243a4d4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_aa33600b6a1b28d0c4dfe4d468272aaa4}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_aa33600b6a1b28d0c4dfe4d468272aaa4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!verify@{verify}}
+\index{verify@{verify}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily verify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___verifiable_aa33600b6a1b28d0c4dfe4d468272aaa4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Verifiable}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a5ee6d0763adc965298ff920482b98c69}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a5ee6d0763adc965298ff920482b98c69}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!\$builder\+Map@{\$builder\+Map}}
+\index{\$builder\+Map@{\$builder\+Map}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{\$builder\+Map}{$builderMap}}
+{\footnotesize\ttfamily \$builder\+Map = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___invocation_mocker_a15c8eaa1637f78d33e7f2d47e86cb76e}\label{class_p_h_p_unit___framework___mock_object___invocation_mocker_a15c8eaa1637f78d33e7f2d47e86cb76e}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}!\$matchers@{\$matchers}}
+\index{\$matchers@{\$matchers}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}
+\subsubsection{\texorpdfstring{\$matchers}{$matchers}}
+{\footnotesize\ttfamily \$matchers = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit-\/mock-\/objects/src/\+Framework/\+Mock\+Object/\mbox{\hyperlink{_invocation_mocker_8php}{Invocation\+Mocker.\+php}}\end{DoxyCompactItemize}

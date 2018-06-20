@@ -1,0 +1,774 @@
+\hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper}{}\section{vfs\+Stream\+Wrapper Class Reference}
+\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper}\index{vfs\+Stream\+Wrapper@{vfs\+Stream\+Wrapper}}
+Inheritance diagram for vfs\+Stream\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af9ec49fcc8889aefee3b186443a895ab}{stream\+\_\+open}} (\$path, \$mode, \$options, \$opened\+\_\+path)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af4c22f18f65f3a87da0abd141752a3f4}{stream\+\_\+close}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_acf4adec38e34adc3b8cdec2f6ddaf1df}{stream\+\_\+read}} (\$count)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a0f84598d2e48826e33d9c7de5364419a}{stream\+\_\+write}} (\$data)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a69a30efd8bd69f56da8297a819b4add5}{stream\+\_\+truncate}} (\$size)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a7eb65965e207cce9913bda3846e2a3ce}{stream\+\_\+metadata}} (\$path, \$option, \$var)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3e9ce71f7c8ab0db36dfd38ea2039476}{stream\+\_\+eof}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa3320416e4520b888b7a9b0ce6508cd6}{stream\+\_\+tell}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a11b8cbb2e2211df9c677df917afe092f}{stream\+\_\+seek}} (\$offset, \$whence)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a8bc9b070955b413c37b960e4bf0a73d2}{stream\+\_\+flush}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad5c2e5aede8f0bd6b523de4be61f169a}{stream\+\_\+stat}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_afd8c7ec563b853761ea7d3470d0bee73}{stream\+\_\+cast}} (\$cast\+\_\+as)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9b45fe8e0c0ce5f58ecb0345851e0b25}{stream\+\_\+lock}} (\$operation)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a0758ac0913bc66f471a24637532e8721}{stream\+\_\+set\+\_\+option}} (\$option, \$arg1, \$arg2)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad6244fc254de2b00ab567e4e0b82a4b3}{unlink}} (\$path)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a6572ee8e63a1c3360385286ac209e0ff}{rename}} (\$path\+\_\+from, \$path\+\_\+to)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a028d2a37cc45234816b36df648b87764}{mkdir}} (\$path, \$mode, \$options)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a62be97a557af790550eb7558dfa5859a}{rmdir}} (\$path, \$options)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ae6bbfde9534ee882c5e750dc64391762}{dir\+\_\+opendir}} (\$path, \$options)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa4876e0cb8d21e65c36ca6243e6f5182}{dir\+\_\+readdir}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_afd6e9558104fd35d07fb3a7412ea0d90}{dir\+\_\+rewinddir}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9f2a581f636224b826e531c63953a907}{dir\+\_\+closedir}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_abcc2fea2362bdc22b2a1c9387176429c}{url\+\_\+stat}} (\$path, \$flags)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a610b9c89b82e11ea426e1804874a6ef4}{register}} ()
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9e895af9df4006a20d6dcbe4747398a2}{set\+Root}} (\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container}{vfs\+Stream\+Container}} \$root)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a41ee3f839f887a3c6313dec895016761}{get\+Root}} ()
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a1f9bcaae41981cb5540bd2ca82e64186}{set\+Quota}} (\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota}{Quota}} \$quota)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_add302975378da047de904daa059a332b}{R\+E\+AD}} = \textquotesingle{}r\textquotesingle{}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa10d31f8aa25c6075dd7552faf588aca}{T\+R\+U\+N\+C\+A\+TE}} = \textquotesingle{}w\textquotesingle{}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3c20641fcacc78eafc28f1494c4ccd7b}{A\+P\+P\+E\+ND}} = \textquotesingle{}\mbox{\hyperlink{interfacea}{a}}\textquotesingle{}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aaedf1c3375abd8a1f5404863a1c57e07}{W\+R\+I\+TE}} = \textquotesingle{}x\textquotesingle{}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a31937e82312653951b2dbc5a7a1af935}{W\+R\+I\+T\+E\+\_\+\+N\+EW}} = \textquotesingle{}\mbox{\hyperlink{classc}{c}}\textquotesingle{}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad95b740fb6c86a1159e6bb96f4d1fdd1}{R\+E\+A\+D\+O\+N\+LY}} = 0
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a8e124a988c89f3102c7da35a9b9c59c8}{W\+R\+I\+T\+E\+O\+N\+LY}} = 1
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ab56e734000051e5c12c8c5cf6d8d160d}{A\+LL}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a7d51cc891bac86ce9903945f5a144af9}{get\+Content}} (\$path)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a2d6d4d348e861b444db7ffdff5976442}{get\+Content\+Of\+Type}} (\$path, \$type)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9ccf585d937023486b26731ad1849a6f}{split\+Path}} (\$path)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a71ebdd4c4f8fcf0282a6b88b30d466ce}{resolve\+Path}} (\$path)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad3053de108475dc3073642dbfa5634d5}{calculate\+Mode}} (\$mode, \$extended)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af15d3d2fe557ff29fa9650ffee56892b}{do\+Unlink}} (\$path)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3aaf40baac36e278c7d7c9139df1750c}{\$mode}}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a57b284fe00866494b33afa80ba729bed}{\$content}}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a1659f0a629d408e0f849dbe4ee061e62}{\$dir}}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a5defe09d5cbd54a8ccc5445596652d06}{\$dir\+Iterator}}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a4832303f9bd07af05f1ec6874de46716}{\$registered}} = false
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ab37f7c32f41c3c61ed940887453767f4}{\$root}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stream wrapper to mock file system requests. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad3053de108475dc3073642dbfa5634d5}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad3053de108475dc3073642dbfa5634d5}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!calculate\+Mode@{calculate\+Mode}}
+\index{calculate\+Mode@{calculate\+Mode}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{calculate\+Mode()}{calculateMode()}}
+{\footnotesize\ttfamily calculate\+Mode (\begin{DoxyParamCaption}\item[{}]{\$mode,  }\item[{}]{\$extended }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+calculates the file mode
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mode} & opening mode\+: r, w, a or x \\
+\hline
+bool & {\em \$extended} & true if + was set with opening mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9f2a581f636224b826e531c63953a907}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9f2a581f636224b826e531c63953a907}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!dir\+\_\+closedir@{dir\+\_\+closedir}}
+\index{dir\+\_\+closedir@{dir\+\_\+closedir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{dir\+\_\+closedir()}{dir\_closedir()}}
+{\footnotesize\ttfamily dir\+\_\+closedir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+closes directory
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ae6bbfde9534ee882c5e750dc64391762}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ae6bbfde9534ee882c5e750dc64391762}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!dir\+\_\+opendir@{dir\+\_\+opendir}}
+\index{dir\+\_\+opendir@{dir\+\_\+opendir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{dir\+\_\+opendir()}{dir\_opendir()}}
+{\footnotesize\ttfamily dir\+\_\+opendir (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+opens a directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa4876e0cb8d21e65c36ca6243e6f5182}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa4876e0cb8d21e65c36ca6243e6f5182}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!dir\+\_\+readdir@{dir\+\_\+readdir}}
+\index{dir\+\_\+readdir@{dir\+\_\+readdir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{dir\+\_\+readdir()}{dir\_readdir()}}
+{\footnotesize\ttfamily dir\+\_\+readdir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+reads directory contents
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_afd6e9558104fd35d07fb3a7412ea0d90}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_afd6e9558104fd35d07fb3a7412ea0d90}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!dir\+\_\+rewinddir@{dir\+\_\+rewinddir}}
+\index{dir\+\_\+rewinddir@{dir\+\_\+rewinddir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{dir\+\_\+rewinddir()}{dir\_rewinddir()}}
+{\footnotesize\ttfamily dir\+\_\+rewinddir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+reset directory iteration
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af15d3d2fe557ff29fa9650ffee56892b}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af15d3d2fe557ff29fa9650ffee56892b}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!do\+Unlink@{do\+Unlink}}
+\index{do\+Unlink@{do\+Unlink}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{do\+Unlink()}{doUnlink()}}
+{\footnotesize\ttfamily do\+Unlink (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+removes a path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a7d51cc891bac86ce9903945f5a144af9}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a7d51cc891bac86ce9903945f5a144af9}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!get\+Content@{get\+Content}}
+\index{get\+Content@{get\+Content}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{get\+Content()}{getContent()}}
+{\footnotesize\ttfamily get\+Content (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+returns content for given path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a2d6d4d348e861b444db7ffdff5976442}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a2d6d4d348e861b444db7ffdff5976442}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!get\+Content\+Of\+Type@{get\+Content\+Of\+Type}}
+\index{get\+Content\+Of\+Type@{get\+Content\+Of\+Type}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{get\+Content\+Of\+Type()}{getContentOfType()}}
+{\footnotesize\ttfamily get\+Content\+Of\+Type (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+returns content for given path but only when it is of given type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a41ee3f839f887a3c6313dec895016761}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a41ee3f839f887a3c6313dec895016761}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!get\+Root@{get\+Root}}
+\index{get\+Root@{get\+Root}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{get\+Root()}{getRoot()}}
+{\footnotesize\ttfamily static get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns the root content
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container}{vfs\+Stream\+Container}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a028d2a37cc45234816b36df648b87764}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a028d2a37cc45234816b36df648b87764}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!mkdir@{mkdir}}
+\index{mkdir@{mkdir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{mkdir()}{mkdir()}}
+{\footnotesize\ttfamily mkdir (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$mode,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+creates a new directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$mode} & \\
+\hline
+int & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a610b9c89b82e11ea426e1804874a6ef4}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a610b9c89b82e11ea426e1804874a6ef4}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!register@{register}}
+\index{register@{register}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily static register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+method to register the stream wrapper
+
+Please be aware that a call to this method will reset the root element to null. If the stream is already registered the method returns silently. If there is already another stream wrapper registered for the scheme used by \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{vfs\+Stream}} a \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_exception}{vfs\+Stream\+Exception}} will be thrown.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_exception}{vfs\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a6572ee8e63a1c3360385286ac209e0ff}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a6572ee8e63a1c3360385286ac209e0ff}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!rename@{rename}}
+\index{rename@{rename}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily rename (\begin{DoxyParamCaption}\item[{}]{\$path\+\_\+from,  }\item[{}]{\$path\+\_\+to }\end{DoxyParamCaption})}
+
+rename from one path to another
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path\+\_\+from} & \\
+\hline
+string & {\em \$path\+\_\+to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Benoit Aubuchon 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a71ebdd4c4f8fcf0282a6b88b30d466ce}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a71ebdd4c4f8fcf0282a6b88b30d466ce}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!resolve\+Path@{resolve\+Path}}
+\index{resolve\+Path@{resolve\+Path}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{resolve\+Path()}{resolvePath()}}
+{\footnotesize\ttfamily resolve\+Path (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+helper method to resolve a path from /foo/bar/. to /foo/bar
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a62be97a557af790550eb7558dfa5859a}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a62be97a557af790550eb7558dfa5859a}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!rmdir@{rmdir}}
+\index{rmdir@{rmdir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{rmdir()}{rmdir()}}
+{\footnotesize\ttfamily rmdir (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$options }\end{DoxyParamCaption})}
+
+removes a directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]consider \$options with S\+T\+R\+E\+A\+M\+\_\+\+M\+K\+D\+I\+R\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE \end{DoxyRefDesc}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a1f9bcaae41981cb5540bd2ca82e64186}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a1f9bcaae41981cb5540bd2ca82e64186}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!set\+Quota@{set\+Quota}}
+\index{set\+Quota@{set\+Quota}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{set\+Quota()}{setQuota()}}
+{\footnotesize\ttfamily static set\+Quota (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota}{Quota}}}]{\$quota }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+sets quota for disk space
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota}{Quota}} & {\em \$quota} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9e895af9df4006a20d6dcbe4747398a2}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9e895af9df4006a20d6dcbe4747398a2}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!set\+Root@{set\+Root}}
+\index{set\+Root@{set\+Root}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{set\+Root()}{setRoot()}}
+{\footnotesize\ttfamily static set\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container}{vfs\+Stream\+Container}}}]{\$root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+sets the root content
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container}{vfs\+Stream\+Container}} & {\em \$root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container}{vfs\+Stream\+Container}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9ccf585d937023486b26731ad1849a6f}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9ccf585d937023486b26731ad1849a6f}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!split\+Path@{split\+Path}}
+\index{split\+Path@{split\+Path}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{split\+Path()}{splitPath()}}
+{\footnotesize\ttfamily split\+Path (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+splits path into its dirname and the basename
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_afd8c7ec563b853761ea7d3470d0bee73}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_afd8c7ec563b853761ea7d3470d0bee73}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+cast@{stream\+\_\+cast}}
+\index{stream\+\_\+cast@{stream\+\_\+cast}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+cast()}{stream\_cast()}}
+{\footnotesize\ttfamily stream\+\_\+cast (\begin{DoxyParamCaption}\item[{}]{\$cast\+\_\+as }\end{DoxyParamCaption})}
+
+retrieve the underlaying resource
+
+Please note that this method always returns false as there is no underlaying resource to return.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$cast\+\_\+as} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+9.\+0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/mikey179/vfsStream/issues/3}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/3} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af4c22f18f65f3a87da0abd141752a3f4}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af4c22f18f65f3a87da0abd141752a3f4}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+close@{stream\+\_\+close}}
+\index{stream\+\_\+close@{stream\+\_\+close}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+close()}{stream\_close()}}
+{\footnotesize\ttfamily stream\+\_\+close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+closes the stream \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3e9ce71f7c8ab0db36dfd38ea2039476}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3e9ce71f7c8ab0db36dfd38ea2039476}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+eof@{stream\+\_\+eof}}
+\index{stream\+\_\+eof@{stream\+\_\+eof}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+eof()}{stream\_eof()}}
+{\footnotesize\ttfamily stream\+\_\+eof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks whether stream is at end of file
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a8bc9b070955b413c37b960e4bf0a73d2}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a8bc9b070955b413c37b960e4bf0a73d2}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+flush@{stream\+\_\+flush}}
+\index{stream\+\_\+flush@{stream\+\_\+flush}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+flush()}{stream\_flush()}}
+{\footnotesize\ttfamily stream\+\_\+flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+flushes unstored data into storage
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9b45fe8e0c0ce5f58ecb0345851e0b25}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9b45fe8e0c0ce5f58ecb0345851e0b25}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+lock@{stream\+\_\+lock}}
+\index{stream\+\_\+lock@{stream\+\_\+lock}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+lock()}{stream\_lock()}}
+{\footnotesize\ttfamily stream\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{\$operation }\end{DoxyParamCaption})}
+
+set lock status for stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$operation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+10.\+0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/mikey179/vfsStream/issues/6}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/6} 
+
+\href{https://github.com/mikey179/vfsStream/issues/31}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/31} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a7eb65965e207cce9913bda3846e2a3ce}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a7eb65965e207cce9913bda3846e2a3ce}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+metadata@{stream\+\_\+metadata}}
+\index{stream\+\_\+metadata@{stream\+\_\+metadata}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+metadata()}{stream\_metadata()}}
+{\footnotesize\ttfamily stream\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$option,  }\item[{}]{\$var }\end{DoxyParamCaption})}
+
+sets metadata like owner, user or permissions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$option} & \\
+\hline
+mixed & {\em \$var} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af9ec49fcc8889aefee3b186443a895ab}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_af9ec49fcc8889aefee3b186443a895ab}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+open@{stream\+\_\+open}}
+\index{stream\+\_\+open@{stream\+\_\+open}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+open()}{stream\_open()}}
+{\footnotesize\ttfamily stream\+\_\+open (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$mode,  }\item[{}]{\$options,  }\item[{}]{\$opened\+\_\+path }\end{DoxyParamCaption})}
+
+open the stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & the path to open \\
+\hline
+string & {\em \$mode} & mode for opening \\
+\hline
+string & {\em \$options} & options for opening \\
+\hline
+string & {\em \$opened\+\_\+path} & full path that was actually opened \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_acf4adec38e34adc3b8cdec2f6ddaf1df}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_acf4adec38e34adc3b8cdec2f6ddaf1df}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+read@{stream\+\_\+read}}
+\index{stream\+\_\+read@{stream\+\_\+read}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+read()}{stream\_read()}}
+{\footnotesize\ttfamily stream\+\_\+read (\begin{DoxyParamCaption}\item[{}]{\$count }\end{DoxyParamCaption})}
+
+read the stream up to \$count bytes
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & amount of bytes to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a11b8cbb2e2211df9c677df917afe092f}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a11b8cbb2e2211df9c677df917afe092f}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+seek@{stream\+\_\+seek}}
+\index{stream\+\_\+seek@{stream\+\_\+seek}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+seek()}{stream\_seek()}}
+{\footnotesize\ttfamily stream\+\_\+seek (\begin{DoxyParamCaption}\item[{}]{\$offset,  }\item[{}]{\$whence }\end{DoxyParamCaption})}
+
+seeks to the given offset
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & \\
+\hline
+int & {\em \$whence} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a0758ac0913bc66f471a24637532e8721}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a0758ac0913bc66f471a24637532e8721}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+set\+\_\+option@{stream\+\_\+set\+\_\+option}}
+\index{stream\+\_\+set\+\_\+option@{stream\+\_\+set\+\_\+option}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+set\+\_\+option()}{stream\_set\_option()}}
+{\footnotesize\ttfamily stream\+\_\+set\+\_\+option (\begin{DoxyParamCaption}\item[{}]{\$option,  }\item[{}]{\$arg1,  }\item[{}]{\$arg2 }\end{DoxyParamCaption})}
+
+sets options on the stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$option} & key of option to set \\
+\hline
+int & {\em \$arg1} & \\
+\hline
+int & {\em \$arg2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+10.\+0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/mikey179/vfsStream/issues/15}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/15} 
+
+\href{http://www.php.net/manual/streamwrapper.stream-set-option.php}{\tt http\+://www.\+php.\+net/manual/streamwrapper.\+stream-\/set-\/option.\+php} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad5c2e5aede8f0bd6b523de4be61f169a}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad5c2e5aede8f0bd6b523de4be61f169a}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+stat@{stream\+\_\+stat}}
+\index{stream\+\_\+stat@{stream\+\_\+stat}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+stat()}{stream\_stat()}}
+{\footnotesize\ttfamily stream\+\_\+stat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns status of stream
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa3320416e4520b888b7a9b0ce6508cd6}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa3320416e4520b888b7a9b0ce6508cd6}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+tell@{stream\+\_\+tell}}
+\index{stream\+\_\+tell@{stream\+\_\+tell}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+tell()}{stream\_tell()}}
+{\footnotesize\ttfamily stream\+\_\+tell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns the current position of the stream
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a69a30efd8bd69f56da8297a819b4add5}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a69a30efd8bd69f56da8297a819b4add5}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+truncate@{stream\+\_\+truncate}}
+\index{stream\+\_\+truncate@{stream\+\_\+truncate}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+truncate()}{stream\_truncate()}}
+{\footnotesize\ttfamily stream\+\_\+truncate (\begin{DoxyParamCaption}\item[{}]{\$size }\end{DoxyParamCaption})}
+
+truncates a file to a given length
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & length to truncate file to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a0f84598d2e48826e33d9c7de5364419a}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a0f84598d2e48826e33d9c7de5364419a}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!stream\+\_\+write@{stream\+\_\+write}}
+\index{stream\+\_\+write@{stream\+\_\+write}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{stream\+\_\+write()}{stream\_write()}}
+{\footnotesize\ttfamily stream\+\_\+write (\begin{DoxyParamCaption}\item[{}]{\$data }\end{DoxyParamCaption})}
+
+writes data into the stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int amount of bytes written 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad6244fc254de2b00ab567e4e0b82a4b3}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad6244fc254de2b00ab567e4e0b82a4b3}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!unlink@{unlink}}
+\index{unlink@{unlink}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{unlink()}{unlink()}}
+{\footnotesize\ttfamily unlink (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})}
+
+remove the data under the given path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_abcc2fea2362bdc22b2a1c9387176429c}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_abcc2fea2362bdc22b2a1c9387176429c}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!url\+\_\+stat@{url\+\_\+stat}}
+\index{url\+\_\+stat@{url\+\_\+stat}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{url\+\_\+stat()}{url\_stat()}}
+{\footnotesize\ttfamily url\+\_\+stat (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$flags }\end{DoxyParamCaption})}
+
+returns status of url
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path of url to return status for \\
+\hline
+int & {\em \$flags} & flags set by the stream A\+PI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a57b284fe00866494b33afa80ba729bed}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a57b284fe00866494b33afa80ba729bed}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!\$content@{\$content}}
+\index{\$content@{\$content}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{\$content}{$content}}
+{\footnotesize\ttfamily \$content\hspace{0.3cm}{\ttfamily [protected]}}
+
+shortcut to file container
+
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}} \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a1659f0a629d408e0f849dbe4ee061e62}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a1659f0a629d408e0f849dbe4ee061e62}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!\$dir@{\$dir}}
+\index{\$dir@{\$dir}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{\$dir}{$dir}}
+{\footnotesize\ttfamily \$dir\hspace{0.3cm}{\ttfamily [protected]}}
+
+shortcut to directory container
+
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a5defe09d5cbd54a8ccc5445596652d06}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a5defe09d5cbd54a8ccc5445596652d06}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!\$dir\+Iterator@{\$dir\+Iterator}}
+\index{\$dir\+Iterator@{\$dir\+Iterator}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{\$dir\+Iterator}{$dirIterator}}
+{\footnotesize\ttfamily \$dir\+Iterator\hspace{0.3cm}{\ttfamily [protected]}}
+
+shortcut to directory container iterator
+
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3aaf40baac36e278c7d7c9139df1750c}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3aaf40baac36e278c7d7c9139df1750c}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!\$mode@{\$mode}}
+\index{\$mode@{\$mode}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{\$mode}{$mode}}
+{\footnotesize\ttfamily \$mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+file mode\+: read only, write only, all
+
+int \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a4832303f9bd07af05f1ec6874de46716}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a4832303f9bd07af05f1ec6874de46716}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!\$registered@{\$registered}}
+\index{\$registered@{\$registered}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{\$registered}{$registered}}
+{\footnotesize\ttfamily \$registered = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+switch whether class has already been registered as stream wrapper or not
+
+bool \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ab37f7c32f41c3c61ed940887453767f4}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ab37f7c32f41c3c61ed940887453767f4}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!\$root@{\$root}}
+\index{\$root@{\$root}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{\$root}{$root}}
+{\footnotesize\ttfamily \$root\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+root content
+
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ab56e734000051e5c12c8c5cf6d8d160d}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ab56e734000051e5c12c8c5cf6d8d160d}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!A\+LL@{A\+LL}}
+\index{A\+LL@{A\+LL}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{A\+LL}{ALL}}
+{\footnotesize\ttfamily const A\+LL = 2}
+
+file mode\+: read and write \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3c20641fcacc78eafc28f1494c4ccd7b}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a3c20641fcacc78eafc28f1494c4ccd7b}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!A\+P\+P\+E\+ND@{A\+P\+P\+E\+ND}}
+\index{A\+P\+P\+E\+ND@{A\+P\+P\+E\+ND}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{A\+P\+P\+E\+ND}{APPEND}}
+{\footnotesize\ttfamily const A\+P\+P\+E\+ND = \textquotesingle{}\mbox{\hyperlink{interfacea}{a}}\textquotesingle{}}
+
+set file pointer to end, append new data \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_add302975378da047de904daa059a332b}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_add302975378da047de904daa059a332b}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!R\+E\+AD@{R\+E\+AD}}
+\index{R\+E\+AD@{R\+E\+AD}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{R\+E\+AD}{READ}}
+{\footnotesize\ttfamily const R\+E\+AD = \textquotesingle{}r\textquotesingle{}}
+
+open file for reading \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad95b740fb6c86a1159e6bb96f4d1fdd1}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_ad95b740fb6c86a1159e6bb96f4d1fdd1}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!R\+E\+A\+D\+O\+N\+LY@{R\+E\+A\+D\+O\+N\+LY}}
+\index{R\+E\+A\+D\+O\+N\+LY@{R\+E\+A\+D\+O\+N\+LY}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{R\+E\+A\+D\+O\+N\+LY}{READONLY}}
+{\footnotesize\ttfamily const R\+E\+A\+D\+O\+N\+LY = 0}
+
+file mode\+: read only \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa10d31f8aa25c6075dd7552faf588aca}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aa10d31f8aa25c6075dd7552faf588aca}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!T\+R\+U\+N\+C\+A\+TE@{T\+R\+U\+N\+C\+A\+TE}}
+\index{T\+R\+U\+N\+C\+A\+TE@{T\+R\+U\+N\+C\+A\+TE}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{T\+R\+U\+N\+C\+A\+TE}{TRUNCATE}}
+{\footnotesize\ttfamily const T\+R\+U\+N\+C\+A\+TE = \textquotesingle{}w\textquotesingle{}}
+
+truncate file \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aaedf1c3375abd8a1f5404863a1c57e07}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_aaedf1c3375abd8a1f5404863a1c57e07}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!W\+R\+I\+TE@{W\+R\+I\+TE}}
+\index{W\+R\+I\+TE@{W\+R\+I\+TE}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{W\+R\+I\+TE}{WRITE}}
+{\footnotesize\ttfamily const W\+R\+I\+TE = \textquotesingle{}x\textquotesingle{}}
+
+set file pointer to start, overwrite existing data \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a31937e82312653951b2dbc5a7a1af935}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a31937e82312653951b2dbc5a7a1af935}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!W\+R\+I\+T\+E\+\_\+\+N\+EW@{W\+R\+I\+T\+E\+\_\+\+N\+EW}}
+\index{W\+R\+I\+T\+E\+\_\+\+N\+EW@{W\+R\+I\+T\+E\+\_\+\+N\+EW}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{W\+R\+I\+T\+E\+\_\+\+N\+EW}{WRITE\_NEW}}
+{\footnotesize\ttfamily const W\+R\+I\+T\+E\+\_\+\+N\+EW = \textquotesingle{}\mbox{\hyperlink{classc}{c}}\textquotesingle{}}
+
+set file pointer to start, overwrite existing data; or create file if does not exist \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a8e124a988c89f3102c7da35a9b9c59c8}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a8e124a988c89f3102c7da35a9b9c59c8}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}!W\+R\+I\+T\+E\+O\+N\+LY@{W\+R\+I\+T\+E\+O\+N\+LY}}
+\index{W\+R\+I\+T\+E\+O\+N\+LY@{W\+R\+I\+T\+E\+O\+N\+LY}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Wrapper}}
+\subsubsection{\texorpdfstring{W\+R\+I\+T\+E\+O\+N\+LY}{WRITEONLY}}
+{\footnotesize\ttfamily const W\+R\+I\+T\+E\+O\+N\+LY = 1}
+
+file mode\+: write only 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/mikey179/vfs\+Stream/src/main/php/org/bovigo/vfs/\mbox{\hyperlink{vfs_stream_wrapper_8php}{vfs\+Stream\+Wrapper.\+php}}\end{DoxyCompactItemize}

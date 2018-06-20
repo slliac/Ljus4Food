@@ -1,0 +1,122 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___attribute}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute Class Reference}
+\label{class_p_h_p_unit___framework___constraint___attribute}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_h_p_unit___framework___constraint___attribute}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute_a4f779220656718bedf2810f90bae8fc5}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} \$constraint, \$attribute\+Name)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute_a4c184790087f7d42c3daf0d0180fe5fb}{evaluate}} (\$other, \$description=\textquotesingle{}\textquotesingle{}, \$return\+Result=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute_aaabb679273bfb812df4d81c283754a59}{failure\+Description}} (\$other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute_a257bb27c360747a7f80b842e7109f54c}{\$attribute\+Name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___attribute_a4f779220656718bedf2810f90bae8fc5}\label{class_p_h_p_unit___framework___constraint___attribute_a4f779220656718bedf2810f90bae8fc5}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}}}]{\$constraint,  }\item[{}]{\$attribute\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} & {\em \$constraint} & \\
+\hline
+string & {\em \$attribute\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___attribute_a4c184790087f7d42c3daf0d0180fe5fb}\label{class_p_h_p_unit___framework___constraint___attribute_a4c184790087f7d42c3daf0d0180fe5fb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily evaluate (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{}]{\$description = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$return\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Evaluates the constraint for parameter \$other
+
+If \$return\+Result is set to false (the default), an exception is thrown in case of a failure. null is returned otherwise.
+
+If \$return\+Result is true, the result of the evaluation is returned as a boolean value instead\+: true in case of success, false in case of a failure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Value or object to evaluate. \\
+\hline
+string & {\em \$description} & Additional information about the test \\
+\hline
+bool & {\em \$return\+Result} & Whether to return a result or throw an exception\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___expectation_failed_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___attribute_aaabb679273bfb812df4d81c283754a59}\label{class_p_h_p_unit___framework___constraint___attribute_aaabb679273bfb812df4d81c283754a59}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}!failure\+Description@{failure\+Description}}
+\index{failure\+Description@{failure\+Description}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}}
+\subsubsection{\texorpdfstring{failure\+Description()}{failureDescription()}}
+{\footnotesize\ttfamily failure\+Description (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the description of the failure
+
+The beginning of failure messages is \char`\"{}\+Failed asserting that\char`\"{} in most cases. This method should return the second part of that sentence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Evaluated value or object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___attribute_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___constraint___attribute_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___attribute_a257bb27c360747a7f80b842e7109f54c}\label{class_p_h_p_unit___framework___constraint___attribute_a257bb27c360747a7f80b842e7109f54c}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}!\$attribute\+Name@{\$attribute\+Name}}
+\index{\$attribute\+Name@{\$attribute\+Name}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}}
+\subsubsection{\texorpdfstring{\$attribute\+Name}{$attributeName}}
+{\footnotesize\ttfamily \$attribute\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_attribute_8php}{Attribute.\+php}}\end{DoxyCompactItemize}

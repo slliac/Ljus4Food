@@ -1,0 +1,323 @@
+\hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{}\section{vfs\+Stream\+Directory Class Reference}
+\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}\index{vfs\+Stream\+Directory@{vfs\+Stream\+Directory}}
+Inheritance diagram for vfs\+Stream\+Directory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_acb8ea4ab5eedb93ea03a6628f5915f04}{\+\_\+\+\_\+construct}} (\$name, \$permissions=null)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a775bfb88c1bb7975d67f277eade2a1b7}{size}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1a6c7cd7f4f894823a9669c6edd52c39}{size\+Summarized}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ab40397a8b5cf98ff82734ce7b1276363}{rename}} (\$new\+Name)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ac6a77daa135cad7077e15b1de57e0d90}{add\+Child}} (\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} \$child)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a2b20c5390cd11395e9a3d32c8c8e51b6}{remove\+Child}} (\$name)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a55594af16e4f3167cfd8b6706778eb04}{has\+Child}} (\$name)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1cfdba129d25b04b73af8290f58ba7c1}{get\+Child}} (\$name)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1332d27ba1ecefa899e393e83309735e}{has\+Children}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a8650a4f6150ed357d88fa043f1685ac5}{get\+Children}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a7a9f937c2958e6f4dd7b030f86fb70b7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a5a7e3863035fc9138bf0c7c486a472cb}{get\+Default\+Permissions}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a9501d2a2b8e2dbfd61a0f60d7c396c5c}{update\+Modifications}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a71a0a3d663fcad187d3b5d8ae751c42a}{get\+Real\+Child\+Name}} (\$name)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ac2333db8d3cfa0155f5bc315f2fff330}{get\+Child\+Name}} (\$name, \$own\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_aafda1a84fe840800c9884c167093f759}{\$children}} = array()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Directory container.
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_acb8ea4ab5eedb93ea03a6628f5915f04}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_acb8ea4ab5eedb93ea03a6628f5915f04}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$permissions = {\ttfamily null} }\end{DoxyParamCaption})}
+
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+int & {\em \$permissions} & optional \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_exception}{vfs\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ac6a77daa135cad7077e15b1de57e0d90}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ac6a77daa135cad7077e15b1de57e0d90}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{add\+Child()}{addChild()}}
+{\footnotesize\ttfamily add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}}}]{\$child }\end{DoxyParamCaption})}
+
+adds child to the directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} & {\em \$child} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_ac6a77daa135cad7077e15b1de57e0d90}{vfs\+Stream\+Container}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1cfdba129d25b04b73af8290f58ba7c1}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1cfdba129d25b04b73af8290f58ba7c1}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!get\+Child@{get\+Child}}
+\index{get\+Child@{get\+Child}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{get\+Child()}{getChild()}}
+{\footnotesize\ttfamily get\+Child (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+returns the child with the given name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_a1cfdba129d25b04b73af8290f58ba7c1}{vfs\+Stream\+Container}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ac2333db8d3cfa0155f5bc315f2fff330}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ac2333db8d3cfa0155f5bc315f2fff330}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!get\+Child\+Name@{get\+Child\+Name}}
+\index{get\+Child\+Name@{get\+Child\+Name}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{get\+Child\+Name()}{getChildName()}}
+{\footnotesize\ttfamily static get\+Child\+Name (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$own\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+helper method to calculate the child name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$own\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a8650a4f6150ed357d88fa043f1685ac5}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a8650a4f6150ed357d88fa043f1685ac5}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!get\+Children@{get\+Children}}
+\index{get\+Children@{get\+Children}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{get\+Children()}{getChildren()}}
+{\footnotesize\ttfamily get\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns a list of children for this directory
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_a8650a4f6150ed357d88fa043f1685ac5}{vfs\+Stream\+Container}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a5a7e3863035fc9138bf0c7c486a472cb}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a5a7e3863035fc9138bf0c7c486a472cb}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!get\+Default\+Permissions@{get\+Default\+Permissions}}
+\index{get\+Default\+Permissions@{get\+Default\+Permissions}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{get\+Default\+Permissions()}{getDefaultPermissions()}}
+{\footnotesize\ttfamily get\+Default\+Permissions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+returns default permissions for concrete implementation
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+8.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a7a9f937c2958e6f4dd7b030f86fb70b7}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a7a9f937c2958e6f4dd7b030f86fb70b7}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!get\+Iterator@{get\+Iterator}}
+\index{get\+Iterator@{get\+Iterator}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{get\+Iterator()}{getIterator()}}
+{\footnotesize\ttfamily get\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns iterator for the children
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_iterator}{vfs\+Stream\+Container\+Iterator}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a71a0a3d663fcad187d3b5d8ae751c42a}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a71a0a3d663fcad187d3b5d8ae751c42a}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!get\+Real\+Child\+Name@{get\+Real\+Child\+Name}}
+\index{get\+Real\+Child\+Name@{get\+Real\+Child\+Name}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{get\+Real\+Child\+Name()}{getRealChildName()}}
+{\footnotesize\ttfamily get\+Real\+Child\+Name (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+helper method to detect the real child name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a55594af16e4f3167cfd8b6706778eb04}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a55594af16e4f3167cfd8b6706778eb04}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!has\+Child@{has\+Child}}
+\index{has\+Child@{has\+Child}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{has\+Child()}{hasChild()}}
+{\footnotesize\ttfamily has\+Child (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+checks whether the container contains a child with the given name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_a55594af16e4f3167cfd8b6706778eb04}{vfs\+Stream\+Container}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1332d27ba1ecefa899e393e83309735e}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1332d27ba1ecefa899e393e83309735e}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!has\+Children@{has\+Children}}
+\index{has\+Children@{has\+Children}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{has\+Children()}{hasChildren()}}
+{\footnotesize\ttfamily has\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks whether directory contains any children
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+10.\+0 
+\end{DoxySince}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_a1332d27ba1ecefa899e393e83309735e}{vfs\+Stream\+Container}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a2b20c5390cd11395e9a3d32c8c8e51b6}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a2b20c5390cd11395e9a3d32c8c8e51b6}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!remove\+Child@{remove\+Child}}
+\index{remove\+Child@{remove\+Child}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{remove\+Child()}{removeChild()}}
+{\footnotesize\ttfamily remove\+Child (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
+removes child from the directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_container_a2b20c5390cd11395e9a3d32c8c8e51b6}{vfs\+Stream\+Container}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ab40397a8b5cf98ff82734ce7b1276363}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_ab40397a8b5cf98ff82734ce7b1276363}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!rename@{rename}}
+\index{rename@{rename}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily rename (\begin{DoxyParamCaption}\item[{}]{\$new\+Name }\end{DoxyParamCaption})}
+
+renames the content
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$new\+Name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_exception}{vfs\+Stream\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content_ab40397a8b5cf98ff82734ce7b1276363}{vfs\+Stream\+Content}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a775bfb88c1bb7975d67f277eade2a1b7}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a775bfb88c1bb7975d67f277eade2a1b7}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!size@{size}}
+\index{size@{size}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns size of directory
+
+The size of a directory is always 0 bytes. To calculate the summarized size of all children in the directory use \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1a6c7cd7f4f894823a9669c6edd52c39}{size\+Summarized()}}.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content_a775bfb88c1bb7975d67f277eade2a1b7}{vfs\+Stream\+Content}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1a6c7cd7f4f894823a9669c6edd52c39}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a1a6c7cd7f4f894823a9669c6edd52c39}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!size\+Summarized@{size\+Summarized}}
+\index{size\+Summarized@{size\+Summarized}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{size\+Summarized()}{sizeSummarized()}}
+{\footnotesize\ttfamily size\+Summarized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns summarized size of directory and its children
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a9501d2a2b8e2dbfd61a0f60d7c396c5c}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_a9501d2a2b8e2dbfd61a0f60d7c396c5c}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!update\+Modifications@{update\+Modifications}}
+\index{update\+Modifications@{update\+Modifications}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{update\+Modifications()}{updateModifications()}}
+{\footnotesize\ttfamily update\+Modifications (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+updates internal timestamps 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_aafda1a84fe840800c9884c167093f759}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory_aafda1a84fe840800c9884c167093f759}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}!\$children@{\$children}}
+\index{\$children@{\$children}!org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory@{org\+::bovigo\+::vfs\+::vfs\+Stream\+Directory}}
+\subsubsection{\texorpdfstring{\$children}{$children}}
+{\footnotesize\ttfamily \$children = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+list of directory children
+
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}}\mbox{[}\mbox{]} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/mikey179/vfs\+Stream/src/main/php/org/bovigo/vfs/\mbox{\hyperlink{vfs_stream_directory_8php}{vfs\+Stream\+Directory.\+php}}\end{DoxyCompactItemize}

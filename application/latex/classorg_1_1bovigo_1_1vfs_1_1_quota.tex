@@ -1,0 +1,100 @@
+\hypertarget{classorg_1_1bovigo_1_1vfs_1_1_quota}{}\section{Quota Class Reference}
+\label{classorg_1_1bovigo_1_1vfs_1_1_quota}\index{Quota@{Quota}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota_aa9f991a30d95d52d4557d2ddfbffbe69}{\+\_\+\+\_\+construct}} (\$amount)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota_a7414df3a1c36d91a5b2fc716d469abbb}{is\+Limited}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota_a1f6bf311f89fadba1116be119e438fdb}{space\+Left}} (\$used\+Space)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota_a1873bf81690fdbb3ca0eaf7faa08450a}{unlimited}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota_af1c43c06d3e15c94050ef7e233971357}{U\+N\+L\+I\+M\+I\+T\+ED}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a quota for disk space.
+
+\begin{DoxySince}{Since}
+1.\+1.\+0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1_quota_aa9f991a30d95d52d4557d2ddfbffbe69}\label{classorg_1_1bovigo_1_1vfs_1_1_quota_aa9f991a30d95d52d4557d2ddfbffbe69}} 
+\index{org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$amount }\end{DoxyParamCaption})}
+
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$amount} & quota in bytes \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1_quota_a7414df3a1c36d91a5b2fc716d469abbb}\label{classorg_1_1bovigo_1_1vfs_1_1_quota_a7414df3a1c36d91a5b2fc716d469abbb}} 
+\index{org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}!is\+Limited@{is\+Limited}}
+\index{is\+Limited@{is\+Limited}!org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}}
+\subsubsection{\texorpdfstring{is\+Limited()}{isLimited()}}
+{\footnotesize\ttfamily is\+Limited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+checks if a quota is set
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1_quota_a1f6bf311f89fadba1116be119e438fdb}\label{classorg_1_1bovigo_1_1vfs_1_1_quota_a1f6bf311f89fadba1116be119e438fdb}} 
+\index{org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}!space\+Left@{space\+Left}}
+\index{space\+Left@{space\+Left}!org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}}
+\subsubsection{\texorpdfstring{space\+Left()}{spaceLeft()}}
+{\footnotesize\ttfamily space\+Left (\begin{DoxyParamCaption}\item[{}]{\$used\+Space }\end{DoxyParamCaption})}
+
+checks if given used space exceeda quota limit
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$used\+Space} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1_quota_a1873bf81690fdbb3ca0eaf7faa08450a}\label{classorg_1_1bovigo_1_1vfs_1_1_quota_a1873bf81690fdbb3ca0eaf7faa08450a}} 
+\index{org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}!unlimited@{unlimited}}
+\index{unlimited@{unlimited}!org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}}
+\subsubsection{\texorpdfstring{unlimited()}{unlimited()}}
+{\footnotesize\ttfamily static unlimited (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+create with unlimited space
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1_quota}{Quota}} 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1_quota_af1c43c06d3e15c94050ef7e233971357}\label{classorg_1_1bovigo_1_1vfs_1_1_quota_af1c43c06d3e15c94050ef7e233971357}} 
+\index{org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}!U\+N\+L\+I\+M\+I\+T\+ED@{U\+N\+L\+I\+M\+I\+T\+ED}}
+\index{U\+N\+L\+I\+M\+I\+T\+ED@{U\+N\+L\+I\+M\+I\+T\+ED}!org\+::bovigo\+::vfs\+::\+Quota@{org\+::bovigo\+::vfs\+::\+Quota}}
+\subsubsection{\texorpdfstring{U\+N\+L\+I\+M\+I\+T\+ED}{UNLIMITED}}
+{\footnotesize\ttfamily const U\+N\+L\+I\+M\+I\+T\+ED = -\/1}
+
+unlimited quota 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/mikey179/vfs\+Stream/src/main/php/org/bovigo/vfs/\mbox{\hyperlink{_quota_8php}{Quota.\+php}}\end{DoxyCompactItemize}

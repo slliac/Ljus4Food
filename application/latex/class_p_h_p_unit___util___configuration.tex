@@ -1,0 +1,344 @@
+\hypertarget{class_p_h_p_unit___util___configuration}{}\section{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration Class Reference}
+\label{class_p_h_p_unit___util___configuration}\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a2982abe8d7b767602a1485dfb4cf653d}{get\+Filename}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a4aabf8db7f0c37953e6261128840acbd}{get\+Filter\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_afa88979f7ae48c0f0745443305631057}{get\+Group\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_af48b04caca08477e6a3128b3712fb562}{get\+Testdox\+Group\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a2339a7df4d6f6bb5f44f10895c68b09a}{get\+Listener\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_afd55a7913b3255daa422e20532c65665}{get\+Logging\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_ab1293b372b365f8752626d457c46711b}{get\+P\+H\+P\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a22645bd8ed1ef0b6f5ae852c22a75665}{handle\+P\+H\+P\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_aa314d2921e739837dbe4e04882402bbb}{get\+P\+H\+P\+Unit\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a8f6c07dc957656f19e0b30afd4ffd932}{get\+Test\+Suite\+Configuration}} (\$test\+Suite\+Filter=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a4062eef82ea4fb2ee5368400e8e1829e}{get\+Test\+Suite\+Names}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___configuration_a13034fd6b1dcf949e6c26dc8c4e464cb}{get\+Instance}} (\$filename)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a3387125924c13e72878c47ecad75faca}{\+\_\+\+\_\+construct}} (\$filename)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a07e38c4b4f08f2d50739562235952225}{get\+Test\+Suite}} (D\+O\+M\+Element \$test\+Suite\+Node, \$test\+Suite\+Filter=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a36eca2931cea673827f30310453d2afb}{get\+Boolean}} (\$value, \$default)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_addb971651caad2302a1c1a1c1ef35857}{get\+Integer}} (\$value, \$default)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a6ccb20f9f1158310c8fb5e3861b3cbbf}{read\+Filter\+Directories}} (\$query)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a4a9714e2bea7d25b00ab025aeac10bd8}{read\+Filter\+Files}} (\$query)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a1d05d18cdb4c7d80110a47c91c3c8d17}{to\+Absolute\+Path}} (\$path, \$use\+Include\+Path=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_ac5a31edb787609a3143dec9bfa8063ea}{\$document}}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_aa270f2ef637ad3d6465f2b764c046def}{\$xpath}}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration_a0722441477f957078ee2437054556cbc}{\$filename}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper for the \mbox{\hyperlink{namespace_p_h_p_unit}{P\+H\+P\+Unit}} X\+ML configuration file.
+
+\mbox{\hyperlink{class_example}{Example}} X\+ML configuration file\+: {\ttfamily  $<$?xml version=\char`\"{}1.\+0\char`\"{} encoding=\char`\"{}utf-\/8\char`\"{} ?$>$}
+
+{\ttfamily $<$phpunit backupglobals=\char`\"{}true\char`\"{} backupstaticattributes=\char`\"{}false\char`\"{} bootstrap=\char`\"{}/path/to/bootstrap.\+php\char`\"{} cachetokens=\char`\"{}false\char`\"{} columns=\char`\"{}80\char`\"{} colors=\char`\"{}false\char`\"{} stderr=\char`\"{}false\char`\"{} converterrorstoexceptions=\char`\"{}true\char`\"{} convertnoticestoexceptions=\char`\"{}true\char`\"{} convertwarningstoexceptions=\char`\"{}true\char`\"{} forcecoversannotation=\char`\"{}false\char`\"{} processisolation=\char`\"{}false\char`\"{} stoponerror=\char`\"{}false\char`\"{} stoponfailure=\char`\"{}false\char`\"{} stoponwarning=\char`\"{}false\char`\"{} stoponincomplete=\char`\"{}false\char`\"{} stoponrisky=\char`\"{}false\char`\"{} stoponskipped=\char`\"{}false\char`\"{} failonwarning=\char`\"{}false\char`\"{} failonrisky=\char`\"{}false\char`\"{} extensionsdirectory=\char`\"{}tools/phpunit.\+d\char`\"{} printerclass=\char`\"{}\+P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Result\+Printer\char`\"{} testsuiteloaderclass=\char`\"{}\+P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Standard\+Test\+Suite\+Loader\char`\"{} bestrictaboutchangestoglobalstate=\char`\"{}false\char`\"{} bestrictaboutcoversannotation=\char`\"{}false\char`\"{} bestrictaboutoutputduringtests=\char`\"{}false\char`\"{} bestrictaboutresourceusageduringsmalltests=\char`\"{}false\char`\"{} bestrictaboutteststhatdonottestanything=\char`\"{}false\char`\"{} bestrictabouttodoannotatedtests=\char`\"{}false\char`\"{} checkforunintentionallycoveredcode=\char`\"{}false\char`\"{} enforcetimelimit=\char`\"{}false\char`\"{} timeoutforsmalltests=\char`\"{}1\char`\"{} timeoutformediumtests=\char`\"{}10\char`\"{} timeoutforlargetests=\char`\"{}60\char`\"{} verbose=\char`\"{}false\char`\"{} reversedefectlist=\char`\"{}false\char`\"{} registermockobjectsfromtestargumentsrecursively=\char`\"{}false\char`\"{}$>$ $<$testsuites$>$ $<$testsuite name=\char`\"{}\+My Test Suite\char`\"{}$>$ $<$directory suffix=\char`\"{}\+Test.\+php\char`\"{} phpversion=\char`\"{}5.\+3.\+0\char`\"{} phpversionoperator=\char`\"{}$>$=\char`\"{}$>$/path/to/files$<$/directory$>$ $<$file phpversion=\char`\"{}5.\+3.\+0\char`\"{} phpversionoperator=\char`\"{}$>$=\char`\"{}$>$/path/to/\+My\+Test.php$<$/file$>$ $<$exclude$>$/path/to/files/exclude$<$/exclude$>$ $<$/testsuite$>$ $<$/testsuites$>$}
+
+{\ttfamily  $<$groups$>$  $<$group$>$name$<$/group$>$  $<$exclude$>$ $<$group$>$name$<$/group$>$ $<$/exclude$>$ $<$/groups$>$}
+
+{\ttfamily  $<$testdox\+Groups$>$  $<$group$>$name$<$/group$>$  $<$exclude$>$ $<$group$>$name$<$/group$>$ $<$/exclude$>$ $<$/testdox\+Groups$>$}
+
+{\ttfamily  $<$filter$>$ $<$whitelist adduncoveredfilesfromwhitelist=\char`\"{}true\char`\"{} processuncoveredfilesfromwhitelist=\char`\"{}false\char`\"{}$>$ $<$directory suffix=\char`\"{}.\+php\char`\"{}$>$/path/to/files$<$/directory$>$ $<$file$>$/path/to/file$<$/file$>$ $<$exclude$>$ $<$directory suffix=\char`\"{}.\+php\char`\"{}$>$/path/to/files$<$/directory$>$ $<$file$>$/path/to/file$<$/file$>$ $<$/exclude$>$ $<$/whitelist$>$ $<$/filter$>$}
+
+{\ttfamily  $<$listeners$>$ $<$listener class=\char`\"{}\+My\+Listener\char`\"{} file=\char`\"{}/optional/path/to/\+My\+Listener.\+php\char`\"{}$>$ $<$arguments$>$ $<$array$>$ $<$element key=\char`\"{}0\char`\"{}$>$ $<$string$>$Sebastian$<$/string$>$ $<$/element$>$ $<$/array$>$ $<$integer$>$22$<$/integer$>$ $<$string$>$April$<$/string$>$ $<$double$>$19.\+78$<$/double$>$ $<$null$>$ $<$object class=\char`\"{}std\+Class\char`\"{}$>$ $<$file$>$My\+Relative\+File.\+php$<$/file$>$ $<$directory$>$My\+Relative\+Dir$<$/directory$>$ $<$/arguments$>$ $<$/listener$>$ $<$/listeners$>$}
+
+{\ttfamily  $<$logging$>$ $<$log type=\char`\"{}coverage-\/html\char`\"{} target=\char`\"{}/tmp/report\char`\"{} lowupperbound=\char`\"{}50\char`\"{} highlowerbound=\char`\"{}90\char`\"{}$>$ $<$log type=\char`\"{}coverage-\/clover\char`\"{} target=\char`\"{}/tmp/clover.\+xml\char`\"{}$>$ $<$log type=\char`\"{}coverage-\/crap4j\char`\"{} target=\char`\"{}/tmp/crap.\+xml\char`\"{} threshold=\char`\"{}30\char`\"{}$>$ $<$log type=\char`\"{}json\char`\"{} target=\char`\"{}/tmp/logfile.\+json\char`\"{}$>$ $<$log type=\char`\"{}plain\char`\"{} target=\char`\"{}/tmp/logfile.\+txt\char`\"{}$>$ $<$log type=\char`\"{}tap\char`\"{} target=\char`\"{}/tmp/logfile.\+tap\char`\"{}$>$ $<$log type=\char`\"{}teamcity\char`\"{} target=\char`\"{}/tmp/logfile.\+txt\char`\"{}$>$ $<$log type=\char`\"{}junit\char`\"{} target=\char`\"{}/tmp/logfile.\+xml\char`\"{} logincompleteskipped=\char`\"{}false\char`\"{}$>$ $<$log type=\char`\"{}testdox-\/html\char`\"{} target=\char`\"{}/tmp/testdox.\+html\char`\"{}$>$ $<$log type=\char`\"{}testdox-\/text\char`\"{} target=\char`\"{}/tmp/testdox.\+txt\char`\"{}$>$ $<$log type=\char`\"{}testdox-\/xml\char`\"{} target=\char`\"{}/tmp/testdox.\+xml\char`\"{}$>$ $<$/logging$>$}
+
+{\ttfamily  $<$php$>$ $<$include\+Path$>$.$<$/include\+Path$>$ $<$ini name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$const name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ {\itshape  $<$env name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$post name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$get name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$cookie name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$server name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$files name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$request name=\char`\"{}foo\char`\"{} value=\char`\"{}bar\char`\"{}$>$ $<$/php$>$ $<$/phpunit$>$  }}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a3387125924c13e72878c47ecad75faca}\label{class_p_h_p_unit___util___configuration_a3387125924c13e72878c47ecad75faca}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads a \mbox{\hyperlink{namespace_p_h_p_unit}{P\+H\+P\+Unit}} configuration file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a36eca2931cea673827f30310453d2afb}\label{class_p_h_p_unit___util___configuration_a36eca2931cea673827f30310453d2afb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Boolean@{get\+Boolean}}
+\index{get\+Boolean@{get\+Boolean}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Boolean()}{getBoolean()}}
+{\footnotesize\ttfamily get\+Boolean (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+bool & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a2982abe8d7b767602a1485dfb4cf653d}\label{class_p_h_p_unit___util___configuration_a2982abe8d7b767602a1485dfb4cf653d}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Filename@{get\+Filename}}
+\index{get\+Filename@{get\+Filename}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Filename()}{getFilename()}}
+{\footnotesize\ttfamily get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the realpath to the configuration file.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a4aabf8db7f0c37953e6261128840acbd}\label{class_p_h_p_unit___util___configuration_a4aabf8db7f0c37953e6261128840acbd}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Filter\+Configuration@{get\+Filter\+Configuration}}
+\index{get\+Filter\+Configuration@{get\+Filter\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Filter\+Configuration()}{getFilterConfiguration()}}
+{\footnotesize\ttfamily get\+Filter\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the configuration for S\+UT filtering.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_afa88979f7ae48c0f0745443305631057}\label{class_p_h_p_unit___util___configuration_afa88979f7ae48c0f0745443305631057}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Group\+Configuration@{get\+Group\+Configuration}}
+\index{get\+Group\+Configuration@{get\+Group\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Group\+Configuration()}{getGroupConfiguration()}}
+{\footnotesize\ttfamily get\+Group\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the configuration for groups.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a13034fd6b1dcf949e6c26dc8c4e464cb}\label{class_p_h_p_unit___util___configuration_a13034fd6b1dcf949e6c26dc8c4e464cb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static get\+Instance (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a \mbox{\hyperlink{namespace_p_h_p_unit}{P\+H\+P\+Unit}} configuration object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___util___configuration}{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_addb971651caad2302a1c1a1c1ef35857}\label{class_p_h_p_unit___util___configuration_addb971651caad2302a1c1a1c1ef35857}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Integer@{get\+Integer}}
+\index{get\+Integer@{get\+Integer}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Integer()}{getInteger()}}
+{\footnotesize\ttfamily get\+Integer (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$default }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+bool & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a2339a7df4d6f6bb5f44f10895c68b09a}\label{class_p_h_p_unit___util___configuration_a2339a7df4d6f6bb5f44f10895c68b09a}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Listener\+Configuration@{get\+Listener\+Configuration}}
+\index{get\+Listener\+Configuration@{get\+Listener\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Listener\+Configuration()}{getListenerConfiguration()}}
+{\footnotesize\ttfamily get\+Listener\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the configuration for listeners.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_afd55a7913b3255daa422e20532c65665}\label{class_p_h_p_unit___util___configuration_afd55a7913b3255daa422e20532c65665}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Logging\+Configuration@{get\+Logging\+Configuration}}
+\index{get\+Logging\+Configuration@{get\+Logging\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Logging\+Configuration()}{getLoggingConfiguration()}}
+{\footnotesize\ttfamily get\+Logging\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the logging configuration.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_ab1293b372b365f8752626d457c46711b}\label{class_p_h_p_unit___util___configuration_ab1293b372b365f8752626d457c46711b}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+P\+H\+P\+Configuration@{get\+P\+H\+P\+Configuration}}
+\index{get\+P\+H\+P\+Configuration@{get\+P\+H\+P\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+P\+H\+P\+Configuration()}{getPHPConfiguration()}}
+{\footnotesize\ttfamily get\+P\+H\+P\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the P\+HP configuration.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_aa314d2921e739837dbe4e04882402bbb}\label{class_p_h_p_unit___util___configuration_aa314d2921e739837dbe4e04882402bbb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+P\+H\+P\+Unit\+Configuration@{get\+P\+H\+P\+Unit\+Configuration}}
+\index{get\+P\+H\+P\+Unit\+Configuration@{get\+P\+H\+P\+Unit\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+P\+H\+P\+Unit\+Configuration()}{getPHPUnitConfiguration()}}
+{\footnotesize\ttfamily get\+P\+H\+P\+Unit\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{namespace_p_h_p_unit}{P\+H\+P\+Unit}} configuration.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_af48b04caca08477e6a3128b3712fb562}\label{class_p_h_p_unit___util___configuration_af48b04caca08477e6a3128b3712fb562}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Testdox\+Group\+Configuration@{get\+Testdox\+Group\+Configuration}}
+\index{get\+Testdox\+Group\+Configuration@{get\+Testdox\+Group\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Testdox\+Group\+Configuration()}{getTestdoxGroupConfiguration()}}
+{\footnotesize\ttfamily get\+Testdox\+Group\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the configuration for testdox groups.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a07e38c4b4f08f2d50739562235952225}\label{class_p_h_p_unit___util___configuration_a07e38c4b4f08f2d50739562235952225}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Test\+Suite@{get\+Test\+Suite}}
+\index{get\+Test\+Suite@{get\+Test\+Suite}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Test\+Suite()}{getTestSuite()}}
+{\footnotesize\ttfamily get\+Test\+Suite (\begin{DoxyParamCaption}\item[{D\+O\+M\+Element}]{\$test\+Suite\+Node,  }\item[{}]{\$test\+Suite\+Filter = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+D\+O\+M\+Element & {\em \$test\+Suite\+Node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_suite}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Suite}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a8f6c07dc957656f19e0b30afd4ffd932}\label{class_p_h_p_unit___util___configuration_a8f6c07dc957656f19e0b30afd4ffd932}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Test\+Suite\+Configuration@{get\+Test\+Suite\+Configuration}}
+\index{get\+Test\+Suite\+Configuration@{get\+Test\+Suite\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Test\+Suite\+Configuration()}{getTestSuiteConfiguration()}}
+{\footnotesize\ttfamily get\+Test\+Suite\+Configuration (\begin{DoxyParamCaption}\item[{}]{\$test\+Suite\+Filter = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Returns the test suite configuration.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_suite}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Suite}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a4062eef82ea4fb2ee5368400e8e1829e}\label{class_p_h_p_unit___util___configuration_a4062eef82ea4fb2ee5368400e8e1829e}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!get\+Test\+Suite\+Names@{get\+Test\+Suite\+Names}}
+\index{get\+Test\+Suite\+Names@{get\+Test\+Suite\+Names}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{get\+Test\+Suite\+Names()}{getTestSuiteNames()}}
+{\footnotesize\ttfamily get\+Test\+Suite\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the test suite names from the configuration.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a22645bd8ed1ef0b6f5ae852c22a75665}\label{class_p_h_p_unit___util___configuration_a22645bd8ed1ef0b6f5ae852c22a75665}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!handle\+P\+H\+P\+Configuration@{handle\+P\+H\+P\+Configuration}}
+\index{handle\+P\+H\+P\+Configuration@{handle\+P\+H\+P\+Configuration}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{handle\+P\+H\+P\+Configuration()}{handlePHPConfiguration()}}
+{\footnotesize\ttfamily handle\+P\+H\+P\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Handles the P\+HP configuration. \mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a6ccb20f9f1158310c8fb5e3861b3cbbf}\label{class_p_h_p_unit___util___configuration_a6ccb20f9f1158310c8fb5e3861b3cbbf}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!read\+Filter\+Directories@{read\+Filter\+Directories}}
+\index{read\+Filter\+Directories@{read\+Filter\+Directories}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{read\+Filter\+Directories()}{readFilterDirectories()}}
+{\footnotesize\ttfamily read\+Filter\+Directories (\begin{DoxyParamCaption}\item[{}]{\$query }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a4a9714e2bea7d25b00ab025aeac10bd8}\label{class_p_h_p_unit___util___configuration_a4a9714e2bea7d25b00ab025aeac10bd8}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!read\+Filter\+Files@{read\+Filter\+Files}}
+\index{read\+Filter\+Files@{read\+Filter\+Files}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{read\+Filter\+Files()}{readFilterFiles()}}
+{\footnotesize\ttfamily read\+Filter\+Files (\begin{DoxyParamCaption}\item[{}]{\$query }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a1d05d18cdb4c7d80110a47c91c3c8d17}\label{class_p_h_p_unit___util___configuration_a1d05d18cdb4c7d80110a47c91c3c8d17}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!to\+Absolute\+Path@{to\+Absolute\+Path}}
+\index{to\+Absolute\+Path@{to\+Absolute\+Path}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{to\+Absolute\+Path()}{toAbsolutePath()}}
+{\footnotesize\ttfamily to\+Absolute\+Path (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$use\+Include\+Path = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+bool & {\em \$use\+Include\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_ac5a31edb787609a3143dec9bfa8063ea}\label{class_p_h_p_unit___util___configuration_ac5a31edb787609a3143dec9bfa8063ea}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!\$document@{\$document}}
+\index{\$document@{\$document}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{\$document}{$document}}
+{\footnotesize\ttfamily \$document\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_a0722441477f957078ee2437054556cbc}\label{class_p_h_p_unit___util___configuration_a0722441477f957078ee2437054556cbc}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!\$filename@{\$filename}}
+\index{\$filename@{\$filename}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{\$filename}{$filename}}
+{\footnotesize\ttfamily \$filename\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___util___configuration_aa270f2ef637ad3d6465f2b764c046def}\label{class_p_h_p_unit___util___configuration_aa270f2ef637ad3d6465f2b764c046def}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}!\$xpath@{\$xpath}}
+\index{\$xpath@{\$xpath}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Configuration}}
+\subsubsection{\texorpdfstring{\$xpath}{$xpath}}
+{\footnotesize\ttfamily \$xpath\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Util/\mbox{\hyperlink{_configuration_8php}{Configuration.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{class_text___template}{}\section{Text\+\_\+\+Template Class Reference}
+\label{class_text___template}\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text___template_a5265a161c2510fb4219e82afd47143d1}{\+\_\+\+\_\+construct}} (\$file=\textquotesingle{}\textquotesingle{}, \$open\+Delimiter=\textquotesingle{}\{\textquotesingle{}, \$close\+Delimiter=\textquotesingle{}\}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_text___template_a786ea2bbab26bd4a0ecae24b253d17fe}{set\+File}} (\$file)
+\item 
+\mbox{\hyperlink{class_text___template_ad7a89bfd367400ebb91fc3600d6c3770}{set\+Var}} (array \$values, \$merge=\mbox{\hyperlink{constants_8php_ae04a3efe6aa42044f803ee90c2277846}{T\+R\+UE}})
+\item 
+\mbox{\hyperlink{class_text___template_afde88292c44dc59faf017738dae6dffb}{render}} ()
+\item 
+\mbox{\hyperlink{class_text___template_ab6a86d8a9247de41c28ea861372c3fb3}{render\+To}} (\$target)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text___template_aa3e9534005fd516d941f6a5569896e01}{\$template}} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_text___template_a08b423e518737fc0195536a20f966296}{\$open\+Delimiter}} = \textquotesingle{}\{\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_text___template_a0d6a85f85e03020ae1d2cc2670252fa2}{\$close\+Delimiter}} = \textquotesingle{}\}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_text___template_affc45c6ace2eeb3f300b054dbf9592b6}{\$values}} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} simple template engine.
+
+\begin{DoxySince}{Since}
+Class available since Release 1.\+0.\+0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_text___template_a5265a161c2510fb4219e82afd47143d1}\label{class_text___template_a5265a161c2510fb4219e82afd47143d1}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$file = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$open\+Delimiter = {\ttfamily \textquotesingle{}\{\textquotesingle{}},  }\item[{}]{\$close\+Delimiter = {\ttfamily \textquotesingle{}\}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_text___template_afde88292c44dc59faf017738dae6dffb}\label{class_text___template_afde88292c44dc59faf017738dae6dffb}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!render@{render}}
+\index{render@{render}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Renders the template and returns the result.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_text___template_ab6a86d8a9247de41c28ea861372c3fb3}\label{class_text___template_ab6a86d8a9247de41c28ea861372c3fb3}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!render\+To@{render\+To}}
+\index{render\+To@{render\+To}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{render\+To()}{renderTo()}}
+{\footnotesize\ttfamily render\+To (\begin{DoxyParamCaption}\item[{}]{\$target }\end{DoxyParamCaption})}
+
+Renders the template and writes the result to a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_text___template_a786ea2bbab26bd4a0ecae24b253d17fe}\label{class_text___template_a786ea2bbab26bd4a0ecae24b253d17fe}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!set\+File@{set\+File}}
+\index{set\+File@{set\+File}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{set\+File()}{setFile()}}
+{\footnotesize\ttfamily set\+File (\begin{DoxyParamCaption}\item[{}]{\$file }\end{DoxyParamCaption})}
+
+Sets the template file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_text___template_ad7a89bfd367400ebb91fc3600d6c3770}\label{class_text___template_ad7a89bfd367400ebb91fc3600d6c3770}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!set\+Var@{set\+Var}}
+\index{set\+Var@{set\+Var}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{set\+Var()}{setVar()}}
+{\footnotesize\ttfamily set\+Var (\begin{DoxyParamCaption}\item[{array}]{\$values,  }\item[{}]{\$merge = {\ttfamily \mbox{\hyperlink{constants_8php_ae04a3efe6aa42044f803ee90c2277846}{T\+R\+UE}}} }\end{DoxyParamCaption})}
+
+Sets one or more template variables.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+bool & {\em \$merge} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_text___template_a0d6a85f85e03020ae1d2cc2670252fa2}\label{class_text___template_a0d6a85f85e03020ae1d2cc2670252fa2}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!\$close\+Delimiter@{\$close\+Delimiter}}
+\index{\$close\+Delimiter@{\$close\+Delimiter}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{\$close\+Delimiter}{$closeDelimiter}}
+{\footnotesize\ttfamily \$close\+Delimiter = \textquotesingle{}\}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_text___template_a08b423e518737fc0195536a20f966296}\label{class_text___template_a08b423e518737fc0195536a20f966296}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!\$open\+Delimiter@{\$open\+Delimiter}}
+\index{\$open\+Delimiter@{\$open\+Delimiter}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{\$open\+Delimiter}{$openDelimiter}}
+{\footnotesize\ttfamily \$open\+Delimiter = \textquotesingle{}\{\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_text___template_aa3e9534005fd516d941f6a5569896e01}\label{class_text___template_aa3e9534005fd516d941f6a5569896e01}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!\$template@{\$template}}
+\index{\$template@{\$template}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{\$template}{$template}}
+{\footnotesize\ttfamily \$template = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_text___template_affc45c6ace2eeb3f300b054dbf9592b6}\label{class_text___template_affc45c6ace2eeb3f300b054dbf9592b6}} 
+\index{Text\+\_\+\+Template@{Text\+\_\+\+Template}!\$values@{\$values}}
+\index{\$values@{\$values}!Text\+\_\+\+Template@{Text\+\_\+\+Template}}
+\subsubsection{\texorpdfstring{\$values}{$values}}
+{\footnotesize\ttfamily \$values = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/php-\/text-\/template/src/\mbox{\hyperlink{_template_8php}{Template.\+php}}\end{DoxyCompactItemize}

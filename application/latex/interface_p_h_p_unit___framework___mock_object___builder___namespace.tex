@@ -1,0 +1,72 @@
+\hypertarget{interface_p_h_p_unit___framework___mock_object___builder___namespace}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace Interface Reference}
+\label{interface_p_h_p_unit___framework___mock_object___builder___namespace}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_p_h_p_unit___framework___mock_object___builder___namespace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___namespace_a1618f99693f7303270b2c569fdd602d4}{lookup\+Id}} (\$id)
+\item 
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___namespace_a538bdd6eae589613c28cf0da0243a4d4}{register\+Id}} (\$id, \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}} \$builder)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for builders which can register builders with a given identification.
+
+This interface relates to \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___identity}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Identity}}.
+
+\begin{DoxySince}{Since}
+Interface available since Release 1.\+0.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_p_h_p_unit___framework___mock_object___builder___namespace_a1618f99693f7303270b2c569fdd602d4}\label{interface_p_h_p_unit___framework___mock_object___builder___namespace_a1618f99693f7303270b2c569fdd602d4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}!lookup\+Id@{lookup\+Id}}
+\index{lookup\+Id@{lookup\+Id}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}}
+\subsubsection{\texorpdfstring{lookup\+Id()}{lookupId()}}
+{\footnotesize\ttfamily lookup\+Id (\begin{DoxyParamCaption}\item[{}]{\$id }\end{DoxyParamCaption})}
+
+Looks up the match builder with identification \$id and returns it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The identification of the match builder\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a1618f99693f7303270b2c569fdd602d4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}.
+
+\mbox{\Hypertarget{interface_p_h_p_unit___framework___mock_object___builder___namespace_a538bdd6eae589613c28cf0da0243a4d4}\label{interface_p_h_p_unit___framework___mock_object___builder___namespace_a538bdd6eae589613c28cf0da0243a4d4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}!register\+Id@{register\+Id}}
+\index{register\+Id@{register\+Id}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Namespace}}
+\subsubsection{\texorpdfstring{register\+Id()}{registerId()}}
+{\footnotesize\ttfamily register\+Id (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}}}]{\$builder }\end{DoxyParamCaption})}
+
+Registers the match builder \$builder with the identification \$id. The builder can later be looked up using \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___namespace_a1618f99693f7303270b2c569fdd602d4}{lookup\+Id()}} to figure out if it has been invoked.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The identification of the match builder \\
+\hline
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___builder___match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Builder\+\_\+\+Match}} & {\em \$builder} & The builder which is being registered \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___invocation_mocker_a538bdd6eae589613c28cf0da0243a4d4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation\+Mocker}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit-\/mock-\/objects/src/\+Framework/\+Mock\+Object/\+Builder/\mbox{\hyperlink{_namespace_8php}{Namespace.\+php}}\end{DoxyCompactItemize}

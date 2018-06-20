@@ -1,0 +1,89 @@
+\hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console}{}\section{Console Class Reference}
+\label{class_sebastian_bergmann_1_1_environment_1_1_console}\index{Console@{Console}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_console_a8e041c5c822c549689dd51c5419cfcf3}{has\+Color\+Support}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_console_a6ff979bb4085e4179bb272b88a45b979}{get\+Number\+Of\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_console_a500b2434d54cb29ec3f01f95b7aa814e}{is\+Interactive}} (\$file\+Descriptor=self\+::\+S\+T\+D\+O\+UT)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_console_ac0f4c3f86bde64525d82ff861e98ab7c}{S\+T\+D\+IN}} = 0
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_console_a4f3480c219bfe74e2a9d07e49700ed7b}{S\+T\+D\+O\+UT}} = 1
+\item 
+const \mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_console_a3bc84077bf369141cbcfc976cd261009}{S\+T\+D\+E\+RR}} = 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console_a6ff979bb4085e4179bb272b88a45b979}\label{class_sebastian_bergmann_1_1_environment_1_1_console_a6ff979bb4085e4179bb272b88a45b979}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}!get\+Number\+Of\+Columns@{get\+Number\+Of\+Columns}}
+\index{get\+Number\+Of\+Columns@{get\+Number\+Of\+Columns}!Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Columns()}{getNumberOfColumns()}}
+{\footnotesize\ttfamily get\+Number\+Of\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the number of columns of the terminal.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console_a8e041c5c822c549689dd51c5419cfcf3}\label{class_sebastian_bergmann_1_1_environment_1_1_console_a8e041c5c822c549689dd51c5419cfcf3}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}!has\+Color\+Support@{has\+Color\+Support}}
+\index{has\+Color\+Support@{has\+Color\+Support}!Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}}
+\subsubsection{\texorpdfstring{has\+Color\+Support()}{hasColorSupport()}}
+{\footnotesize\ttfamily has\+Color\+Support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if S\+T\+D\+O\+UT supports colorization.
+
+This code has been copied and adapted from \mbox{\hyperlink{namespace_symfony}{Symfony}}.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console_a500b2434d54cb29ec3f01f95b7aa814e}\label{class_sebastian_bergmann_1_1_environment_1_1_console_a500b2434d54cb29ec3f01f95b7aa814e}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}!is\+Interactive@{is\+Interactive}}
+\index{is\+Interactive@{is\+Interactive}!Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}}
+\subsubsection{\texorpdfstring{is\+Interactive()}{isInteractive()}}
+{\footnotesize\ttfamily is\+Interactive (\begin{DoxyParamCaption}\item[{}]{\$file\+Descriptor = {\ttfamily self\+:\+:STDOUT} }\end{DoxyParamCaption})}
+
+Returns if the file descriptor is an interactive terminal or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | resource & {\em \$file\+Descriptor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console_a3bc84077bf369141cbcfc976cd261009}\label{class_sebastian_bergmann_1_1_environment_1_1_console_a3bc84077bf369141cbcfc976cd261009}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}!S\+T\+D\+E\+RR@{S\+T\+D\+E\+RR}}
+\index{S\+T\+D\+E\+RR@{S\+T\+D\+E\+RR}!Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}}
+\subsubsection{\texorpdfstring{S\+T\+D\+E\+RR}{STDERR}}
+{\footnotesize\ttfamily const S\+T\+D\+E\+RR = 2}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console_ac0f4c3f86bde64525d82ff861e98ab7c}\label{class_sebastian_bergmann_1_1_environment_1_1_console_ac0f4c3f86bde64525d82ff861e98ab7c}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}!S\+T\+D\+IN@{S\+T\+D\+IN}}
+\index{S\+T\+D\+IN@{S\+T\+D\+IN}!Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}}
+\subsubsection{\texorpdfstring{S\+T\+D\+IN}{STDIN}}
+{\footnotesize\ttfamily const S\+T\+D\+IN = 0}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_console_a4f3480c219bfe74e2a9d07e49700ed7b}\label{class_sebastian_bergmann_1_1_environment_1_1_console_a4f3480c219bfe74e2a9d07e49700ed7b}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}!S\+T\+D\+O\+UT@{S\+T\+D\+O\+UT}}
+\index{S\+T\+D\+O\+UT@{S\+T\+D\+O\+UT}!Sebastian\+Bergmann\+::\+Environment\+::\+Console@{Sebastian\+Bergmann\+::\+Environment\+::\+Console}}
+\subsubsection{\texorpdfstring{S\+T\+D\+O\+UT}{STDOUT}}
+{\footnotesize\ttfamily const S\+T\+D\+O\+UT = 1}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/sebastian/environment/src/\mbox{\hyperlink{_console_8php}{Console.\+php}}\end{DoxyCompactItemize}

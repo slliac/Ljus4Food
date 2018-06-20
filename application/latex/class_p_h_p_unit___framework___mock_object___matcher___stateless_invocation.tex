@@ -1,0 +1,77 @@
+\hypertarget{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation Class Reference}
+\label{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.379310cm]{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_a63f37b06181c9547bc3c225007c34425}{invoked}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} \$invocation)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_aa33600b6a1b28d0c4dfe4d468272aaa4}{verify}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Invocation matcher which does not care about previous state from earlier invocations.
+
+This abstract class can be implemented by matchers which does not care about state but only the current run-\/time value of the invocation itself.
+
+\begin{DoxySince}{Since}
+Class available since Release 1.\+0.\+0  
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_a63f37b06181c9547bc3c225007c34425}\label{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_a63f37b06181c9547bc3c225007c34425}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation}!invoked@{invoked}}
+\index{invoked@{invoked}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation}}
+\subsubsection{\texorpdfstring{invoked()}{invoked()}}
+{\footnotesize\ttfamily invoked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}}}]{\$invocation }\end{DoxyParamCaption})}
+
+Registers the invocation \$invocation in the object as being invoked. This will only occur after \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation_a4988c6fa11e275302172d0a4ae32dd3a}{matches()}} returns true which means the current invocation is the correct one.
+
+The matcher can store information from the invocation which can later be checked in \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_aa33600b6a1b28d0c4dfe4d468272aaa4}{verify()}}, or it can check the values directly and throw and exception if an expectation is not met.
+
+If the matcher is a stub it will also have a return value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} & {\em \$invocation} & Object containing information on a mocked or stubbed method which was invoked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation_a63f37b06181c9547bc3c225007c34425}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_aa33600b6a1b28d0c4dfe4d468272aaa4}\label{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_aa33600b6a1b28d0c4dfe4d468272aaa4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation}!verify@{verify}}
+\index{verify@{verify}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Stateless\+Invocation}}
+\subsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily verify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Checks if the invocation \$invocation matches the current rules. If it does the matcher will get the \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___stateless_invocation_a63f37b06181c9547bc3c225007c34425}{invoked()}} method called which should check if an expectation is met.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} & {\em \$invocation} & Object containing information on a mocked or stubbed method which was invoked\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___verifiable_aa33600b6a1b28d0c4dfe4d468272aaa4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Verifiable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit-\/mock-\/objects/src/\+Framework/\+Mock\+Object/\+Matcher/\mbox{\hyperlink{_stateless_invocation_8php}{Stateless\+Invocation.\+php}}\end{DoxyCompactItemize}

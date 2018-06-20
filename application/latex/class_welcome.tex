@@ -1,0 +1,136 @@
+\hypertarget{class_welcome}{}\section{Welcome Class Reference}
+\label{class_welcome}\index{Welcome@{Welcome}}
+Inheritance diagram for Welcome\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_welcome}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_welcome_a149eb92716c1084a935e04a8d95f7347}{index}} ()
+\item 
+\mbox{\hyperlink{class_welcome_a76ab733fc756846ce6b6cdaddb8c005a}{adv\+Search}} ()
+\item 
+\mbox{\hyperlink{class_welcome_a4d5123cf815fd723d6dfdcb2c16fcc42}{form}} ()
+\item 
+\mbox{\hyperlink{class_welcome_a7edf443ddd63ae9348516d11b66d90a8}{sync\+Zomato\+Server}} (\$loc\+\_\+\+Read, \$cusine)
+\item 
+\mbox{\hyperlink{class_welcome_a1149321de0575cabb0e83f18de85728f}{location}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_welcome_a76ab733fc756846ce6b6cdaddb8c005a}\label{class_welcome_a76ab733fc756846ce6b6cdaddb8c005a}} 
+\index{Welcome@{Welcome}!adv\+Search@{adv\+Search}}
+\index{adv\+Search@{adv\+Search}!Welcome@{Welcome}}
+\subsubsection{\texorpdfstring{adv\+Search()}{advSearch()}}
+{\footnotesize\ttfamily adv\+Search (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+advance search linkage
+
+return to the adv\+Search\mbox{\Hypertarget{class_welcome_a4d5123cf815fd723d6dfdcb2c16fcc42}\label{class_welcome_a4d5123cf815fd723d6dfdcb2c16fcc42}} 
+\index{Welcome@{Welcome}!form@{form}}
+\index{form@{form}!Welcome@{Welcome}}
+\subsubsection{\texorpdfstring{form()}{form()}}
+{\footnotesize\ttfamily form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+sync the request to Eadamam A\+PI and then used extract datum to represent in v-\/card format
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$stmtheader} & -\/ header for api request \\
+\hline
+{\em \$stmtkey} & -\/ detail for default applicaiton request \\
+\hline
+{\em \$\+\_\+\+G\+E\+T\mbox{[}\char`\"{}search\char`\"{}\mbox{]}} & -\/ search data type come from the user \textquotesingle{}s default request \\
+\hline
+{\em \$oh} & -\/ object header of the the api request link \\
+\hline
+{\em \$linkedurl} & -\/ url link sent for request \\
+\hline
+{\em \$food} & -\/ object for storing the data ( try to use OO in programming) \\
+\hline
+{\em count} & -\/ the number of hits that users requested \\
+\hline
+{\em \$data\mbox{[}\textquotesingle{}image\textquotesingle{}\mbox{]}} & -\/ image of data \\
+\hline
+{\em \$data\mbox{[}\textquotesingle{}label\textquotesingle{}\mbox{]}} & -\/ label of dish \\
+\hline
+{\em \$data\mbox{[}\char`\"{}arr\char`\"{}\mbox{]}} & -\/ recipe of the disc\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_welcome_a149eb92716c1084a935e04a8d95f7347}\label{class_welcome_a149eb92716c1084a935e04a8d95f7347}} 
+\index{Welcome@{Welcome}!index@{index}}
+\index{index@{index}!Welcome@{Welcome}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Index Page for this controller.
+
+Maps to the following U\+RL \href{http://example.com/index.php/welcome}{\tt http\+://example.\+com/index.\+php/welcome}
+\begin{DoxyItemize}
+\item or -\/ \href{http://example.com/index.php/welcome/index}{\tt http\+://example.\+com/index.\+php/welcome/index}
+\item or -\/ Since this controller is set as the default controller in config/routes.\+php, it\textquotesingle{}s displayed at \href{http://example.com/}{\tt http\+://example.\+com/}
+\end{DoxyItemize}
+
+So any other public methods not prefixed with an underscore will map to /index.php/welcome/$<$method\+\_\+name$>$ \begin{DoxySeeAlso}{See also}
+\href{https://codeigniter.com/user_guide/general/urls.html}{\tt https\+://codeigniter.\+com/user\+\_\+guide/general/urls.\+html} 
+\end{DoxySeeAlso}
+index of the page
+
+return the intorduction of the website\mbox{\Hypertarget{class_welcome_a1149321de0575cabb0e83f18de85728f}\label{class_welcome_a1149321de0575cabb0e83f18de85728f}} 
+\index{Welcome@{Welcome}!location@{location}}
+\index{location@{location}!Welcome@{Welcome}}
+\subsubsection{\texorpdfstring{location()}{location()}}
+{\footnotesize\ttfamily location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Grab the location by using Zomato A\+PI , datum of latitude and longtitude supported with Eadamai A\+PI. and using the Google M\+AP A\+PI to represent the datum into the map size. 
+\begin{DoxyParams}{Parameters}
+{\em \$address} & \\
+\hline
+{\em \$latitude} & \\
+\hline
+{\em \$longitude} & \\
+\hline
+{\em \$rating} & \\
+\hline
+{\em \$outlook} & \\
+\hline
+{\em \$placename} & \\
+\hline
+{\em \$data} & -\/ send buffer from controller to view\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_welcome_a7edf443ddd63ae9348516d11b66d90a8}\label{class_welcome_a7edf443ddd63ae9348516d11b66d90a8}} 
+\index{Welcome@{Welcome}!sync\+Zomato\+Server@{sync\+Zomato\+Server}}
+\index{sync\+Zomato\+Server@{sync\+Zomato\+Server}!Welcome@{Welcome}}
+\subsubsection{\texorpdfstring{sync\+Zomato\+Server()}{syncZomatoServer()}}
+{\footnotesize\ttfamily sync\+Zomato\+Server (\begin{DoxyParamCaption}\item[{}]{\$loc\+\_\+\+Read,  }\item[{}]{\$cusine }\end{DoxyParamCaption})}
+
+Plug location and cusine type for specific your search, and then make a request to the Zomato server, finally return json key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em headoflocation} & -\/ header of the zomato link \\
+\hline
+{\em src\+\_\+location} & -\/ linked to the method that get\+\_\+content \\
+\hline
+{\em buffer\+\_\+location} & -\/ buffer for storing the json styled file \\
+\hline
+{\em tail} & -\/ entity type definiton \\
+\hline
+{\em counting} & -\/ the number of data that want to show \\
+\hline
+{\em api} & -\/ the final api link want to going to sync \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ json file type datum back to server and manage
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+controllers/\mbox{\hyperlink{_welcome_8php}{Welcome.\+php}}\end{DoxyCompactItemize}

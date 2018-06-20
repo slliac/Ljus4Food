@@ -1,0 +1,188 @@
+\subsection*{4.\+0.\+0 }
+
+
+\begin{DoxyItemize}
+\item The behavior of the non-\/specific tag {\ttfamily !} is changed and now forces non-\/evaluating your values.
+\item complex mappings will throw a {\ttfamily Parse\+Exception}
+\item support for the comma as a group separator for floats has been dropped, use the underscore instead
+\item support for the {\ttfamily !!php/object} tag has been dropped, use the {\ttfamily !php/object} tag instead
+\item duplicate mapping keys throw a {\ttfamily Parse\+Exception}
+\item non-\/string mapping keys throw a {\ttfamily Parse\+Exception}, use the {\ttfamily Yaml\+::\+P\+A\+R\+S\+E\+\_\+\+K\+E\+Y\+S\+\_\+\+A\+S\+\_\+\+S\+T\+R\+I\+N\+GS} flag to cast them to strings
+\item {\ttfamily \%} at the beginning of an unquoted string throw a {\ttfamily Parse\+Exception}
+\item mappings with a colon ({\ttfamily \+:}) that is not followed by a whitespace throw a {\ttfamily Parse\+Exception}
+\item the {\ttfamily Dumper\+::set\+Indentation()} method has been removed
+\item being able to pass boolean options to the {\ttfamily Yaml\+::parse()}, {\ttfamily Yaml\+::dump()}, {\ttfamily Parser\+::parse()}, and {\ttfamily Dumper\+::dump()} methods to configure the behavior of the parser and dumper is no longer supported, pass bitmask flags instead
+\item the constructor arguments of the {\ttfamily Parser} class have been removed
+\item the {\ttfamily Inline} class is internal and no longer part of the BC promise
+\item removed support for the {\ttfamily !str} tag, use the {\ttfamily !!str} tag instead
+\item added support for tagged scalars.
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Yaml::parse('!foo bar', Yaml::PARSE\_CUSTOM\_TAGS);
+// returns TaggedValue('foo', 'bar');
+\end{DoxyCode}
+
+
+\subsection*{3.\+4.\+0 }
+
+
+\begin{DoxyItemize}
+\item added support for parsing Y\+A\+ML files using the {\ttfamily Yaml\+::parse\+File()} or {\ttfamily Parser\+::parse\+File()} method
+\item the {\ttfamily Dumper}, {\ttfamily Parser}, and {\ttfamily Yaml} classes are marked as final
+\item Deprecated the {\ttfamily !php/object\+:} tag which will be replaced by the {\ttfamily !php/object} tag (without the colon) in 4.\+0.
+\item Deprecated the {\ttfamily !php/const\+:} tag which will be replaced by the {\ttfamily !php/const} tag (without the colon) in 4.\+0.
+\item Support for the {\ttfamily !str} tag is deprecated, use the {\ttfamily !!str} tag instead.
+\item Deprecated using the non-\/specific tag {\ttfamily !} as its behavior will change in 4.\+0. It will force non-\/evaluating your values in 4.\+0. Use plain integers or {\ttfamily !!float} instead.
+\end{DoxyItemize}
+
+\subsection*{3.\+3.\+0 }
+
+
+\begin{DoxyItemize}
+\item Starting an unquoted string with a question mark followed by a space is deprecated and will throw a {\ttfamily Parse\+Exception} in \mbox{\hyperlink{namespace_symfony}{Symfony}} 4.\+0.
+\item Deprecated support for implicitly parsing non-\/string mapping keys as strings. Mapping keys that are no strings will lead to a {\ttfamily Parse\+Exception} in \mbox{\hyperlink{namespace_symfony}{Symfony}} 4.\+0. Use quotes to opt-\/in for keys to be parsed as strings.
+
+Before\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+$yaml = <<<YAML
+null: null key
+\textcolor{keyword}{true}: \textcolor{keywordtype}{boolean} \textcolor{keyword}{true}
+2.0: \textcolor{keywordtype}{float} key
+YAML;
+
+Yaml::parse($yaml);
+\end{DoxyCode}
+
+
+After\+:
+
+
+\begin{DoxyCode}
+$yaml = <<<YAML
+\textcolor{stringliteral}{"null"}: null key
+\textcolor{stringliteral}{"true"}: \textcolor{keywordtype}{boolean} \textcolor{keyword}{true}
+\textcolor{stringliteral}{"2.0"}: \textcolor{keywordtype}{float} key
+YAML;
+
+Yaml::parse($yaml);
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Omitted mapping values will be parsed as {\ttfamily null}.
+\item Omitting the key of a mapping is deprecated and will throw a {\ttfamily Parse\+Exception} in \mbox{\hyperlink{namespace_symfony}{Symfony}} 4.\+0.
+\item Added support for dumping empty P\+HP arrays as Y\+A\+ML sequences\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Yaml::dump([], 0, 0, Yaml::DUMP\_EMPTY\_ARRAY\_AS\_SEQUENCE);
+\end{DoxyCode}
+
+
+\subsection*{3.\+2.\+0 }
+
+
+\begin{DoxyItemize}
+\item Mappings with a colon ({\ttfamily \+:}) that is not followed by a whitespace are deprecated when the mapping key is not quoted and will lead to a {\ttfamily Parse\+Exception} in \mbox{\hyperlink{namespace_symfony}{Symfony}} 4.\+0 (e.\+g. {\ttfamily foo\+:bar} must be {\ttfamily foo\+: bar}).
+\item Added support for parsing P\+HP constants\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Yaml::parse(\textcolor{stringliteral}{'!php/const:PHP\_INT\_MAX'}, Yaml::PARSE\_CONSTANT);
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Support for silently ignoring duplicate mapping keys in Y\+A\+ML has been deprecated and will lead to a {\ttfamily Parse\+Exception} in \mbox{\hyperlink{namespace_symfony}{Symfony}} 4.\+0.
+\end{DoxyItemize}
+
+\subsection*{3.\+1.\+0 }
+
+
+\begin{DoxyItemize}
+\item Added support to dump {\ttfamily std\+Class} and {\ttfamily Array\+Access} objects as Y\+A\+ML mappings through the {\ttfamily Yaml\+::\+D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP} flag.
+\item Strings that are not U\+T\+F-\/8 encoded will be dumped as base64 encoded binary data.
+\item Added support for dumping multi line strings as literal blocks.
+\item Added support for parsing base64 encoded binary data when they are tagged with the {\ttfamily !!binary} tag.
+\item Added support for parsing timestamps as {\ttfamily \textbackslash{}Date\+Time} objects\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Yaml::parse(\textcolor{stringliteral}{'2001-12-15 21:59:43.10 -5'}, Yaml::PARSE\_DATETIME);
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \textbackslash{}Date\+Time} and {\ttfamily \textbackslash{}Date\+Time\+Immutable} objects are dumped as Y\+A\+ML timestamps.
+\item Deprecated usage of {\ttfamily \%} at the beginning of an unquoted string.
+\item Added support for customizing the Y\+A\+ML parser behavior through an optional bit field\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Yaml::parse(\textcolor{stringliteral}{'\{ "foo": "bar", "fiz": "cat" \}'}, Yaml::PARSE\_EXCEPTION\_ON\_INVALID\_TYPE | Yaml::PARSE\_OBJECT | 
+      Yaml::PARSE\_OBJECT\_FOR\_MAP);
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Added support for customizing the dumped Y\+A\+ML string through an optional bit field\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+Yaml::dump(array(\textcolor{stringliteral}{'foo'} => \textcolor{keyword}{new} \mbox{\hyperlink{class_a}{A}}(), \textcolor{stringliteral}{'bar'} => 1), 0, 0, Yaml::DUMP\_EXCEPTION\_ON\_INVALID\_TYPE | 
+      Yaml::DUMP\_OBJECT);
+\end{DoxyCode}
+
+
+\subsection*{3.\+0.\+0 }
+
+
+\begin{DoxyItemize}
+\item Yaml\+::parse() now throws an exception when a blackslash is not escaped in double-\/quoted strings
+\end{DoxyItemize}
+
+\subsection*{2.\+8.\+0 }
+
+
+\begin{DoxyItemize}
+\item Deprecated usage of a colon in an unquoted mapping value
+\item Deprecated usage of @, \`{}, $\vert$ and $>$ at the beginning of an unquoted string
+\item When surrounding strings with double-\/quotes, you must now escape {\ttfamily \textbackslash{}} characters. Not escaping those characters (when surrounded by double-\/quotes) is deprecated.
+
+Before\+:
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+class: "Foo\(\backslash\)Var"
+\end{DoxyCode}
+
+
+After\+:
+
+
+\begin{DoxyCode}
+class: "Foo\(\backslash\)\(\backslash\)Var"
+\end{DoxyCode}
+
+
+\subsection*{2.\+1.\+0 }
+
+
+\begin{DoxyItemize}
+\item Yaml\+::parse() does not evaluate loaded files as P\+HP files by default anymore (call Yaml\+::enable\+Php\+Parsing() to get back the old behavior) 
+\end{DoxyItemize}

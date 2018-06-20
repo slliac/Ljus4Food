@@ -1,0 +1,107 @@
+\hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_escaper}{}\section{Escaper Class Reference}
+\label{class_symfony_1_1_component_1_1_yaml_1_1_escaper}\index{Escaper@{Escaper}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a27a91a29f75e7bab19ab1e9d9a571280}{requires\+Double\+Quoting}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_escaper_acfaf5ef09521c38f06f9642e65437d9d}{escape\+With\+Double\+Quotes}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_escaper_ad0f9c5f7d3716a41cc182af3129cb88e}{requires\+Single\+Quoting}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a1919aa59601bd0d1fd064052798a754a}{escape\+With\+Single\+Quotes}} (string \$value)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a35ce88401a0b249e400659276c997046}{R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE}} = \char`\"{}\mbox{[}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}\textbackslash{}x1f\mbox{]}$\vert$\textbackslash{}xc2\textbackslash{}x85$\vert$\textbackslash{}xc2\textbackslash{}xa0$\vert$\textbackslash{}xe2\textbackslash{}x80\textbackslash{}xa8$\vert$\textbackslash{}xe2\textbackslash{}x80\textbackslash{}xa9\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_escaper}{Escaper}} encapsulates escaping rules for single and double-\/quoted Y\+A\+ML strings.
+
+\begin{DoxyAuthor}{Author}
+Matthew Lewinski \href{mailto:matthew@lewinski.org}{\tt matthew@lewinski.\+org} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_escaper_acfaf5ef09521c38f06f9642e65437d9d}\label{class_symfony_1_1_component_1_1_yaml_1_1_escaper_acfaf5ef09521c38f06f9642e65437d9d}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}!escape\+With\+Double\+Quotes@{escape\+With\+Double\+Quotes}}
+\index{escape\+With\+Double\+Quotes@{escape\+With\+Double\+Quotes}!Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}}
+\subsubsection{\texorpdfstring{escape\+With\+Double\+Quotes()}{escapeWithDoubleQuotes()}}
+{\footnotesize\ttfamily static escape\+With\+Double\+Quotes (\begin{DoxyParamCaption}\item[{string}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Escapes and surrounds a P\+HP value with double quotes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \mbox{\hyperlink{class_a}{A}} P\+HP value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The quoted, escaped string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a1919aa59601bd0d1fd064052798a754a}\label{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a1919aa59601bd0d1fd064052798a754a}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}!escape\+With\+Single\+Quotes@{escape\+With\+Single\+Quotes}}
+\index{escape\+With\+Single\+Quotes@{escape\+With\+Single\+Quotes}!Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}}
+\subsubsection{\texorpdfstring{escape\+With\+Single\+Quotes()}{escapeWithSingleQuotes()}}
+{\footnotesize\ttfamily static escape\+With\+Single\+Quotes (\begin{DoxyParamCaption}\item[{string}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Escapes and surrounds a P\+HP value with single quotes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \mbox{\hyperlink{class_a}{A}} P\+HP value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The quoted, escaped string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a27a91a29f75e7bab19ab1e9d9a571280}\label{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a27a91a29f75e7bab19ab1e9d9a571280}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}!requires\+Double\+Quoting@{requires\+Double\+Quoting}}
+\index{requires\+Double\+Quoting@{requires\+Double\+Quoting}!Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}}
+\subsubsection{\texorpdfstring{requires\+Double\+Quoting()}{requiresDoubleQuoting()}}
+{\footnotesize\ttfamily static requires\+Double\+Quoting (\begin{DoxyParamCaption}\item[{string}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines if a P\+HP value would require double quoting in Y\+A\+ML.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \mbox{\hyperlink{class_a}{A}} P\+HP value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the value would require double quotes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_escaper_ad0f9c5f7d3716a41cc182af3129cb88e}\label{class_symfony_1_1_component_1_1_yaml_1_1_escaper_ad0f9c5f7d3716a41cc182af3129cb88e}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}!requires\+Single\+Quoting@{requires\+Single\+Quoting}}
+\index{requires\+Single\+Quoting@{requires\+Single\+Quoting}!Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}}
+\subsubsection{\texorpdfstring{requires\+Single\+Quoting()}{requiresSingleQuoting()}}
+{\footnotesize\ttfamily static requires\+Single\+Quoting (\begin{DoxyParamCaption}\item[{string}]{\$value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines if a P\+HP value would require single quoting in Y\+A\+ML.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \mbox{\hyperlink{class_a}{A}} P\+HP value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the value would require single quotes 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a35ce88401a0b249e400659276c997046}\label{class_symfony_1_1_component_1_1_yaml_1_1_escaper_a35ce88401a0b249e400659276c997046}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}!R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE@{R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE}}
+\index{R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE@{R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE}!Symfony\+::\+Component\+::\+Yaml\+::\+Escaper@{Symfony\+::\+Component\+::\+Yaml\+::\+Escaper}}
+\subsubsection{\texorpdfstring{R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE}{REGEX\_CHARACTER\_TO\_ESCAPE}}
+{\footnotesize\ttfamily const R\+E\+G\+E\+X\+\_\+\+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+T\+O\+\_\+\+E\+S\+C\+A\+PE = \char`\"{}\mbox{[}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}\textbackslash{}x1f\mbox{]}$\vert$\textbackslash{}xc2\textbackslash{}x85$\vert$\textbackslash{}xc2\textbackslash{}xa0$\vert$\textbackslash{}xe2\textbackslash{}x80\textbackslash{}xa8$\vert$\textbackslash{}xe2\textbackslash{}x80\textbackslash{}xa9\char`\"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/symfony/yaml/\mbox{\hyperlink{_escaper_8php}{Escaper.\+php}}\end{DoxyCompactItemize}

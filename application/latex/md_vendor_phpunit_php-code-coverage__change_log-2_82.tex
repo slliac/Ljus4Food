@@ -1,0 +1,75 @@
+All notable changes of the P\+H\+P\+\_\+\+Code\+Coverage 2.\+2 release series are documented in this file using the \href{http://keepachangelog.com/}{\tt Keep a C\+H\+A\+N\+G\+E\+L\+OG} principles.
+
+\subsection*{\mbox{[}2.\+2.\+4\mbox{]} -\/ 2015-\/10-\/06}
+
+\subsubsection*{Fixed}
+
+
+\begin{DoxyItemize}
+\item Fixed \href{https://github.com/sebastianbergmann/php-code-coverage/pull/391}{\tt \#391}\+: Missing {\ttfamily $<$/abbr$>$} tag
+\end{DoxyItemize}
+
+\subsection*{\mbox{[}2.\+2.\+3\mbox{]} -\/ 2015-\/09-\/14}
+
+\subsubsection*{Fixed}
+
+
+\begin{DoxyItemize}
+\item Fixed \href{https://github.com/sebastianbergmann/php-code-coverage/pull/368}{\tt \#368}\+: Blacklists and whitelists are not merged when merging data sets
+\item Fixed \href{https://github.com/sebastianbergmann/php-code-coverage/issues/370}{\tt \#370}\+: Confusing statistics for source file that declares a class without methods
+\item Fixed \href{https://github.com/sebastianbergmann/php-code-coverage/pull/372}{\tt \#372}\+: Nested classes and functions are not handled correctly
+\item Fixed \href{https://github.com/sebastianbergmann/php-code-coverage/issues/382}{\tt \#382}\+: Crap4J report generates incorrect X\+ML logfile
+\end{DoxyItemize}
+
+\subsection*{\mbox{[}2.\+2.\+2\mbox{]} -\/ 2015-\/08-\/04}
+
+\subsubsection*{Added}
+
+
+\begin{DoxyItemize}
+\item Reintroduced the {\ttfamily P\+H\+P\+\_\+\+Code\+Coverage\+\_\+\+Driver\+\_\+\+H\+H\+VM} driver as an extension of {\ttfamily P\+H\+P\+\_\+\+Code\+Coverage\+\_\+\+Driver\+\_\+\+Xdebug} that does not use {\ttfamily xdebug\+\_\+start\+\_\+code\+\_\+coverage()} with options not supported by H\+H\+VM
+\end{DoxyItemize}
+
+\subsubsection*{Changed}
+
+
+\begin{DoxyItemize}
+\item Bumped required version of {\ttfamily sebastian/environment} to 1.\+3.\+2 for \href{https://github.com/sebastianbergmann/php-code-coverage/issues/365}{\tt \#365}
+\end{DoxyItemize}
+
+\subsection*{\mbox{[}2.\+2.\+1\mbox{]} -\/ 2015-\/08-\/02}
+
+\subsubsection*{Changed}
+
+
+\begin{DoxyItemize}
+\item Bumped required version of {\ttfamily sebastian/environment} to 1.\+3.\+1 for \href{https://github.com/sebastianbergmann/php-code-coverage/issues/365}{\tt \#365}
+\end{DoxyItemize}
+
+\subsection*{\mbox{[}2.\+2.\+0\mbox{]} -\/ 2015-\/08-\/01}
+
+\subsubsection*{Added}
+
+
+\begin{DoxyItemize}
+\item Added a driver for P\+H\+P\+D\+BG (requires P\+HP 7)
+\item Added {\ttfamily P\+H\+P\+\_\+\+Code\+Coverage\+::set\+Disable\+Ignored\+Lines()} to disable the ignoring of lines using annotations such as {\ttfamily @code\+Coverage\+Ignore}
+\end{DoxyItemize}
+
+\#\#\# Changed
+
+
+\begin{DoxyItemize}
+\item Annotating a method with \`{}\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000024}{Deprecated}}]{\ttfamily now has the same effect as annotating it with}\`{}\end{DoxyRefDesc}
+
+\end{DoxyItemize}
+
+\#\#\# Removed
+
+
+\begin{DoxyItemize}
+\item The dedicated driver for H\+H\+VM, {\ttfamily P\+H\+P\+\_\+\+Code\+Coverage\+\_\+\+Driver\+\_\+\+H\+H\+VM} has been removed
+\end{DoxyItemize}
+
+\mbox{[}2.\+2.\+4\mbox{]}\+: \href{https://github.com/sebastianbergmann/php-code-coverage/compare/2.2.3...2.2.4}{\tt https\+://github.\+com/sebastianbergmann/php-\/code-\/coverage/compare/2.\+2.\+3...\+2.\+2.\+4} \mbox{[}2.\+2.\+3\mbox{]}\+: \href{https://github.com/sebastianbergmann/php-code-coverage/compare/2.2.2...2.2.3}{\tt https\+://github.\+com/sebastianbergmann/php-\/code-\/coverage/compare/2.\+2.\+2...\+2.\+2.\+3} \mbox{[}2.\+2.\+2\mbox{]}\+: \href{https://github.com/sebastianbergmann/php-code-coverage/compare/2.2.1...2.2.2}{\tt https\+://github.\+com/sebastianbergmann/php-\/code-\/coverage/compare/2.\+2.\+1...\+2.\+2.\+2} \mbox{[}2.\+2.\+1\mbox{]}\+: \href{https://github.com/sebastianbergmann/php-code-coverage/compare/2.2.0...2.2.1}{\tt https\+://github.\+com/sebastianbergmann/php-\/code-\/coverage/compare/2.\+2.\+0...\+2.\+2.\+1} \mbox{[}2.\+2.\+0\mbox{]}\+: \href{https://github.com/sebastianbergmann/php-code-coverage/compare/2.1...2.2.0}{\tt https\+://github.\+com/sebastianbergmann/php-\/code-\/coverage/compare/2.\+1...\+2.\+2.\+0} 

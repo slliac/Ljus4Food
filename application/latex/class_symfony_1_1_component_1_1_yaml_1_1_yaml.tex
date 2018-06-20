@@ -1,0 +1,195 @@
+\hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml}{}\section{Yaml Class Reference}
+\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml}\index{Yaml@{Yaml}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a4948f36005708b9a6a0d9da36c05d810}{parse\+File}} (string \$filename, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_acb1368e5993339ca9bb58ee95bc49b14}{parse}} (string \$input, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a26b0fb9733ab43ce9a9340845e78b7c3}{dump}} (\$input, int \$inline=2, int \$indent=4, int \$flags=0)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ab1817385e64dcec99e30b879124be30f}{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT}} = 1
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a5a189ef40a1572df617e7eed2d55a51a}{P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}} = 2
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a2b9e74f4d07da6a803de1c48c6df6e01}{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT}} = 4
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a570a6d9877bcb0c9eaffeb0f046e04b0}{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP}} = 8
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_aa6ae46d15e364f0c0b9d394bbe24821e}{D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}} = 16
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ad08ffe7d5e5300cd050b804ccb4c4547}{P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME}} = 32
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_adfad364cd9134aaa2c794f8e642f823b}{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP}} = 64
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a403ab30a581f745104360191e3520766}{D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK}} = 128
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a7049ef83faca09605803d4d27a3a7cbf}{P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT}} = 256
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ae27e0cfe901cb897a10fc6738c63eb55}{P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS}} = 512
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a9218c80f067ac9728ecca223e5afbf18}{D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}} = 1024
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml}{Yaml}} offers convenience methods to load and dump Y\+A\+ML.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a26b0fb9733ab43ce9a9340845e78b7c3}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a26b0fb9733ab43ce9a9340845e78b7c3}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!dump@{dump}}
+\index{dump@{dump}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily static dump (\begin{DoxyParamCaption}\item[{}]{\$input,  }\item[{int}]{\$inline = {\ttfamily 2},  }\item[{int}]{\$indent = {\ttfamily 4},  }\item[{int}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dumps a P\+HP value to a Y\+A\+ML string.
+
+The dump method, when supplied with an array, will do its best to convert the array into friendly Y\+A\+ML.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$input} & The P\+HP value \\
+\hline
+int & {\em \$inline} & The level where you switch to inline Y\+A\+ML \\
+\hline
+int & {\em \$indent} & The amount of spaces to use for indentation of nested nodes \\
+\hline
+int & {\em \$flags} & \mbox{\hyperlink{class_a}{A}} bit field of D\+U\+M\+P\+\_\+$\ast$ constants to customize the dumped Y\+A\+ML string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \mbox{\hyperlink{class_a}{A}} Y\+A\+ML string representing the original P\+HP value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_acb1368e5993339ca9bb58ee95bc49b14}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_acb1368e5993339ca9bb58ee95bc49b14}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!parse@{parse}}
+\index{parse@{parse}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily static parse (\begin{DoxyParamCaption}\item[{string}]{\$input,  }\item[{int}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses Y\+A\+ML into a P\+HP value.
+
+Usage\+: {\ttfamily  \$array = \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_acb1368e5993339ca9bb58ee95bc49b14}{Yaml\+::parse}}(file\+\_\+get\+\_\+contents(\textquotesingle{}config.\+yml\textquotesingle{})); print\+\_\+r(\$array); }
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \mbox{\hyperlink{class_a}{A}} string containing Y\+A\+ML \\
+\hline
+int & {\em \$flags} & \mbox{\hyperlink{class_a}{A}} bit field of P\+A\+R\+S\+E\+\_\+$\ast$ constants to customize the Y\+A\+ML parser behavior\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The Y\+A\+ML converted to a P\+HP value
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & If the Y\+A\+ML is not valid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a4948f36005708b9a6a0d9da36c05d810}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a4948f36005708b9a6a0d9da36c05d810}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!parse\+File@{parse\+File}}
+\index{parse\+File@{parse\+File}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{parse\+File()}{parseFile()}}
+{\footnotesize\ttfamily static parse\+File (\begin{DoxyParamCaption}\item[{string}]{\$filename,  }\item[{int}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a Y\+A\+ML file into a P\+HP value.
+
+Usage\+: {\ttfamily  \$array = \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a4948f36005708b9a6a0d9da36c05d810}{Yaml\+::parse\+File}}(\textquotesingle{}config.\+yml\textquotesingle{}); print\+\_\+r(\$array); }
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & The path to the Y\+A\+ML file to be parsed \\
+\hline
+int & {\em \$flags} & \mbox{\hyperlink{class_a}{A}} bit field of P\+A\+R\+S\+E\+\_\+$\ast$ constants to customize the Y\+A\+ML parser behavior\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The Y\+A\+ML converted to a P\+HP value
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & If the file could not be read or the Y\+A\+ML is not valid \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a9218c80f067ac9728ecca223e5afbf18}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a9218c80f067ac9728ecca223e5afbf18}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE@{D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}}
+\index{D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE@{D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}{DUMP\_EMPTY\_ARRAY\_AS\_SEQUENCE}}
+{\footnotesize\ttfamily const D\+U\+M\+P\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+A\+S\+\_\+\+S\+E\+Q\+U\+E\+N\+CE = 1024}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_aa6ae46d15e364f0c0b9d394bbe24821e}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_aa6ae46d15e364f0c0b9d394bbe24821e}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE@{D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}}
+\index{D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE@{D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}{DUMP\_EXCEPTION\_ON\_INVALID\_TYPE}}
+{\footnotesize\ttfamily const D\+U\+M\+P\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE = 16}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a403ab30a581f745104360191e3520766}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a403ab30a581f745104360191e3520766}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK@{D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK}}
+\index{D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK@{D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK}{DUMP\_MULTI\_LINE\_LITERAL\_BLOCK}}
+{\footnotesize\ttfamily const D\+U\+M\+P\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+I\+N\+E\+\_\+\+L\+I\+T\+E\+R\+A\+L\+\_\+\+B\+L\+O\+CK = 128}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ab1817385e64dcec99e30b879124be30f}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ab1817385e64dcec99e30b879124be30f}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT@{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT}}
+\index{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT@{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT}{DUMP\_OBJECT}}
+{\footnotesize\ttfamily const D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+CT = 1}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_adfad364cd9134aaa2c794f8e642f823b}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_adfad364cd9134aaa2c794f8e642f823b}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP@{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP}}
+\index{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP@{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP}{DUMP\_OBJECT\_AS\_MAP}}
+{\footnotesize\ttfamily const D\+U\+M\+P\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+A\+S\+\_\+\+M\+AP = 64}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a7049ef83faca09605803d4d27a3a7cbf}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a7049ef83faca09605803d4d27a3a7cbf}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT@{P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT}}
+\index{P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT@{P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT}{PARSE\_CONSTANT}}
+{\footnotesize\ttfamily const P\+A\+R\+S\+E\+\_\+\+C\+O\+N\+S\+T\+A\+NT = 256}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ae27e0cfe901cb897a10fc6738c63eb55}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ae27e0cfe901cb897a10fc6738c63eb55}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS@{P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS}}
+\index{P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS@{P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS}{PARSE\_CUSTOM\_TAGS}}
+{\footnotesize\ttfamily const P\+A\+R\+S\+E\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+\+T\+A\+GS = 512}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ad08ffe7d5e5300cd050b804ccb4c4547}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_ad08ffe7d5e5300cd050b804ccb4c4547}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME@{P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME}}
+\index{P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME@{P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME}{PARSE\_DATETIME}}
+{\footnotesize\ttfamily const P\+A\+R\+S\+E\+\_\+\+D\+A\+T\+E\+T\+I\+ME = 32}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a5a189ef40a1572df617e7eed2d55a51a}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a5a189ef40a1572df617e7eed2d55a51a}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE@{P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}}
+\index{P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE@{P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE}{PARSE\_EXCEPTION\_ON\_INVALID\_TYPE}}
+{\footnotesize\ttfamily const P\+A\+R\+S\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+\+O\+N\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+T\+Y\+PE = 2}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a2b9e74f4d07da6a803de1c48c6df6e01}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a2b9e74f4d07da6a803de1c48c6df6e01}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT@{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT}}
+\index{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT@{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT}{PARSE\_OBJECT}}
+{\footnotesize\ttfamily const P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+CT = 4}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a570a6d9877bcb0c9eaffeb0f046e04b0}\label{class_symfony_1_1_component_1_1_yaml_1_1_yaml_a570a6d9877bcb0c9eaffeb0f046e04b0}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}!P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP@{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP}}
+\index{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP@{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP}!Symfony\+::\+Component\+::\+Yaml\+::\+Yaml@{Symfony\+::\+Component\+::\+Yaml\+::\+Yaml}}
+\subsubsection{\texorpdfstring{P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP}{PARSE\_OBJECT\_FOR\_MAP}}
+{\footnotesize\ttfamily const P\+A\+R\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+F\+O\+R\+\_\+\+M\+AP = 8}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/symfony/yaml/\mbox{\hyperlink{_yaml_8php}{Yaml.\+php}}\end{DoxyCompactItemize}

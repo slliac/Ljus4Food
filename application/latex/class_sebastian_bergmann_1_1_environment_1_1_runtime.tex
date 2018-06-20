@@ -1,0 +1,151 @@
+\hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime}{}\section{Runtime Class Reference}
+\label{class_sebastian_bergmann_1_1_environment_1_1_runtime}\index{Runtime@{Runtime}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a42325c04455b234a6fe2c82afeaf64ed}{can\+Collect\+Code\+Coverage}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a138a1d5494c18de73ffa2e00c3710dee}{get\+Binary}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a5fbc8183397fa91dc5a6ba4ea691249e}{get\+Name\+With\+Version}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_af4f72d653429fc10b3afe1bd6229e592}{get\+Vendor\+Url}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_afa8e7a3a646144eab50188b7a805a389}{get\+Version}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_acecff6f517895e8b29d0fa8c01719cad}{has\+Xdebug}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_a143d62536771155bca50c9a3a2570fc9}{is\+H\+H\+VM}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_ad8d8be550e6fd8c5cb85a0e2e4694775}{is\+P\+HP}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_acf30ff73d108770a401801df1e1a7a2b}{is\+P\+H\+P\+D\+BG}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_environment_1_1_runtime_ac8e0875de214299bd91a0acd2e46ccea}{has\+P\+H\+P\+D\+B\+G\+Code\+Coverage}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class for H\+H\+V\+M/\+P\+HP environment handling. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a42325c04455b234a6fe2c82afeaf64ed}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a42325c04455b234a6fe2c82afeaf64ed}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!can\+Collect\+Code\+Coverage@{can\+Collect\+Code\+Coverage}}
+\index{can\+Collect\+Code\+Coverage@{can\+Collect\+Code\+Coverage}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{can\+Collect\+Code\+Coverage()}{canCollectCodeCoverage()}}
+{\footnotesize\ttfamily can\+Collect\+Code\+Coverage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true when Xdebug is supported or the runtime used is P\+H\+P\+D\+BG (P\+HP $>$= 7.\+0).
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a138a1d5494c18de73ffa2e00c3710dee}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a138a1d5494c18de73ffa2e00c3710dee}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!get\+Binary@{get\+Binary}}
+\index{get\+Binary@{get\+Binary}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{get\+Binary()}{getBinary()}}
+{\footnotesize\ttfamily get\+Binary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the path to the binary of the current runtime. Appends \textquotesingle{} --php\textquotesingle{} to the path when the runtime is H\+H\+VM.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3d0963e68bb313b163a73f2803c64600}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a3d0963e68bb313b163a73f2803c64600}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a5fbc8183397fa91dc5a6ba4ea691249e}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a5fbc8183397fa91dc5a6ba4ea691249e}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!get\+Name\+With\+Version@{get\+Name\+With\+Version}}
+\index{get\+Name\+With\+Version@{get\+Name\+With\+Version}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{get\+Name\+With\+Version()}{getNameWithVersion()}}
+{\footnotesize\ttfamily get\+Name\+With\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_af4f72d653429fc10b3afe1bd6229e592}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_af4f72d653429fc10b3afe1bd6229e592}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!get\+Vendor\+Url@{get\+Vendor\+Url}}
+\index{get\+Vendor\+Url@{get\+Vendor\+Url}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{get\+Vendor\+Url()}{getVendorUrl()}}
+{\footnotesize\ttfamily get\+Vendor\+Url (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_afa8e7a3a646144eab50188b7a805a389}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_afa8e7a3a646144eab50188b7a805a389}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{get\+Version()}{getVersion()}}
+{\footnotesize\ttfamily get\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_ac8e0875de214299bd91a0acd2e46ccea}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_ac8e0875de214299bd91a0acd2e46ccea}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!has\+P\+H\+P\+D\+B\+G\+Code\+Coverage@{has\+P\+H\+P\+D\+B\+G\+Code\+Coverage}}
+\index{has\+P\+H\+P\+D\+B\+G\+Code\+Coverage@{has\+P\+H\+P\+D\+B\+G\+Code\+Coverage}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{has\+P\+H\+P\+D\+B\+G\+Code\+Coverage()}{hasPHPDBGCodeCoverage()}}
+{\footnotesize\ttfamily has\+P\+H\+P\+D\+B\+G\+Code\+Coverage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true when the runtime used is P\+HP with the P\+H\+P\+D\+BG S\+A\+PI and the phpdbg\+\_\+$\ast$\+\_\+oplog() functions are available (P\+HP $>$= 7.\+0).
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_acecff6f517895e8b29d0fa8c01719cad}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_acecff6f517895e8b29d0fa8c01719cad}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!has\+Xdebug@{has\+Xdebug}}
+\index{has\+Xdebug@{has\+Xdebug}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{has\+Xdebug()}{hasXdebug()}}
+{\footnotesize\ttfamily has\+Xdebug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true when the runtime used is P\+HP and Xdebug is loaded.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_a143d62536771155bca50c9a3a2570fc9}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_a143d62536771155bca50c9a3a2570fc9}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!is\+H\+H\+VM@{is\+H\+H\+VM}}
+\index{is\+H\+H\+VM@{is\+H\+H\+VM}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{is\+H\+H\+V\+M()}{isHHVM()}}
+{\footnotesize\ttfamily is\+H\+H\+VM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true when the runtime used is H\+H\+VM.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_ad8d8be550e6fd8c5cb85a0e2e4694775}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_ad8d8be550e6fd8c5cb85a0e2e4694775}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!is\+P\+HP@{is\+P\+HP}}
+\index{is\+P\+HP@{is\+P\+HP}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{is\+P\+H\+P()}{isPHP()}}
+{\footnotesize\ttfamily is\+P\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true when the runtime used is P\+HP without the P\+H\+P\+D\+BG S\+A\+PI.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_environment_1_1_runtime_acf30ff73d108770a401801df1e1a7a2b}\label{class_sebastian_bergmann_1_1_environment_1_1_runtime_acf30ff73d108770a401801df1e1a7a2b}} 
+\index{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}!is\+P\+H\+P\+D\+BG@{is\+P\+H\+P\+D\+BG}}
+\index{is\+P\+H\+P\+D\+BG@{is\+P\+H\+P\+D\+BG}!Sebastian\+Bergmann\+::\+Environment\+::\+Runtime@{Sebastian\+Bergmann\+::\+Environment\+::\+Runtime}}
+\subsubsection{\texorpdfstring{is\+P\+H\+P\+D\+B\+G()}{isPHPDBG()}}
+{\footnotesize\ttfamily is\+P\+H\+P\+D\+BG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true when the runtime used is P\+HP with the P\+H\+P\+D\+BG S\+A\+PI.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/sebastian/environment/src/\mbox{\hyperlink{_runtime_8php}{Runtime.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{class_p_h_p_unit___util___x_m_l}{}\section{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML Class Reference}
+\label{class_p_h_p_unit___util___x_m_l}\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___x_m_l_a59b1c5f6d9c05f3971004237935f257b}{load}} (\$actual, \$is\+Html=false, \$filename=\textquotesingle{}\textquotesingle{}, \$xinclude=false, \$strict=false)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___x_m_l_a6ae13affc8cf80041fb57a274631fba5}{load\+File}} (\$filename, \$is\+Html=false, \$xinclude=false, \$strict=false)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___x_m_l_a2c80608cf99e22685634885c94930eab}{remove\+Character\+Data\+Nodes}} (D\+O\+M\+Node \$node)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___x_m_l_a10eb5357ad761c10be65337073d38d4b}{prepare\+String}} (\$string)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___x_m_l_a907699a2aab1dd40c7233e619e2534b0}{xml\+To\+Variable}} (D\+O\+M\+Element \$element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+X\+ML helpers. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___x_m_l_a59b1c5f6d9c05f3971004237935f257b}\label{class_p_h_p_unit___util___x_m_l_a59b1c5f6d9c05f3971004237935f257b}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}!load@{load}}
+\index{load@{load}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static load (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$is\+Html = {\ttfamily false},  }\item[{}]{\$filename = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$xinclude = {\ttfamily false},  }\item[{}]{\$strict = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load an \$actual document into a D\+O\+M\+Document. This is called from the selector assertions.
+
+If \$actual is already a D\+O\+M\+Document, it is returned with no changes. Otherwise, \$actual is loaded into a new D\+O\+M\+Document as either H\+T\+ML or X\+ML, depending on the value of \$is\+Html. If \$is\+Html is false and \$xinclude is true, xinclude is performed on the loaded D\+O\+M\+Document.
+
+Note\+: prior to \mbox{\hyperlink{namespace_p_h_p_unit}{P\+H\+P\+Unit}} 3.\+3.\+0, this method loaded a file and not a string as it currently does. To load a file into a D\+O\+M\+Document, use \mbox{\hyperlink{class_p_h_p_unit___util___x_m_l_a6ae13affc8cf80041fb57a274631fba5}{load\+File()}} instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | D\+O\+M\+Document & {\em \$actual} & \\
+\hline
+bool & {\em \$is\+Html} & \\
+\hline
+string & {\em \$filename} & \\
+\hline
+bool & {\em \$xinclude} & \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+O\+M\+Document 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___x_m_l_a6ae13affc8cf80041fb57a274631fba5}\label{class_p_h_p_unit___util___x_m_l_a6ae13affc8cf80041fb57a274631fba5}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}}
+\subsubsection{\texorpdfstring{load\+File()}{loadFile()}}
+{\footnotesize\ttfamily static load\+File (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$is\+Html = {\ttfamily false},  }\item[{}]{\$xinclude = {\ttfamily false},  }\item[{}]{\$strict = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads an X\+ML (or H\+T\+ML) file into a D\+O\+M\+Document object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+bool & {\em \$is\+Html} & \\
+\hline
+bool & {\em \$xinclude} & \\
+\hline
+bool & {\em \$strict} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+D\+O\+M\+Document 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___x_m_l_a10eb5357ad761c10be65337073d38d4b}\label{class_p_h_p_unit___util___x_m_l_a10eb5357ad761c10be65337073d38d4b}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}!prepare\+String@{prepare\+String}}
+\index{prepare\+String@{prepare\+String}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}}
+\subsubsection{\texorpdfstring{prepare\+String()}{prepareString()}}
+{\footnotesize\ttfamily static prepare\+String (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Escapes a string for the use in X\+ML documents Any Unicode character is allowed, excluding the surrogate blocks, F\+F\+FE, and F\+F\+FF (not even as character reference). See \href{http://www.w3.org/TR/xml/#charsets}{\tt http\+://www.\+w3.\+org/\+T\+R/xml/\#charsets}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___x_m_l_a2c80608cf99e22685634885c94930eab}\label{class_p_h_p_unit___util___x_m_l_a2c80608cf99e22685634885c94930eab}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}!remove\+Character\+Data\+Nodes@{remove\+Character\+Data\+Nodes}}
+\index{remove\+Character\+Data\+Nodes@{remove\+Character\+Data\+Nodes}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}}
+\subsubsection{\texorpdfstring{remove\+Character\+Data\+Nodes()}{removeCharacterDataNodes()}}
+{\footnotesize\ttfamily static remove\+Character\+Data\+Nodes (\begin{DoxyParamCaption}\item[{D\+O\+M\+Node}]{\$node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+D\+O\+M\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit___util___x_m_l_a907699a2aab1dd40c7233e619e2534b0}\label{class_p_h_p_unit___util___x_m_l_a907699a2aab1dd40c7233e619e2534b0}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}!xml\+To\+Variable@{xml\+To\+Variable}}
+\index{xml\+To\+Variable@{xml\+To\+Variable}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+X\+ML}}
+\subsubsection{\texorpdfstring{xml\+To\+Variable()}{xmlToVariable()}}
+{\footnotesize\ttfamily static xml\+To\+Variable (\begin{DoxyParamCaption}\item[{D\+O\+M\+Element}]{\$element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\char`\"{}\+Convert\char`\"{} a D\+O\+M\+Element object into a P\+HP variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+D\+O\+M\+Element & {\em \$element} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Util/\mbox{\hyperlink{_x_m_l_8php}{X\+M\+L.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___composite}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite Class Reference}
+\label{class_p_h_p_unit___framework___constraint___composite}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_h_p_unit___framework___constraint___composite}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___composite_a27c4ee0925757fb19b6261a515d7d995}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} \$inner\+Constraint)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___composite_a4c184790087f7d42c3daf0d0180fe5fb}{evaluate}} (\$other, \$description=\textquotesingle{}\textquotesingle{}, \$return\+Result=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___composite_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___composite_afa3581b2deec1029bc9edc3111543af9}{\$inner\+Constraint}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___composite_a27c4ee0925757fb19b6261a515d7d995}\label{class_p_h_p_unit___framework___constraint___composite_a27c4ee0925757fb19b6261a515d7d995}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}}}]{\$inner\+Constraint }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} & {\em \$inner\+Constraint} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___composite_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_p_h_p_unit___framework___constraint___composite_ac751e87b3d4c4bf2feb03bee8b092755}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}!count@{count}}
+\index{count@{count}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Counts the number of constraint elements.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___composite_a4c184790087f7d42c3daf0d0180fe5fb}\label{class_p_h_p_unit___framework___constraint___composite_a4c184790087f7d42c3daf0d0180fe5fb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily evaluate (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{}]{\$description = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$return\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Evaluates the constraint for parameter \$other
+
+If \$return\+Result is set to false (the default), an exception is thrown in case of a failure. null is returned otherwise.
+
+If \$return\+Result is true, the result of the evaluation is returned as a boolean value instead\+: true in case of success, false in case of a failure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Value or object to evaluate. \\
+\hline
+string & {\em \$description} & Additional information about the test \\
+\hline
+bool & {\em \$return\+Result} & Whether to return a result or throw an exception\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___expectation_failed_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___composite_afa3581b2deec1029bc9edc3111543af9}\label{class_p_h_p_unit___framework___constraint___composite_afa3581b2deec1029bc9edc3111543af9}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}!\$inner\+Constraint@{\$inner\+Constraint}}
+\index{\$inner\+Constraint@{\$inner\+Constraint}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Composite}}
+\subsubsection{\texorpdfstring{\$inner\+Constraint}{$innerConstraint}}
+{\footnotesize\ttfamily \$inner\+Constraint\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_composite_8php}{Composite.\+php}}\end{DoxyCompactItemize}

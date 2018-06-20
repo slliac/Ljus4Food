@@ -1,0 +1,173 @@
+\hypertarget{class_p_h_p_unit___runner___base_test_runner}{}\section{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner Class Reference}
+\label{class_p_h_p_unit___runner___base_test_runner}\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p_unit___runner___base_test_runner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a461527c1de39a5520c52951b8f03d99f}{get\+Loader}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_acce3ddc863e8e98fc31f01cc7c82c9d6}{get\+Test}} (\$suite\+Class\+Name, \$suite\+Class\+File=\textquotesingle{}\textquotesingle{}, \$suffixes=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a1a28f0be3ad6f73b51676fccc40072ee}{S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED}} = 0
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a87afa30ee7058e12a03b79a8c6d23872}{S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED}} = 1
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_aa9db883bf7bde7a33417fc394104b993}{S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}} = 2
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a28d3f8ea93c4bfa055f7d008fee14d51}{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE}} = 3
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a1146470c30c7d95d6d85427eaf81c5b3}{S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR}} = 4
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a0bc4e56160de7672f5de9c20f39f78eb}{S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY}} = 5
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a74244d8aee9ce6294218f69ae7b32a67}{S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG}} = 6
+\item 
+const \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_ac14c4ab6649e297d40a71879c09ba32e}{S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME}} = \textquotesingle{}suite\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_af11a3ecd8a30be7d8d1901e343459f47}{load\+Suite\+Class}} (\$suite\+Class\+Name, \$suite\+Class\+File=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a12113684dc8266d3a43668f1266ff890}{clear\+Status}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a51ed3bece021dbcaad0aa7a8c911de39}{run\+Failed}} (\$message)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for all test runners. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a12113684dc8266d3a43668f1266ff890}\label{class_p_h_p_unit___runner___base_test_runner_a12113684dc8266d3a43668f1266ff890}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!clear\+Status@{clear\+Status}}
+\index{clear\+Status@{clear\+Status}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{clear\+Status()}{clearStatus()}}
+{\footnotesize\ttfamily clear\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clears the status message. \mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a461527c1de39a5520c52951b8f03d99f}\label{class_p_h_p_unit___runner___base_test_runner_a461527c1de39a5520c52951b8f03d99f}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!get\+Loader@{get\+Loader}}
+\index{get\+Loader@{get\+Loader}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{get\+Loader()}{getLoader()}}
+{\footnotesize\ttfamily get\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the loader to be used.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___runner___test_suite_loader}{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Test\+Suite\+Loader}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_acce3ddc863e8e98fc31f01cc7c82c9d6}\label{class_p_h_p_unit___runner___base_test_runner_acce3ddc863e8e98fc31f01cc7c82c9d6}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!get\+Test@{get\+Test}}
+\index{get\+Test@{get\+Test}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{get\+Test()}{getTest()}}
+{\footnotesize\ttfamily get\+Test (\begin{DoxyParamCaption}\item[{}]{\$suite\+Class\+Name,  }\item[{}]{\$suite\+Class\+File = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$suffixes = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{class_test}{Test}} corresponding to the given suite. This is a template method, subclasses override the \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a51ed3bece021dbcaad0aa7a8c911de39}{run\+Failed()}} and \mbox{\hyperlink{class_p_h_p_unit___runner___base_test_runner_a12113684dc8266d3a43668f1266ff890}{clear\+Status()}} methods.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$suite\+Class\+Name} & \\
+\hline
+string & {\em \$suite\+Class\+File} & \\
+\hline
+mixed & {\em \$suffixes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___test}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_af11a3ecd8a30be7d8d1901e343459f47}\label{class_p_h_p_unit___runner___base_test_runner_af11a3ecd8a30be7d8d1901e343459f47}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!load\+Suite\+Class@{load\+Suite\+Class}}
+\index{load\+Suite\+Class@{load\+Suite\+Class}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{load\+Suite\+Class()}{loadSuiteClass()}}
+{\footnotesize\ttfamily load\+Suite\+Class (\begin{DoxyParamCaption}\item[{}]{\$suite\+Class\+Name,  }\item[{}]{\$suite\+Class\+File = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the loaded Reflection\+Class for a suite name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$suite\+Class\+Name} & \\
+\hline
+string & {\em \$suite\+Class\+File} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reflection\+Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a51ed3bece021dbcaad0aa7a8c911de39}\label{class_p_h_p_unit___runner___base_test_runner_a51ed3bece021dbcaad0aa7a8c911de39}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!run\+Failed@{run\+Failed}}
+\index{run\+Failed@{run\+Failed}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{run\+Failed()}{runFailed()}}
+{\footnotesize\ttfamily run\+Failed (\begin{DoxyParamCaption}\item[{}]{\$message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Override to define how to handle a failed loading of a test suite.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a1146470c30c7d95d6d85427eaf81c5b3}\label{class_p_h_p_unit___runner___base_test_runner_a1146470c30c7d95d6d85427eaf81c5b3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR@{S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR@{S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR}{STATUS\_ERROR}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+E\+R\+R\+OR = 4}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a28d3f8ea93c4bfa055f7d008fee14d51}\label{class_p_h_p_unit___runner___base_test_runner_a28d3f8ea93c4bfa055f7d008fee14d51}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE@{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE@{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE}{STATUS\_FAILURE}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+F\+A\+I\+L\+U\+RE = 3}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_aa9db883bf7bde7a33417fc394104b993}\label{class_p_h_p_unit___runner___base_test_runner_aa9db883bf7bde7a33417fc394104b993}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE@{S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE@{S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE}{STATUS\_INCOMPLETE}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+C\+O\+M\+P\+L\+E\+TE = 2}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a1a28f0be3ad6f73b51676fccc40072ee}\label{class_p_h_p_unit___runner___base_test_runner_a1a28f0be3ad6f73b51676fccc40072ee}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED}{STATUS\_PASSED}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+P\+A\+S\+S\+ED = 0}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a0bc4e56160de7672f5de9c20f39f78eb}\label{class_p_h_p_unit___runner___base_test_runner_a0bc4e56160de7672f5de9c20f39f78eb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY@{S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY@{S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY}{STATUS\_RISKY}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+R\+I\+S\+KY = 5}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a87afa30ee7058e12a03b79a8c6d23872}\label{class_p_h_p_unit___runner___base_test_runner_a87afa30ee7058e12a03b79a8c6d23872}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED@{S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED}{STATUS\_SKIPPED}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+S\+K\+I\+P\+P\+ED = 1}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_a74244d8aee9ce6294218f69ae7b32a67}\label{class_p_h_p_unit___runner___base_test_runner_a74244d8aee9ce6294218f69ae7b32a67}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG@{S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG@{S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG}{STATUS\_WARNING}}
+{\footnotesize\ttfamily const S\+T\+A\+T\+U\+S\+\_\+\+W\+A\+R\+N\+I\+NG = 6}
+
+\mbox{\Hypertarget{class_p_h_p_unit___runner___base_test_runner_ac14c4ab6649e297d40a71879c09ba32e}\label{class_p_h_p_unit___runner___base_test_runner_ac14c4ab6649e297d40a71879c09ba32e}} 
+\index{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}!S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME@{S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME}}
+\index{S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME@{S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME}!P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner@{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Base\+Test\+Runner}}
+\subsubsection{\texorpdfstring{S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME}{SUITE\_METHODNAME}}
+{\footnotesize\ttfamily const S\+U\+I\+T\+E\+\_\+\+M\+E\+T\+H\+O\+D\+N\+A\+ME = \textquotesingle{}suite\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Runner/\mbox{\hyperlink{_base_test_runner_8php}{Base\+Test\+Runner.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,143 @@
+\hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor}{}\section{vfs\+Stream\+Print\+Visitor Class Reference}
+\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor}\index{vfs\+Stream\+Print\+Visitor@{vfs\+Stream\+Print\+Visitor}}
+Inheritance diagram for vfs\+Stream\+Print\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a06fa66ede64ad757c3c997c171c754db}{\+\_\+\+\_\+construct}} (\$out=S\+T\+D\+O\+UT)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_aefbf1a8429cc874e03034c19eeba5a07}{visit\+File}} (\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}} \$file)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a58aba2b3abdff052e38254bba19aac72}{visit\+Directory}} (\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \$dir)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a572c2173fd7442929a4f7529493e33f8}{print\+Content}} (\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} \$content)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a48cb304902320d173a4eaa41543327b9}{\$out}}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a0abb04e6a8a04e161eb4657f54848b18}{\$depth}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Visitor which traverses a content structure recursively to print it to an output stream.
+
+\begin{DoxySince}{Since}
+0.\+10.\+0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/mikey179/vfsStream/issues/10}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/10} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a06fa66ede64ad757c3c997c171c754db}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a06fa66ede64ad757c3c997c171c754db}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$out = {\ttfamily STDOUT} }\end{DoxyParamCaption})}
+
+constructor
+
+If no file pointer given it will fall back to S\+T\+D\+O\+UT.
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$out} & optional \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a572c2173fd7442929a4f7529493e33f8}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a572c2173fd7442929a4f7529493e33f8}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}!print\+Content@{print\+Content}}
+\index{print\+Content@{print\+Content}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}}
+\subsubsection{\texorpdfstring{print\+Content()}{printContent()}}
+{\footnotesize\ttfamily print\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}}}]{\$content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+helper method to print the content
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} & {\em \$content} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a58aba2b3abdff052e38254bba19aac72}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a58aba2b3abdff052e38254bba19aac72}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}!visit\+Directory@{visit\+Directory}}
+\index{visit\+Directory@{visit\+Directory}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}}
+\subsubsection{\texorpdfstring{visit\+Directory()}{visitDirectory()}}
+{\footnotesize\ttfamily visit\+Directory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}}}]{\$dir }\end{DoxyParamCaption})}
+
+visit a directory and process it
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} & {\em \$dir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor}{vfs\+Stream\+Print\+Visitor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_visitor_a58aba2b3abdff052e38254bba19aac72}{vfs\+Stream\+Visitor}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_aefbf1a8429cc874e03034c19eeba5a07}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_aefbf1a8429cc874e03034c19eeba5a07}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}!visit\+File@{visit\+File}}
+\index{visit\+File@{visit\+File}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}}
+\subsubsection{\texorpdfstring{visit\+File()}{visitFile()}}
+{\footnotesize\ttfamily visit\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}}}]{\$file }\end{DoxyParamCaption})}
+
+visit a file and process it
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}} & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor}{vfs\+Stream\+Print\+Visitor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_visitor_aefbf1a8429cc874e03034c19eeba5a07}{vfs\+Stream\+Visitor}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a0abb04e6a8a04e161eb4657f54848b18}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a0abb04e6a8a04e161eb4657f54848b18}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}!\$depth@{\$depth}}
+\index{\$depth@{\$depth}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}}
+\subsubsection{\texorpdfstring{\$depth}{$depth}}
+{\footnotesize\ttfamily \$depth\hspace{0.3cm}{\ttfamily [protected]}}
+
+current depth in directory tree
+
+int \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a48cb304902320d173a4eaa41543327b9}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_print_visitor_a48cb304902320d173a4eaa41543327b9}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}!\$out@{\$out}}
+\index{\$out@{\$out}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Print\+Visitor}}
+\subsubsection{\texorpdfstring{\$out}{$out}}
+{\footnotesize\ttfamily \$out\hspace{0.3cm}{\ttfamily [protected]}}
+
+target to write output to
+
+resource 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/mikey179/vfs\+Stream/src/main/php/org/bovigo/vfs/visitor/\mbox{\hyperlink{vfs_stream_print_visitor_8php}{vfs\+Stream\+Print\+Visitor.\+php}}\end{DoxyCompactItemize}

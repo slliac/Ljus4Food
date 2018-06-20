@@ -1,0 +1,40 @@
+\href{https://travis-ci.org/sebastianbergmann/comparator}{\tt }
+
+\section*{Comparator}
+
+This component provides the functionality to compare P\+HP values for equality.
+
+\subsection*{Installation}
+
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\tt Composer}\+: \begin{DoxyVerb}composer require sebastian/comparator
+\end{DoxyVerb}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+: \begin{DoxyVerb}composer require --dev sebastian/comparator
+\end{DoxyVerb}
+
+
+\subsection*{Usage}
+
+
+\begin{DoxyCode}
+<?php
+use \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory}{SebastianBergmann\(\backslash\)Comparator\(\backslash\)Factory}};
+use \mbox{\hyperlink{namespace_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{SebastianBergmann\(\backslash\)Comparator\(\backslash\)ComparisonFailure}};
+
+$date1 = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_date_time}{DateTime}}(\textcolor{stringliteral}{'2013-03-29 04:13:35'}, \textcolor{keyword}{new} \mbox{\hyperlink{namespace_date_time_zone}{DateTimeZone}}(\textcolor{stringliteral}{'America/New\_York'}));
+$date2 = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_date_time}{DateTime}}(\textcolor{stringliteral}{'2013-03-29 03:13:35'}, \textcolor{keyword}{new} \mbox{\hyperlink{namespace_date_time_zone}{DateTimeZone}}(\textcolor{stringliteral}{'America/Chicago'}));
+
+$factory = \textcolor{keyword}{new} Factory;
+$comparator = $factory->getComparatorFor($date1, $date2);
+
+\textcolor{keywordflow}{try} \{
+    $comparator->assertEquals($date1, $date2);
+    print \textcolor{stringliteral}{"Dates match"};
+\}
+
+\textcolor{keywordflow}{catch} (ComparisonFailure $failure) \{
+    print \textcolor{stringliteral}{"Dates don't match"};
+\}
+\end{DoxyCode}
+ 

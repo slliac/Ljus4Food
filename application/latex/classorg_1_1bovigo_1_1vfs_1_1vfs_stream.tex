@@ -1,0 +1,406 @@
+\hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{}\section{vfs\+Stream Class Reference}
+\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}\index{vfs\+Stream@{vfs\+Stream}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a1dbaa0b09758fa82fedc57215170496d}{url}} (\$\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a10e779f8d9c06c0d0f4ccea20c16da7f}{path}})
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a10e779f8d9c06c0d0f4ccea20c16da7f}{path}} (\$\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a1dbaa0b09758fa82fedc57215170496d}{url}})
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9a9ea1dff8c926f2ff9b3c6a5f583823}{umask}} (\$umask=null)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ad34a51eb551a4b587f9fd7191c3f6896}{setup}} (\$root\+Dir\+Name=\textquotesingle{}root\textquotesingle{}, \$permissions=null, array \$structure=array())
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a96a1398a02095ca9ce344c24e3beaf15}{create}} (array \$structure, \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \$base\+Dir=null)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a4de6051823b0cc2581447a1f99b35bab}{copy\+From\+File\+System}} (\$\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a10e779f8d9c06c0d0f4ccea20c16da7f}{path}}, \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \$base\+Dir=null, \$max\+File\+Size=1048576)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a8d3891477e360b943175a88c3505f5c9}{new\+File}} (\$name, \$permissions=null)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a7aafb7859f4a5ce5cd434236fefe121b}{new\+Directory}} (\$name, \$permissions=null)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abe39ee9bd8c9467fd15bdd3da6528f3d}{get\+Current\+User}} ()
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a09678fb3b1dbabc33026c00b56fd52eb}{get\+Current\+Group}} ()
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ae1d0536a1c4b5bf8169549379d0bcf90}{inspect}} (\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_visitor}{vfs\+Stream\+Visitor}} \$visitor, \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} \$content=null)
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a27c55f279310a27369fb046c2b7f51f2}{set\+Quota}} (\$bytes)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_acd5618ad381307733a7b905783529c28}{S\+C\+H\+E\+ME}} = \textquotesingle{}vfs\textquotesingle{}
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a69cca9841133f0eea6743361796ee169}{O\+W\+N\+E\+R\+\_\+\+R\+O\+OT}} = 0
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_acdd2be9ffc0243db56c5da2e6a7c93af}{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1}} = 1
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a998f1e93d3b3ae5f716964299424062e}{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2}} = 2
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9fd29be03d9645717db74b902a1f0058}{G\+R\+O\+U\+P\+\_\+\+R\+O\+OT}} = 0
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abab4ea411784f30cb4e0bd2bf4f4724b}{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1}} = 1
+\item 
+const \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a89bd20cdc22672ef937bde73a5263a57}{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2}} = 2
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a519af95cdacbaf22c974c88175d4f6f7}{add\+Structure}} (array \$structure, \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \$base\+Dir)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a4c000b60583eda8e4aaaf00a28aec3d1}{\$umask}} = 0000
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Some utility methods for \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{vfs\+Stream}}.
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a519af95cdacbaf22c974c88175d4f6f7}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a519af95cdacbaf22c974c88175d4f6f7}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!add\+Structure@{add\+Structure}}
+\index{add\+Structure@{add\+Structure}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{add\+Structure()}{addStructure()}}
+{\footnotesize\ttfamily static add\+Structure (\begin{DoxyParamCaption}\item[{array}]{\$structure,  }\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}}}]{\$base\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+helper method to create subdirectories recursively
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$structure} & subdirectory structure to add \\
+\hline
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} & {\em \$base\+Dir} & directory to add the structure to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a4de6051823b0cc2581447a1f99b35bab}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a4de6051823b0cc2581447a1f99b35bab}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!copy\+From\+File\+System@{copy\+From\+File\+System}}
+\index{copy\+From\+File\+System@{copy\+From\+File\+System}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{copy\+From\+File\+System()}{copyFromFileSystem()}}
+{\footnotesize\ttfamily static copy\+From\+File\+System (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}}}]{\$base\+Dir = {\ttfamily null},  }\item[{}]{\$max\+File\+Size = {\ttfamily 1048576} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+copies the file system structure from given path into the base dir
+
+If no base\+Dir is given it will try to add the structure to the existing root directory without replacing existing childs except those with equal names. File permissions are copied as well. Please note that file contents will only be copied if their file size does not exceed the given \$max\+File\+Size which is 1024 KB.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to copy the structure from \\
+\hline
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} & {\em \$base\+Dir} & directory to add the structure to \\
+\hline
+int & {\em \$max\+File\+Size} & maximum file size of files to copy content from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a96a1398a02095ca9ce344c24e3beaf15}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a96a1398a02095ca9ce344c24e3beaf15}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!create@{create}}
+\index{create@{create}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static create (\begin{DoxyParamCaption}\item[{array}]{\$structure,  }\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}}}]{\$base\+Dir = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+creates \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{vfs\+Stream}} directory structure from an array and adds it to given base dir
+
+Assumed \$structure contains an array like this\+: {\ttfamily  array(\textquotesingle{}Core\textquotesingle{} = array(\textquotesingle{}Abstract\+Factory\textquotesingle{} =$>$ array(\textquotesingle{}test.\+php\textquotesingle{} =$>$ \textquotesingle{}some text content\textquotesingle{}, \textquotesingle{}other.\+php\textquotesingle{} =$>$ \textquotesingle{}Some more text content\textquotesingle{}, \textquotesingle{}Invalid.\+csv\textquotesingle{} =$>$ \textquotesingle{}Something else\textquotesingle{}, ), \textquotesingle{}An\+Empty\+Folder\textquotesingle{} =$>$ array(), \textquotesingle{}badlocation.\+php\textquotesingle{} =$>$ \textquotesingle{}some bad content\textquotesingle{}, ) ) } the resulting directory tree will look like this\+: 
+\begin{DoxyPre}
+baseDir
+-\/ Core
+ |- badlocation.php
+ |- AbstractFactory
+ | |- test.php
+ | |- other.php
+ | -\/ Invalid.csv
+ -\/ AnEmptyFolder
+\end{DoxyPre}
+ Arrays will become directories with their key as directory name, and strings becomes files with their key as file name and their value as file content.
+
+If no base\+Dir is given it will try to add the structure to the existing root directory without replacing existing childs except those with equal names.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$structure} & directory structure to add under root directory \\
+\hline
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} & {\em \$base\+Dir} & base directory to add structure to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a09678fb3b1dbabc33026c00b56fd52eb}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a09678fb3b1dbabc33026c00b56fd52eb}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!get\+Current\+Group@{get\+Current\+Group}}
+\index{get\+Current\+Group@{get\+Current\+Group}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{get\+Current\+Group()}{getCurrentGroup()}}
+{\footnotesize\ttfamily static get\+Current\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns current group
+
+If the system does not support posix\+\_\+getgid() the current group will be root (0).
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abe39ee9bd8c9467fd15bdd3da6528f3d}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abe39ee9bd8c9467fd15bdd3da6528f3d}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!get\+Current\+User@{get\+Current\+User}}
+\index{get\+Current\+User@{get\+Current\+User}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{get\+Current\+User()}{getCurrentUser()}}
+{\footnotesize\ttfamily static get\+Current\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns current user
+
+If the system does not support posix\+\_\+getuid() the current user will be root (0).
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ae1d0536a1c4b5bf8169549379d0bcf90}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ae1d0536a1c4b5bf8169549379d0bcf90}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!inspect@{inspect}}
+\index{inspect@{inspect}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{inspect()}{inspect()}}
+{\footnotesize\ttfamily static inspect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_visitor}{vfs\+Stream\+Visitor}}}]{\$visitor,  }\item[{\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}}}]{\$content = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+use visitor to inspect a content structure
+
+If the given content is null it will fall back to use the current root directory of the stream wrapper.
+
+Returns given visitor for method chaining comfort.
+
+
+\begin{DoxyParams}[1]{Parameters}
+vfs\+Stream\+Visitor & {\em \$visitor} & the visitor who inspects \\
+\hline
+\mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1vfs_stream_content}{vfs\+Stream\+Content}} & {\em \$content} & directory structure to inspect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vfs\+Stream\+Visitor 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a7aafb7859f4a5ce5cd434236fefe121b}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a7aafb7859f4a5ce5cd434236fefe121b}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!new\+Directory@{new\+Directory}}
+\index{new\+Directory@{new\+Directory}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{new\+Directory()}{newDirectory()}}
+{\footnotesize\ttfamily static new\+Directory (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$permissions = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns a new directory with given name
+
+If the name contains slashes, a new directory structure will be created. The returned directory will always be the parent directory of this directory structure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & name of directory to create \\
+\hline
+int & {\em \$permissions} & permissions of directory to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a8d3891477e360b943175a88c3505f5c9}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a8d3891477e360b943175a88c3505f5c9}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!new\+File@{new\+File}}
+\index{new\+File@{new\+File}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{new\+File()}{newFile()}}
+{\footnotesize\ttfamily static new\+File (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$permissions = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+returns a new file with given name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & name of file to create \\
+\hline
+int & {\em \$permissions} & permissions of file to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a10e779f8d9c06c0d0f4ccea20c16da7f}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a10e779f8d9c06c0d0f4ccea20c16da7f}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!path@{path}}
+\index{path@{path}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily static path (\begin{DoxyParamCaption}\item[{}]{\$url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+restores the path from the url
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{vfs\+Stream}} url to translate into path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a27c55f279310a27369fb046c2b7f51f2}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a27c55f279310a27369fb046c2b7f51f2}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!set\+Quota@{set\+Quota}}
+\index{set\+Quota@{set\+Quota}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{set\+Quota()}{setQuota()}}
+{\footnotesize\ttfamily static set\+Quota (\begin{DoxyParamCaption}\item[{}]{\$bytes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+sets quota to given amount of bytes
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$bytes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ad34a51eb551a4b587f9fd7191c3f6896}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ad34a51eb551a4b587f9fd7191c3f6896}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!setup@{setup}}
+\index{setup@{setup}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily static setup (\begin{DoxyParamCaption}\item[{}]{\$root\+Dir\+Name = {\ttfamily \textquotesingle{}root\textquotesingle{}},  }\item[{}]{\$permissions = {\ttfamily null},  }\item[{array}]{\$structure = {\ttfamily array()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+helper method for setting up \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{vfs\+Stream}} in unit tests
+
+Instead of \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a610b9c89b82e11ea426e1804874a6ef4}{vfs\+Stream\+Wrapper\+::register()}}; \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_wrapper_a9e895af9df4006a20d6dcbe4747398a2}{vfs\+Stream\+Wrapper\+::set\+Root}}(\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a7aafb7859f4a5ce5cd434236fefe121b}{vfs\+Stream\+::new\+Directory}}(\textquotesingle{}root\textquotesingle{})); you can simply do \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_ad34a51eb551a4b587f9fd7191c3f6896}{vfs\+Stream\+::setup()}} which yields the same result. Additionally, the method returns the freshly created root directory which you can use to make further adjustments to it.
+
+Assumed \$structure contains an array like this\+: {\ttfamily  array(\textquotesingle{}Core\textquotesingle{} = array(\textquotesingle{}Abstract\+Factory\textquotesingle{} =$>$ array(\textquotesingle{}test.\+php\textquotesingle{} =$>$ \textquotesingle{}some text content\textquotesingle{}, \textquotesingle{}other.\+php\textquotesingle{} =$>$ \textquotesingle{}Some more text content\textquotesingle{}, \textquotesingle{}Invalid.\+csv\textquotesingle{} =$>$ \textquotesingle{}Something else\textquotesingle{}, ), \textquotesingle{}An\+Empty\+Folder\textquotesingle{} =$>$ array(), \textquotesingle{}badlocation.\+php\textquotesingle{} =$>$ \textquotesingle{}some bad content\textquotesingle{}, ) ) } the resulting directory tree will look like this\+: 
+\begin{DoxyPre}
+root
+-\/ Core
+ |- badlocation.php
+ |- AbstractFactory
+ | |- test.php
+ | |- other.php
+ | -\/ Invalid.csv
+ -\/ AnEmptyFolder
+\end{DoxyPre}
+ Arrays will become directories with their key as directory name, and strings becomes files with their key as file name and their value as file content.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$root\+Dir\+Name} & name of root directory \\
+\hline
+int & {\em \$permissions} & file permissions of root directory \\
+\hline
+array & {\em \$structure} & directory structure to add under root directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+7.\+0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/mikey179/vfsStream/issues/14}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/14} 
+
+\href{https://github.com/mikey179/vfsStream/issues/20}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/20} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9a9ea1dff8c926f2ff9b3c6a5f583823}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9a9ea1dff8c926f2ff9b3c6a5f583823}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!umask@{umask}}
+\index{umask@{umask}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{umask()}{umask()}}
+{\footnotesize\ttfamily static umask (\begin{DoxyParamCaption}\item[{}]{\$umask = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+sets new umask setting and returns previous umask setting
+
+If no value is given only the current umask setting is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$umask} & new umask setting \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+8.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a1dbaa0b09758fa82fedc57215170496d}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a1dbaa0b09758fa82fedc57215170496d}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!url@{url}}
+\index{url@{url}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily static url (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+prepends the scheme to the given U\+RL
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to translate to \mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream}{vfs\+Stream}} url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a4c000b60583eda8e4aaaf00a28aec3d1}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a4c000b60583eda8e4aaaf00a28aec3d1}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!\$umask@{\$umask}}
+\index{\$umask@{\$umask}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{\$umask}{$umask}}
+{\footnotesize\ttfamily \$\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9a9ea1dff8c926f2ff9b3c6a5f583823}{umask}} = 0000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+initial umask setting
+
+int \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9fd29be03d9645717db74b902a1f0058}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a9fd29be03d9645717db74b902a1f0058}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!G\+R\+O\+U\+P\+\_\+\+R\+O\+OT@{G\+R\+O\+U\+P\+\_\+\+R\+O\+OT}}
+\index{G\+R\+O\+U\+P\+\_\+\+R\+O\+OT@{G\+R\+O\+U\+P\+\_\+\+R\+O\+OT}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{G\+R\+O\+U\+P\+\_\+\+R\+O\+OT}{GROUP\_ROOT}}
+{\footnotesize\ttfamily const G\+R\+O\+U\+P\+\_\+\+R\+O\+OT = 0}
+
+group\+: root \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abab4ea411784f30cb4e0bd2bf4f4724b}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abab4ea411784f30cb4e0bd2bf4f4724b}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1@{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1}}
+\index{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1@{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1}{GROUP\_USER\_1}}
+{\footnotesize\ttfamily const G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+1 = 1}
+
+group\+: user 1 \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a89bd20cdc22672ef937bde73a5263a57}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a89bd20cdc22672ef937bde73a5263a57}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2@{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2}}
+\index{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2@{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2}{GROUP\_USER\_2}}
+{\footnotesize\ttfamily const G\+R\+O\+U\+P\+\_\+\+U\+S\+E\+R\+\_\+2 = 2}
+
+group\+: user 2 \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a69cca9841133f0eea6743361796ee169}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a69cca9841133f0eea6743361796ee169}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!O\+W\+N\+E\+R\+\_\+\+R\+O\+OT@{O\+W\+N\+E\+R\+\_\+\+R\+O\+OT}}
+\index{O\+W\+N\+E\+R\+\_\+\+R\+O\+OT@{O\+W\+N\+E\+R\+\_\+\+R\+O\+OT}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{O\+W\+N\+E\+R\+\_\+\+R\+O\+OT}{OWNER\_ROOT}}
+{\footnotesize\ttfamily const O\+W\+N\+E\+R\+\_\+\+R\+O\+OT = 0}
+
+owner\+: root \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_acdd2be9ffc0243db56c5da2e6a7c93af}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_acdd2be9ffc0243db56c5da2e6a7c93af}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1@{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1}}
+\index{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1@{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1}{OWNER\_USER\_1}}
+{\footnotesize\ttfamily const O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+1 = 1}
+
+owner\+: user 1 \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a998f1e93d3b3ae5f716964299424062e}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_a998f1e93d3b3ae5f716964299424062e}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2@{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2}}
+\index{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2@{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2}{OWNER\_USER\_2}}
+{\footnotesize\ttfamily const O\+W\+N\+E\+R\+\_\+\+U\+S\+E\+R\+\_\+2 = 2}
+
+owner\+: user 2 \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_acd5618ad381307733a7b905783529c28}\label{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_acd5618ad381307733a7b905783529c28}} 
+\index{org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}!S\+C\+H\+E\+ME@{S\+C\+H\+E\+ME}}
+\index{S\+C\+H\+E\+ME@{S\+C\+H\+E\+ME}!org\+::bovigo\+::vfs\+::vfs\+Stream@{org\+::bovigo\+::vfs\+::vfs\+Stream}}
+\subsubsection{\texorpdfstring{S\+C\+H\+E\+ME}{SCHEME}}
+{\footnotesize\ttfamily const S\+C\+H\+E\+ME = \textquotesingle{}vfs\textquotesingle{}}
+
+url scheme 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/mikey179/vfs\+Stream/src/main/php/org/bovigo/vfs/\mbox{\hyperlink{vfs_stream_8php}{vfs\+Stream.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor}{}\section{vfs\+Stream\+Structure\+Visitor Class Reference}
+\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor}\index{vfs\+Stream\+Structure\+Visitor@{vfs\+Stream\+Structure\+Visitor}}
+Inheritance diagram for vfs\+Stream\+Structure\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_aefbf1a8429cc874e03034c19eeba5a07}{visit\+File}} (\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}} \$file)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a58aba2b3abdff052e38254bba19aac72}{visit\+Directory}} (\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} \$dir)
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_ac039a7d66b72b41cbc80f4507d254f68}{get\+Structure}} ()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_aa78d61fba96a50ae36cf20c6de2b8e64}{\$structure}} = array()
+\item 
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a2c4c58e377f6c66ca38c8ea97666fc5e}{\$current}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Visitor which traverses a content structure recursively to create an array structure from it.
+
+\begin{DoxySince}{Since}
+0.\+10.\+0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/mikey179/vfsStream/issues/10}{\tt https\+://github.\+com/mikey179/vfs\+Stream/issues/10} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a095c5d389db211932136b53f25f39685}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a095c5d389db211932136b53f25f39685}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_ac039a7d66b72b41cbc80f4507d254f68}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_ac039a7d66b72b41cbc80f4507d254f68}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!get\+Structure@{get\+Structure}}
+\index{get\+Structure@{get\+Structure}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{get\+Structure()}{getStructure()}}
+{\footnotesize\ttfamily get\+Structure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+returns structure of visited contents
+
+\begin{DoxyReturn}{Returns}
+array  
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a4a20559544fdf4dcb457e258dc976cf8}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a4a20559544fdf4dcb457e258dc976cf8}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!reset@{reset}}
+\index{reset@{reset}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+resets structure so visitor could be reused
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor}{vfs\+Stream\+Structure\+Visitor}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a58aba2b3abdff052e38254bba19aac72}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a58aba2b3abdff052e38254bba19aac72}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!visit\+Directory@{visit\+Directory}}
+\index{visit\+Directory@{visit\+Directory}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{visit\+Directory()}{visitDirectory()}}
+{\footnotesize\ttfamily visit\+Directory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}}}]{\$dir }\end{DoxyParamCaption})}
+
+visit a directory and process it
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_directory}{vfs\+Stream\+Directory}} & {\em \$dir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor}{vfs\+Stream\+Structure\+Visitor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_visitor_a58aba2b3abdff052e38254bba19aac72}{vfs\+Stream\+Visitor}}.
+
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_aefbf1a8429cc874e03034c19eeba5a07}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_aefbf1a8429cc874e03034c19eeba5a07}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!visit\+File@{visit\+File}}
+\index{visit\+File@{visit\+File}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{visit\+File()}{visitFile()}}
+{\footnotesize\ttfamily visit\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}}}]{\$file }\end{DoxyParamCaption})}
+
+visit a file and process it
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1vfs_stream_file}{vfs\+Stream\+File}} & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor}{vfs\+Stream\+Structure\+Visitor}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfaceorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_visitor_aefbf1a8429cc874e03034c19eeba5a07}{vfs\+Stream\+Visitor}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a2c4c58e377f6c66ca38c8ea97666fc5e}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_a2c4c58e377f6c66ca38c8ea97666fc5e}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!\$current@{\$current}}
+\index{\$current@{\$current}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{\$current}{$current}}
+{\footnotesize\ttfamily \$current\hspace{0.3cm}{\ttfamily [protected]}}
+
+poiting to currently iterated directory
+
+array \mbox{\Hypertarget{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_aa78d61fba96a50ae36cf20c6de2b8e64}\label{classorg_1_1bovigo_1_1vfs_1_1visitor_1_1vfs_stream_structure_visitor_aa78d61fba96a50ae36cf20c6de2b8e64}} 
+\index{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}!\$structure@{\$structure}}
+\index{\$structure@{\$structure}!org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor@{org\+::bovigo\+::vfs\+::visitor\+::vfs\+Stream\+Structure\+Visitor}}
+\subsubsection{\texorpdfstring{\$structure}{$structure}}
+{\footnotesize\ttfamily \$structure = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+collected structure
+
+array 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/mikey179/vfs\+Stream/src/main/php/org/bovigo/vfs/visitor/\mbox{\hyperlink{vfs_stream_structure_visitor_8php}{vfs\+Stream\+Structure\+Visitor.\+php}}\end{DoxyCompactItemize}

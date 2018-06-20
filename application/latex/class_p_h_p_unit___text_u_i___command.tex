@@ -1,0 +1,228 @@
+\hypertarget{class_p_h_p_unit___text_u_i___command}{}\section{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command Class Reference}
+\label{class_p_h_p_unit___text_u_i___command}\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_h_p_unit___text_u_i___command}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a2beab03aa97d08d7a25a709e018ecf8e}{run}} (array \$argv, \$exit=true)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_aadc1fe8ec72bedafd51ee47cd16f8cba}{main}} (\$exit=true)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a16a628a086f941d2a00d4cde917d1251}{create\+Runner}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_aa31f6317c1f043c16d7524024ecc9445}{handle\+Arguments}} (array \$argv)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_aaea6080accfabc612f819580be15a3d4}{handle\+Loader}} (\$loader\+Class, \$loader\+File=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a8e4a50d2ec53027d3621bd3beb3d9eb1}{handle\+Printer}} (\$printer\+Class, \$printer\+File=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a5180182e50fae4b44de58f4c0f68e81d}{handle\+Bootstrap}} (\$filename)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_ac44fe359d84a50430f972272158e018d}{handle\+Self\+Update}} (\$upgrade=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a475024c68c7cb509672c0bab39d68f98}{handle\+Version\+Check}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a258bf9304a3fd9d40d1894a7339eb90f}{show\+Help}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_ab8abd5b6bb82eb8fcf573f5c7b03d012}{handle\+Custom\+Test\+Suite}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a61eded163d962fc248b3cf209000979b}{\$arguments}}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a011800c63ece4cbbfa77136a20607023}{\$options}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___command_a1b74a8af2115a39559e9994778a567c3}{\$long\+Options}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} Test\+Runner for the Command Line Interface (C\+LI) P\+HP S\+A\+PI Module. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a16a628a086f941d2a00d4cde917d1251}\label{class_p_h_p_unit___text_u_i___command_a16a628a086f941d2a00d4cde917d1251}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!create\+Runner@{create\+Runner}}
+\index{create\+Runner@{create\+Runner}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{create\+Runner()}{createRunner()}}
+{\footnotesize\ttfamily create\+Runner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a Test\+Runner, override in subclasses.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___text_u_i___test_runner}{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Test\+Runner}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_aa31f6317c1f043c16d7524024ecc9445}\label{class_p_h_p_unit___text_u_i___command_aa31f6317c1f043c16d7524024ecc9445}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Arguments@{handle\+Arguments}}
+\index{handle\+Arguments@{handle\+Arguments}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Arguments()}{handleArguments()}}
+{\footnotesize\ttfamily handle\+Arguments (\begin{DoxyParamCaption}\item[{array}]{\$argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handles the command-\/line arguments.
+
+\mbox{\hyperlink{class_a}{A}} child class of \mbox{\hyperlink{class_p_h_p_unit___text_u_i___command}{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}} can hook into the argument parsing by adding the switch(es) to the \$long\+Options array and point to a callback method that handles the switch(es) in the child class like this
+
+{\ttfamily  $<$?php class \mbox{\hyperlink{class_my_command}{My\+Command}} extends \mbox{\hyperlink{class_p_h_p_unit___text_u_i___command}{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}} \{ public function \+\_\+\+\_\+construct() \{ // my-\/switch won\textquotesingle{}t accept a value, it\textquotesingle{}s an on/off \$this-\/$>$long\+Options\mbox{[}\textquotesingle{}my-\/switch\textquotesingle{}\mbox{]} = \textquotesingle{}my\+Handler\textquotesingle{}; // my-\/secondswitch will accept a value -\/ note the equals sign \$this-\/$>$long\+Options\mbox{[}\textquotesingle{}my-\/secondswitch=\textquotesingle{}\mbox{]} = \textquotesingle{}my\+Other\+Handler\textquotesingle{}; \}}
+
+{\ttfamily  // --my-\/switch -\/$>$ my\+Handler() protected function my\+Handler() \{ \}}
+
+{\ttfamily  // --my-\/secondswitch foo -\/$>$ my\+Other\+Handler(\textquotesingle{}foo\textquotesingle{}) protected function my\+Other\+Handler (\$value) \{ \}}
+
+{\ttfamily  // You will also need this -\/ the static keyword in the // \mbox{\hyperlink{class_p_h_p_unit___text_u_i___command}{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}} will mean that it\textquotesingle{}ll be // \mbox{\hyperlink{class_p_h_p_unit___text_u_i___command}{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}} that gets instantiated, // not \mbox{\hyperlink{class_my_command}{My\+Command}} public static function main(\$exit = true) \{ \$command = new static;}
+
+{\ttfamily  return \$command-\/$>$run(\$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}argv\textquotesingle{}\mbox{]}, \$exit); \}}
+
+{\ttfamily \} }
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$argv} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a5180182e50fae4b44de58f4c0f68e81d}\label{class_p_h_p_unit___text_u_i___command_a5180182e50fae4b44de58f4c0f68e81d}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Bootstrap@{handle\+Bootstrap}}
+\index{handle\+Bootstrap@{handle\+Bootstrap}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Bootstrap()}{handleBootstrap()}}
+{\footnotesize\ttfamily handle\+Bootstrap (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads a bootstrap file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_ab8abd5b6bb82eb8fcf573f5c7b03d012}\label{class_p_h_p_unit___text_u_i___command_ab8abd5b6bb82eb8fcf573f5c7b03d012}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Custom\+Test\+Suite@{handle\+Custom\+Test\+Suite}}
+\index{handle\+Custom\+Test\+Suite@{handle\+Custom\+Test\+Suite}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Custom\+Test\+Suite()}{handleCustomTestSuite()}}
+{\footnotesize\ttfamily handle\+Custom\+Test\+Suite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Custom callback for test suite discovery. \mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_aaea6080accfabc612f819580be15a3d4}\label{class_p_h_p_unit___text_u_i___command_aaea6080accfabc612f819580be15a3d4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Loader@{handle\+Loader}}
+\index{handle\+Loader@{handle\+Loader}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Loader()}{handleLoader()}}
+{\footnotesize\ttfamily handle\+Loader (\begin{DoxyParamCaption}\item[{}]{\$loader\+Class,  }\item[{}]{\$loader\+File = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handles the loading of the \mbox{\hyperlink{interface_p_h_p_unit___runner___test_suite_loader}{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Test\+Suite\+Loader}} implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$loader\+Class} & \\
+\hline
+string & {\em \$loader\+File} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___runner___test_suite_loader}{P\+H\+P\+Unit\+\_\+\+Runner\+\_\+\+Test\+Suite\+Loader}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a8e4a50d2ec53027d3621bd3beb3d9eb1}\label{class_p_h_p_unit___text_u_i___command_a8e4a50d2ec53027d3621bd3beb3d9eb1}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Printer@{handle\+Printer}}
+\index{handle\+Printer@{handle\+Printer}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Printer()}{handlePrinter()}}
+{\footnotesize\ttfamily handle\+Printer (\begin{DoxyParamCaption}\item[{}]{\$printer\+Class,  }\item[{}]{\$printer\+File = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handles the loading of the \mbox{\hyperlink{class_p_h_p_unit___util___printer}{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}} implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$printer\+Class} & \\
+\hline
+string & {\em \$printer\+File} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer$\vert$string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_ac44fe359d84a50430f972272158e018d}\label{class_p_h_p_unit___text_u_i___command_ac44fe359d84a50430f972272158e018d}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Self\+Update@{handle\+Self\+Update}}
+\index{handle\+Self\+Update@{handle\+Self\+Update}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Self\+Update()}{handleSelfUpdate()}}
+{\footnotesize\ttfamily handle\+Self\+Update (\begin{DoxyParamCaption}\item[{}]{\$upgrade = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a475024c68c7cb509672c0bab39d68f98}\label{class_p_h_p_unit___text_u_i___command_a475024c68c7cb509672c0bab39d68f98}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!handle\+Version\+Check@{handle\+Version\+Check}}
+\index{handle\+Version\+Check@{handle\+Version\+Check}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{handle\+Version\+Check()}{handleVersionCheck()}}
+{\footnotesize\ttfamily handle\+Version\+Check (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_aadc1fe8ec72bedafd51ee47cd16f8cba}\label{class_p_h_p_unit___text_u_i___command_aadc1fe8ec72bedafd51ee47cd16f8cba}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!main@{main}}
+\index{main@{main}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static main (\begin{DoxyParamCaption}\item[{}]{\$exit = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$exit} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a2beab03aa97d08d7a25a709e018ecf8e}\label{class_p_h_p_unit___text_u_i___command_a2beab03aa97d08d7a25a709e018ecf8e}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!run@{run}}
+\index{run@{run}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily run (\begin{DoxyParamCaption}\item[{array}]{\$argv,  }\item[{}]{\$exit = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$argv} & \\
+\hline
+bool & {\em \$exit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a258bf9304a3fd9d40d1894a7339eb90f}\label{class_p_h_p_unit___text_u_i___command_a258bf9304a3fd9d40d1894a7339eb90f}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!show\+Help@{show\+Help}}
+\index{show\+Help@{show\+Help}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{show\+Help()}{showHelp()}}
+{\footnotesize\ttfamily show\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Show the help message. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a61eded163d962fc248b3cf209000979b}\label{class_p_h_p_unit___text_u_i___command_a61eded163d962fc248b3cf209000979b}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!\$arguments@{\$arguments}}
+\index{\$arguments@{\$arguments}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{\$arguments}{$arguments}}
+{\footnotesize\ttfamily \$arguments\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'listGroups'}              => \textcolor{keyword}{false}
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a1b74a8af2115a39559e9994778a567c3}\label{class_p_h_p_unit___text_u_i___command_a1b74a8af2115a39559e9994778a567c3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!\$long\+Options@{\$long\+Options}}
+\index{\$long\+Options@{\$long\+Options}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{\$long\+Options}{$longOptions}}
+{\footnotesize\ttfamily \$long\+Options\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'atleast-version='}        => null
+\end{DoxyCode}
+\mbox{\Hypertarget{class_p_h_p_unit___text_u_i___command_a011800c63ece4cbbfa77136a20607023}\label{class_p_h_p_unit___text_u_i___command_a011800c63ece4cbbfa77136a20607023}} 
+\index{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}!\$options@{\$options}}
+\index{\$options@{\$options}!P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command@{P\+H\+P\+Unit\+\_\+\+Text\+U\+I\+\_\+\+Command}}
+\subsubsection{\texorpdfstring{\$options}{$options}}
+{\footnotesize\ttfamily \$options = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Text\+U\+I/\mbox{\hyperlink{_command_8php}{Command.\+php}}\end{DoxyCompactItemize}

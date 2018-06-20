@@ -1,0 +1,304 @@
+\href{https://travis-ci.org/webmozart/assert}{\tt } \href{https://ci.appveyor.com/project/webmozart/assert/branch/master}{\tt } \href{https://packagist.org/packages/webmozart/assert}{\tt } \href{https://packagist.org/packages/webmozart/assert}{\tt } \href{https://www.versioneye.com/php/webmozart:assert/1.2.0}{\tt }
+
+Latest release\+: \href{https://packagist.org/packages/webmozart/assert#1.2.0}{\tt 1.\+2.\+0}
+
+P\+HP $>$= 5.\+3.\+9
+
+This library contains efficient assertions to test the input and output of your methods. With these assertions, you can greatly reduce the amount of coding needed to write a safe implementation.
+
+All assertions in the \href{src/Assert.php}{\tt {\ttfamily Assert}} class throw an {\ttfamily \textbackslash{}Invalid\+Argument\+Exception} if they fail.
+
+\subsection*{F\+AQ }
+
+{\bfseries What\textquotesingle{}s the difference to \href{https://github.com/beberlei/assert}{\tt beberlei/assert}?}
+
+This library is heavily inspired by Benjamin Eberlei\textquotesingle{}s wonderful \href{https://github.com/beberlei/assert}{\tt assert package}, but fixes a usability issue with error messages that can\textquotesingle{}t be fixed there without breaking backwards compatibility.
+
+This package features usable error messages by default. However, you can also easily write custom error messages\+:
+
+
+\begin{DoxyCode}
+Assert::string($path, 'The path is expected to be a string. Got: %s');
+\end{DoxyCode}
+
+
+In \href{https://github.com/beberlei/assert}{\tt beberlei/assert}, the ordering of the {\ttfamily s} placeholders is different for every assertion. This package, on the contrary, provides consistent placeholder ordering for all assertions\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily s}\+: The tested value as string, e.\+g. {\ttfamily \char`\"{}/foo/bar\char`\"{}}.
+\item {\ttfamily \%2\$s}, {\ttfamily \%3\$s}, ...\+: Additional assertion-\/specific values, e.\+g. the minimum/maximum length, allowed values, etc.
+\end{DoxyItemize}
+
+Check the source code of the assertions to find out details about the additional available placeholders.
+
+\subsection*{Installation }
+
+Use \href{https://getcomposer.org}{\tt Composer} to install the package\+:
+
+
+\begin{DoxyCode}
+$ composer require webmozart/assert
+\end{DoxyCode}
+
+
+\subsection*{\mbox{\hyperlink{class_example}{Example}} }
+
+
+\begin{DoxyCode}
+use \mbox{\hyperlink{namespace_webmozart_1_1_assert_1_1_assert}{Webmozart\(\backslash\)Assert\(\backslash\)Assert}};
+
+\textcolor{keyword}{class }Employee
+\{
+    \textcolor{keyword}{public} \textcolor{keyword}{function} \_\_construct($id)
+    \{
+        Assert::integer($id, \textcolor{stringliteral}{'The employee ID must be an integer. Got: %s'});
+        \mbox{\hyperlink{_functions_8php_abce6d1e7cbce97c9725bbbcba61afb3a}{Assert::greaterThan}}($id, 0, \textcolor{stringliteral}{'The employee ID must be a positive integer. Got: %s
+      '});
+    \}
+\}
+\end{DoxyCode}
+
+
+If you create an employee with an invalid ID, an exception is thrown\+:
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{new} Employee(\textcolor{stringliteral}{'foobar'});
+\textcolor{comment}{// => InvalidArgumentException: }
+\textcolor{comment}{//    The employee ID must be an integer. Got: string}
+
+\textcolor{keyword}{new} Employee(-10);
+\textcolor{comment}{// => InvalidArgumentException: }
+\textcolor{comment}{//    The employee ID must be a positive integer. Got: -10}
+\end{DoxyCode}
+
+
+\subsection*{Assertions }
+
+The \href{src/Assert.php}{\tt {\ttfamily Assert}} class provides the following assertions\+:
+
+\subsubsection*{Type Assertions}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`string(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a string   \\\cline{1-2}
+`string\+Not\+Empty(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a non-\/empty string   \\\cline{1-2}
+`integer(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an integer   \\\cline{1-2}
+`integerish(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value casts to an integer   \\\cline{1-2}
+`float(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a float   \\\cline{1-2}
+`numeric(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is numeric   \\\cline{1-2}
+`natural(\$value, \$message= '\textquotesingle{}\textquotesingle{})\`{}  &Check that a value is a non-\/negative integer   \\\cline{1-2}
+`boolean(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a boolean   \\\cline{1-2}
+`scalar(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a scalar   \\\cline{1-2}
+`object(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an object   \\\cline{1-2}
+`resource(\$value, \$type = null, \$message = '\textquotesingle{})\`{}  &Check that a value is a resource   \\\cline{1-2}
+`is\+Callable(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a callable   \\\cline{1-2}
+`is\+Array(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an array   \\\cline{1-2}
+`is\+Traversable(\$value, \$message = '\textquotesingle{}){\ttfamily (deprecated) $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is an array or a}\`{}   \\\cline{1-2}
+`is\+Iterable(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is an array or a}\`{}   \\\cline{1-2}
+`is\+Countable(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is an array or a}\`{}   \\\cline{1-2}
+`is\+Instance\+Of(\$value, \$class, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is an}instanceof\`{} a class   \\\cline{1-2}
+`is\+Instance\+Of\+Any(\$value, array \$classes, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is an}instanceof\`{} a at least one class on the array of classes   \\\cline{1-2}
+`not\+Instance\+Of(\$value, \$class, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is not an}instanceof\`{} a class   \\\cline{1-2}
+`is\+Array\+Accessible(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value can be accessed as an array   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{Comparison Assertions}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`true(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is}true\`{}   \\\cline{1-2}
+`false(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is}false\`{}   \\\cline{1-2}
+`null(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is}null\`{}   \\\cline{1-2}
+`not\+Null(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is not}null\`{}   \\\cline{1-2}
+`is\+Empty(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is}empty()\`{}   \\\cline{1-2}
+`not\+Empty(\$value, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is not}empty()\`{}   \\\cline{1-2}
+`eq(\$value, \$value2, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value equals another (}==\`{})   \\\cline{1-2}
+`not\+Eq(\$value, \$value2, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value does not equal another (}!=\`{})   \\\cline{1-2}
+`same(\$value, \$value2, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is identical to another (}===\`{})   \\\cline{1-2}
+`not\+Same(\$value, \$value2, \$message = '\textquotesingle{}){\ttfamily $<$/td$>$ $<$td class=\char`\"{}markdown\+Table\+Body\+None\char`\"{}$>$ Check that a value is not identical to another (}!==\`{})   \\\cline{1-2}
+`greater\+Than(\$value, \$value2, \$message = '\textquotesingle{})\`{}  &Check that a value is greater than another   \\\cline{1-2}
+`greater\+Than\+Eq(\$value, \$value2, \$message = '\textquotesingle{})\`{}  &Check that a value is greater than or equal to another   \\\cline{1-2}
+`less\+Than(\$value, \$value2, \$message = '\textquotesingle{})\`{}  &Check that a value is less than another   \\\cline{1-2}
+`less\+Than\+Eq(\$value, \$value2, \$message = '\textquotesingle{})\`{}  &Check that a value is less than or equal to another   \\\cline{1-2}
+`range(\$value, \$min, \$max, \$message = '\textquotesingle{})\`{}  &Check that a value is within a range   \\\cline{1-2}
+`one\+Of(\$value, array \$values, \$message = '\textquotesingle{})\`{}  &Check that a value is one of a list of values   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{String Assertions}
+
+You should check that a value is a string with {\ttfamily Assert\+::string()} before making any of the following assertions.
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`contains(\$value, \$sub\+String, \$message = '\textquotesingle{})\`{}  &Check that a string contains a substring   \\\cline{1-2}
+`not\+Contains(\$value, \$sub\+String, \$message = '\textquotesingle{})\`{}  &Check that a string does not contains a substring   \\\cline{1-2}
+`starts\+With(\$value, \$prefix, \$message = '\textquotesingle{})\`{}  &Check that a string has a prefix   \\\cline{1-2}
+`starts\+With\+Letter(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string starts with a letter   \\\cline{1-2}
+`ends\+With(\$value, \$suffix, \$message = '\textquotesingle{})\`{}  &Check that a string has a suffix   \\\cline{1-2}
+`regex(\$value, \$pattern, \$message = '\textquotesingle{})\`{}  &Check that a string matches a regular expression   \\\cline{1-2}
+`alpha(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string contains letters only   \\\cline{1-2}
+`digits(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string contains digits only   \\\cline{1-2}
+`alnum(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string contains letters and digits only   \\\cline{1-2}
+`lower(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string contains lowercase characters only   \\\cline{1-2}
+`upper(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string contains uppercase characters only   \\\cline{1-2}
+`length(\$value, \$length, \$message = '\textquotesingle{})\`{}  &Check that a string has a certain number of characters   \\\cline{1-2}
+`min\+Length(\$value, \$min, \$message = '\textquotesingle{})\`{}  &Check that a string has at least a certain number of characters   \\\cline{1-2}
+`max\+Length(\$value, \$max, \$message = '\textquotesingle{})\`{}  &Check that a string has at most a certain number of characters   \\\cline{1-2}
+`length\+Between(\$value, \$min, \$max, \$message = '\textquotesingle{})\`{}  &Check that a string has a length in the given range   \\\cline{1-2}
+`uuid(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string is a valid U\+U\+ID   \\\cline{1-2}
+`not\+Whitespace\+Only(\$value, \$message = '\textquotesingle{})\`{}  &Check that a string contains at least one non-\/whitespace character   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{File Assertions}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`file\+Exists(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an existing path   \\\cline{1-2}
+`file(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an existing file   \\\cline{1-2}
+`directory(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an existing directory   \\\cline{1-2}
+`readable(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a readable path   \\\cline{1-2}
+`writable(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is a writable path   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{Object Assertions}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`class\+Exists(\$value, \$message = '\textquotesingle{})\`{}  &Check that a value is an existing class name   \\\cline{1-2}
+`subclass\+Of(\$value, \$class, \$message = '\textquotesingle{})\`{}  &Check that a class is a subclass of another   \\\cline{1-2}
+`implements\+Interface(\$value, \$class, \$message = '\textquotesingle{})\`{}  &Check that a class implements an interface   \\\cline{1-2}
+`property\+Exists(\$value, \$property, \$message = '\textquotesingle{})\`{}  &Check that a property exists in a class/object   \\\cline{1-2}
+`property\+Not\+Exists(\$value, \$property, \$message = '\textquotesingle{})\`{}  &Check that a property does not exist in a class/object   \\\cline{1-2}
+`method\+Exists(\$value, \$method, \$message = '\textquotesingle{})\`{}  &Check that a method exists in a class/object   \\\cline{1-2}
+`method\+Not\+Exists(\$value, \$method, \$message = '\textquotesingle{})\`{}  &Check that a method does not exist in a class/object   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{Array Assertions}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`key\+Exists(\$array, \$key, \$message = '\textquotesingle{})\`{}  &Check that a key exists in an array   \\\cline{1-2}
+`key\+Not\+Exists(\$array, \$key, \$message = '\textquotesingle{})\`{}  &Check that a key does not exist in an array   \\\cline{1-2}
+`count(\$array, \$number, \$message = '\textquotesingle{})\`{}  &Check that an array contains a specific number of elements   \\\cline{1-2}
+`min\+Count(\$array, \$min, \$message = '\textquotesingle{})\`{}  &Check that an array contains at least a certain number of elements   \\\cline{1-2}
+`max\+Count(\$array, \$max, \$message = '\textquotesingle{})\`{}  &Check that an array contains at most a certain number of elements   \\\cline{1-2}
+`count\+Between(\$array, \$min, \$max, \$message = '\textquotesingle{})\`{}  &Check that an array has a count in the given range   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{Function Assertions}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Method  }&\textbf{ Description -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/---   }\\\cline{1-2}
+\endhead
+`throws(\$closure, \$class, \$message = '\textquotesingle{})\`{}  &Check that a function throws a certain exception. Subclasses of the exception class will be accepted.   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{Collection Assertions}
+
+All of the above assertions can be prefixed with {\ttfamily all$\ast$()} to test the contents of an array or a {\ttfamily \textbackslash{}Traversable}\+:
+
+
+\begin{DoxyCode}
+Assert::allIsInstanceOf($employees, \textcolor{stringliteral}{'Acme\(\backslash\)Employee'});
+\end{DoxyCode}
+
+
+\subsubsection*{Nullable Assertions}
+
+All of the above assertions can be prefixed with {\ttfamily null\+Or$\ast$()} to run the assertion only if it the value is not {\ttfamily null}\+:
+
+
+\begin{DoxyCode}
+Assert::nullOrString($middleName, \textcolor{stringliteral}{'The middle name must be a string or null. Got: %s'});
+\end{DoxyCode}
+
+
+\subsection*{Authors }
+
+
+\begin{DoxyItemize}
+\item \href{http://webmozarts.com}{\tt Bernhard Schussek} a.\+k.\+a. \href{https://twitter.com/webmozart}{\tt }
+\item \href{https://github.com/webmozart/assert/graphs/contributors}{\tt The Community Contributors}
+\end{DoxyItemize}
+
+\subsection*{Contribute }
+
+Contributions to the package are always welcome!
+
+
+\begin{DoxyItemize}
+\item Report any bugs or issues you find on the \href{https://github.com/webmozart/assert/issues}{\tt issue tracker}.
+\item You can grab the source code at the package\textquotesingle{}s \href{https://github.com/webmozart/assert}{\tt Git repository}.
+\end{DoxyItemize}
+
+\subsection*{Support }
+
+If you are having problems, send a mail to \href{mailto:bschussek@gmail.com}{\tt bschussek@gmail.\+com} or shout out to \href{https://twitter.com/webmozart}{\tt } on Twitter.
+
+\subsection*{License }
+
+All contents of this package are licensed under the \mbox{[}M\+IT license\mbox{]}. 

@@ -1,0 +1,40 @@
+The specification on types in Doc\+Blocks (P\+S\+R-\/5) describes various keywords and special constructs but also how to statically resolve the partial name of a Class into a Fully Qualified Class Name (F\+Q\+CN).
+
+P\+S\+R-\/5 also introduces an additional way to describe deeper elements than Classes, Interfaces and Traits called the Fully Qualified Structural Element Name (F\+Q\+S\+EN). Using this it is possible to refer to methods, properties and class constants but also functions and global constants.
+
+This package provides two Resolvers that are capable of
+
+
+\begin{DoxyEnumerate}
+\item Returning a series of Value Object for given expression while resolving any partial class names, and
+\item Returning an F\+Q\+S\+EN object after resolving any partial Structural Element Names into Fully Qualified Structural Element names.
+\end{DoxyEnumerate}
+
+\subsection*{Installing}
+
+The easiest way to install this library is with \href{https://getcomposer.org}{\tt Composer} using the following command\+: \begin{DoxyVerb}$ composer require phpdocumentor/type-resolver
+\end{DoxyVerb}
+
+
+\subsection*{Examples}
+
+Ready to dive in and don\textquotesingle{}t want to read through all that text below? Just consult the \mbox{[}examples\mbox{]}(examples) folder and check which type of action that your want to accomplish.
+
+\subsection*{On Types and Element Names}
+
+This component can be used in one of two ways
+
+
+\begin{DoxyEnumerate}
+\item To resolve a Type or
+\item To resolve a Fully Qualified Structural Element Name
+\end{DoxyEnumerate}
+
+The big difference between these two is in the number of things it can resolve.
+
+The Type\+Resolver can resolve\+:
+
+
+\begin{DoxyItemize}
+\item a php primitive or pseudo-\/primitive such as a string or void (\`{} 
+\end{DoxyItemize}

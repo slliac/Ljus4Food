@@ -1,0 +1,267 @@
+\hypertarget{class_p_h_p_unit___framework___mock_object___generator}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator Class Reference}
+\label{class_p_h_p_unit___framework___mock_object___generator}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_a4aa75cc7322a03dd24fb69af2e52855f}{get\+Mock}} (\$type, \$methods=\mbox{[}$\,$\mbox{]}, array \$arguments=\mbox{[}$\,$\mbox{]}, \$mock\+Class\+Name=\textquotesingle{}\textquotesingle{}, \$call\+Original\+Constructor=true, \$call\+Original\+Clone=true, \$call\+Autoload=true, \$clone\+Arguments=true, \$call\+Original\+Methods=false, \$proxy\+Target=null, \$allow\+Mocking\+Unknown\+Types=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_a48f47851bf11e93ca38eae5fef655e6c}{get\+Mock\+For\+Abstract\+Class}} (\$original\+Class\+Name, array \$arguments=\mbox{[}$\,$\mbox{]}, \$mock\+Class\+Name=\textquotesingle{}\textquotesingle{}, \$call\+Original\+Constructor=true, \$call\+Original\+Clone=true, \$call\+Autoload=true, \$mocked\+Methods=\mbox{[}$\,$\mbox{]}, \$clone\+Arguments=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_a0ac3712032983624f4878e129fc73f8f}{get\+Mock\+For\+Trait}} (\$trait\+Name, array \$arguments=\mbox{[}$\,$\mbox{]}, \$mock\+Class\+Name=\textquotesingle{}\textquotesingle{}, \$call\+Original\+Constructor=true, \$call\+Original\+Clone=true, \$call\+Autoload=true, \$mocked\+Methods=\mbox{[}$\,$\mbox{]}, \$clone\+Arguments=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_a858ff8de619f3734580faccc53ce6145}{get\+Object\+For\+Trait}} (\$trait\+Name, array \$arguments=\mbox{[}$\,$\mbox{]}, \$trait\+Class\+Name=\textquotesingle{}\textquotesingle{}, \$call\+Original\+Constructor=true, \$call\+Original\+Clone=true, \$call\+Autoload=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_ae878e56d3f3c00386b41c6788a113f69}{generate}} (\$type, array \$methods=null, \$mock\+Class\+Name=\textquotesingle{}\textquotesingle{}, \$call\+Original\+Clone=true, \$call\+Autoload=true, \$clone\+Arguments=true, \$call\+Original\+Methods=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_ae6b3bdda520502ad2027bd5f3b1eecb3}{generate\+Class\+From\+Wsdl}} (\$wsdl\+File, \$class\+Name, array \$methods=\mbox{[}$\,$\mbox{]}, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___generator_a6e2cfbf16be19a8ff5ea30a745a55bf7}{get\+Class\+Methods}} (\$class\+Name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mock Object Code Generator
+
+\begin{DoxySince}{Since}
+Class available since Release 1.\+0.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_ae878e56d3f3c00386b41c6788a113f69}\label{class_p_h_p_unit___framework___mock_object___generator_ae878e56d3f3c00386b41c6788a113f69}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!generate@{generate}}
+\index{generate@{generate}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily generate (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{array}]{\$methods = {\ttfamily null},  }\item[{}]{\$mock\+Class\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$call\+Original\+Clone = {\ttfamily true},  }\item[{}]{\$call\+Autoload = {\ttfamily true},  }\item[{}]{\$clone\+Arguments = {\ttfamily true},  }\item[{}]{\$call\+Original\+Methods = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$type} & \\
+\hline
+array & {\em \$methods} & \\
+\hline
+string & {\em \$mock\+Class\+Name} & \\
+\hline
+bool & {\em \$call\+Original\+Clone} & \\
+\hline
+bool & {\em \$call\+Autoload} & \\
+\hline
+bool & {\em \$clone\+Arguments} & \\
+\hline
+bool & {\em \$call\+Original\+Methods} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_ae6b3bdda520502ad2027bd5f3b1eecb3}\label{class_p_h_p_unit___framework___mock_object___generator_ae6b3bdda520502ad2027bd5f3b1eecb3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!generate\+Class\+From\+Wsdl@{generate\+Class\+From\+Wsdl}}
+\index{generate\+Class\+From\+Wsdl@{generate\+Class\+From\+Wsdl}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{generate\+Class\+From\+Wsdl()}{generateClassFromWsdl()}}
+{\footnotesize\ttfamily generate\+Class\+From\+Wsdl (\begin{DoxyParamCaption}\item[{}]{\$wsdl\+File,  }\item[{}]{\$class\+Name,  }\item[{array}]{\$methods = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$options = {\ttfamily \mbox{[}\mbox{]}} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$wsdl\+File} & \\
+\hline
+string & {\em \$class\+Name} & \\
+\hline
+array & {\em \$methods} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___runtime_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Runtime\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_a6e2cfbf16be19a8ff5ea30a745a55bf7}\label{class_p_h_p_unit___framework___mock_object___generator_a6e2cfbf16be19a8ff5ea30a745a55bf7}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!get\+Class\+Methods@{get\+Class\+Methods}}
+\index{get\+Class\+Methods@{get\+Class\+Methods}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{get\+Class\+Methods()}{getClassMethods()}}
+{\footnotesize\ttfamily get\+Class\+Methods (\begin{DoxyParamCaption}\item[{}]{\$class\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Method available since Release 2.\+3.\+2 
+\end{DoxySince}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_a4aa75cc7322a03dd24fb69af2e52855f}\label{class_p_h_p_unit___framework___mock_object___generator_a4aa75cc7322a03dd24fb69af2e52855f}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!get\+Mock@{get\+Mock}}
+\index{get\+Mock@{get\+Mock}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{get\+Mock()}{getMock()}}
+{\footnotesize\ttfamily get\+Mock (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$methods = {\ttfamily \mbox{[}\mbox{]}},  }\item[{array}]{\$arguments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$mock\+Class\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$call\+Original\+Constructor = {\ttfamily true},  }\item[{}]{\$call\+Original\+Clone = {\ttfamily true},  }\item[{}]{\$call\+Autoload = {\ttfamily true},  }\item[{}]{\$clone\+Arguments = {\ttfamily true},  }\item[{}]{\$call\+Original\+Methods = {\ttfamily false},  }\item[{}]{\$proxy\+Target = {\ttfamily null},  }\item[{}]{\$allow\+Mocking\+Unknown\+Types = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Returns a mock object for the specified class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$type} & \\
+\hline
+array & {\em \$methods} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+string & {\em \$mock\+Class\+Name} & \\
+\hline
+bool & {\em \$call\+Original\+Constructor} & \\
+\hline
+bool & {\em \$call\+Original\+Clone} & \\
+\hline
+bool & {\em \$call\+Autoload} & \\
+\hline
+bool & {\em \$clone\+Arguments} & \\
+\hline
+bool & {\em \$call\+Original\+Methods} & \\
+\hline
+object & {\em \$proxy\+Target} & \\
+\hline
+bool & {\em \$allow\+Mocking\+Unknown\+Types} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___mock_object}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Mock\+Object}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___runtime_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Runtime\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+0.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_a48f47851bf11e93ca38eae5fef655e6c}\label{class_p_h_p_unit___framework___mock_object___generator_a48f47851bf11e93ca38eae5fef655e6c}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!get\+Mock\+For\+Abstract\+Class@{get\+Mock\+For\+Abstract\+Class}}
+\index{get\+Mock\+For\+Abstract\+Class@{get\+Mock\+For\+Abstract\+Class}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{get\+Mock\+For\+Abstract\+Class()}{getMockForAbstractClass()}}
+{\footnotesize\ttfamily get\+Mock\+For\+Abstract\+Class (\begin{DoxyParamCaption}\item[{}]{\$original\+Class\+Name,  }\item[{array}]{\$arguments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$mock\+Class\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$call\+Original\+Constructor = {\ttfamily true},  }\item[{}]{\$call\+Original\+Clone = {\ttfamily true},  }\item[{}]{\$call\+Autoload = {\ttfamily true},  }\item[{}]{\$mocked\+Methods = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$clone\+Arguments = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Returns a mock object for the specified abstract class with all abstract methods of the class mocked. Concrete methods to mock can be specified with the last parameter
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$original\+Class\+Name} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+string & {\em \$mock\+Class\+Name} & \\
+\hline
+bool & {\em \$call\+Original\+Constructor} & \\
+\hline
+bool & {\em \$call\+Original\+Clone} & \\
+\hline
+bool & {\em \$call\+Autoload} & \\
+\hline
+array & {\em \$mocked\+Methods} & \\
+\hline
+bool & {\em \$clone\+Arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___mock_object}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Mock\+Object}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___runtime_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Runtime\+Exception}}} & \\
+\hline
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+0.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_a0ac3712032983624f4878e129fc73f8f}\label{class_p_h_p_unit___framework___mock_object___generator_a0ac3712032983624f4878e129fc73f8f}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!get\+Mock\+For\+Trait@{get\+Mock\+For\+Trait}}
+\index{get\+Mock\+For\+Trait@{get\+Mock\+For\+Trait}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{get\+Mock\+For\+Trait()}{getMockForTrait()}}
+{\footnotesize\ttfamily get\+Mock\+For\+Trait (\begin{DoxyParamCaption}\item[{}]{\$trait\+Name,  }\item[{array}]{\$arguments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$mock\+Class\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$call\+Original\+Constructor = {\ttfamily true},  }\item[{}]{\$call\+Original\+Clone = {\ttfamily true},  }\item[{}]{\$call\+Autoload = {\ttfamily true},  }\item[{}]{\$mocked\+Methods = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$clone\+Arguments = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Returns a mock object for the specified trait with all abstract methods of the trait mocked. Concrete methods to mock can be specified with the {\ttfamily \$mocked\+Methods} parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$trait\+Name} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+string & {\em \$mock\+Class\+Name} & \\
+\hline
+bool & {\em \$call\+Original\+Constructor} & \\
+\hline
+bool & {\em \$call\+Original\+Clone} & \\
+\hline
+bool & {\em \$call\+Autoload} & \\
+\hline
+array & {\em \$mocked\+Methods} & \\
+\hline
+bool & {\em \$clone\+Arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___mock_object}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Mock\+Object}}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___runtime_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Runtime\+Exception}}} & \\
+\hline
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+2.\+3 
+\end{DoxySince}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___generator_a858ff8de619f3734580faccc53ce6145}\label{class_p_h_p_unit___framework___mock_object___generator_a858ff8de619f3734580faccc53ce6145}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}!get\+Object\+For\+Trait@{get\+Object\+For\+Trait}}
+\index{get\+Object\+For\+Trait@{get\+Object\+For\+Trait}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Generator}}
+\subsubsection{\texorpdfstring{get\+Object\+For\+Trait()}{getObjectForTrait()}}
+{\footnotesize\ttfamily get\+Object\+For\+Trait (\begin{DoxyParamCaption}\item[{}]{\$trait\+Name,  }\item[{array}]{\$arguments = {\ttfamily \mbox{[}\mbox{]}},  }\item[{}]{\$trait\+Class\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$call\+Original\+Constructor = {\ttfamily true},  }\item[{}]{\$call\+Original\+Clone = {\ttfamily true},  }\item[{}]{\$call\+Autoload = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Returns an object for the specified trait.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$trait\+Name} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+string & {\em \$trait\+Class\+Name} & \\
+\hline
+bool & {\em \$call\+Original\+Constructor} & \\
+\hline
+bool & {\em \$call\+Original\+Clone} & \\
+\hline
+bool & {\em \$call\+Autoload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___runtime_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Runtime\+Exception}}} & \\
+\hline
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit-\/mock-\/objects/src/\+Framework/\+Mock\+Object/\mbox{\hyperlink{_generator_8php}{Generator.\+php}}\end{DoxyCompactItemize}

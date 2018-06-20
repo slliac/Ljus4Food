@@ -1,0 +1,95 @@
+\hypertarget{class_p_h_p___timer}{}\section{P\+H\+P\+\_\+\+Timer Class Reference}
+\label{class_p_h_p___timer}\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___timer_a146085d0f3a9d17bdcd7f3d4081d8c0d}{start}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p___timer_a00c3c0c2fc53579e9d1ac28a52623450}{stop}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p___timer_a953a729d77565c65fae1c2db93bd7566}{seconds\+To\+Time\+String}} (\$time)
+\item 
+static \mbox{\hyperlink{class_p_h_p___timer_a47261cd60577fea5503d5994e45b6811}{time\+Since\+Start\+Of\+Request}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p___timer_a0497d98146ffede423c66e0c3dc401c8}{resource\+Usage}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p___timer_a9d3accc7e7c5a7f4c3157df35cde6cfa}{\$request\+Time}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class for timing. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p___timer_a0497d98146ffede423c66e0c3dc401c8}\label{class_p_h_p___timer_a0497d98146ffede423c66e0c3dc401c8}} 
+\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}!resource\+Usage@{resource\+Usage}}
+\index{resource\+Usage@{resource\+Usage}!P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{resource\+Usage()}{resourceUsage()}}
+{\footnotesize\ttfamily static resource\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the resources (time, memory) of the request as a string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___timer_a953a729d77565c65fae1c2db93bd7566}\label{class_p_h_p___timer_a953a729d77565c65fae1c2db93bd7566}} 
+\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}!seconds\+To\+Time\+String@{seconds\+To\+Time\+String}}
+\index{seconds\+To\+Time\+String@{seconds\+To\+Time\+String}!P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{seconds\+To\+Time\+String()}{secondsToTimeString()}}
+{\footnotesize\ttfamily static seconds\+To\+Time\+String (\begin{DoxyParamCaption}\item[{}]{\$time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Formats the elapsed time as a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___timer_a146085d0f3a9d17bdcd7f3d4081d8c0d}\label{class_p_h_p___timer_a146085d0f3a9d17bdcd7f3d4081d8c0d}} 
+\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}!start@{start}}
+\index{start@{start}!P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily static start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Starts the timer. \mbox{\Hypertarget{class_p_h_p___timer_a00c3c0c2fc53579e9d1ac28a52623450}\label{class_p_h_p___timer_a00c3c0c2fc53579e9d1ac28a52623450}} 
+\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}!stop@{stop}}
+\index{stop@{stop}!P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily static stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Stops the timer and returns the elapsed time.
+
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p___timer_a47261cd60577fea5503d5994e45b6811}\label{class_p_h_p___timer_a47261cd60577fea5503d5994e45b6811}} 
+\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}!time\+Since\+Start\+Of\+Request@{time\+Since\+Start\+Of\+Request}}
+\index{time\+Since\+Start\+Of\+Request@{time\+Since\+Start\+Of\+Request}!P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{time\+Since\+Start\+Of\+Request()}{timeSinceStartOfRequest()}}
+{\footnotesize\ttfamily static time\+Since\+Start\+Of\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Formats the elapsed time since the start of the request as a string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p___timer_a9d3accc7e7c5a7f4c3157df35cde6cfa}\label{class_p_h_p___timer_a9d3accc7e7c5a7f4c3157df35cde6cfa}} 
+\index{P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}!\$request\+Time@{\$request\+Time}}
+\index{\$request\+Time@{\$request\+Time}!P\+H\+P\+\_\+\+Timer@{P\+H\+P\+\_\+\+Timer}}
+\subsubsection{\texorpdfstring{\$request\+Time}{$requestTime}}
+{\footnotesize\ttfamily \$request\+Time\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/php-\/timer/src/\mbox{\hyperlink{_timer_8php}{Timer.\+php}}\end{DoxyCompactItemize}

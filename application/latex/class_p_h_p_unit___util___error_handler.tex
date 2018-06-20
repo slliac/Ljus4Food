@@ -1,0 +1,87 @@
+\hypertarget{class_p_h_p_unit___util___error_handler}{}\section{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler Class Reference}
+\label{class_p_h_p_unit___util___error_handler}\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___error_handler_a51bd8b56b164c04af2c9fac7a2b7f71b}{get\+Error\+Stack}} ()
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___error_handler_a84f0a108d579fb2b6214ac165ba43f49}{handle\+Error}} (\$errno, \$errstr, \$errfile, \$errline)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___error_handler_a544bf731d5ec4ff76db4bab47cc767df}{handle\+Error\+Once}} (\$severity=E\+\_\+\+W\+A\+R\+N\+I\+NG)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit___util___error_handler_ada0bac2f96f0f9e4bd927a90c01f1132}{\$error\+Stack}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Error handler that converts P\+HP errors and warnings to exceptions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___error_handler_a51bd8b56b164c04af2c9fac7a2b7f71b}\label{class_p_h_p_unit___util___error_handler_a51bd8b56b164c04af2c9fac7a2b7f71b}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}!get\+Error\+Stack@{get\+Error\+Stack}}
+\index{get\+Error\+Stack@{get\+Error\+Stack}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}}
+\subsubsection{\texorpdfstring{get\+Error\+Stack()}{getErrorStack()}}
+{\footnotesize\ttfamily static get\+Error\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the error stack.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___error_handler_a84f0a108d579fb2b6214ac165ba43f49}\label{class_p_h_p_unit___util___error_handler_a84f0a108d579fb2b6214ac165ba43f49}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}!handle\+Error@{handle\+Error}}
+\index{handle\+Error@{handle\+Error}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}}
+\subsubsection{\texorpdfstring{handle\+Error()}{handleError()}}
+{\footnotesize\ttfamily static handle\+Error (\begin{DoxyParamCaption}\item[{}]{\$errno,  }\item[{}]{\$errstr,  }\item[{}]{\$errfile,  }\item[{}]{\$errline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errno} & \\
+\hline
+string & {\em \$errstr} & \\
+\hline
+string & {\em \$errfile} & \\
+\hline
+int & {\em \$errline} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit___util___error_handler_a544bf731d5ec4ff76db4bab47cc767df}\label{class_p_h_p_unit___util___error_handler_a544bf731d5ec4ff76db4bab47cc767df}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}!handle\+Error\+Once@{handle\+Error\+Once}}
+\index{handle\+Error\+Once@{handle\+Error\+Once}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}}
+\subsubsection{\texorpdfstring{handle\+Error\+Once()}{handleErrorOnce()}}
+{\footnotesize\ttfamily static handle\+Error\+Once (\begin{DoxyParamCaption}\item[{}]{\$severity = {\ttfamily E\+\_\+WARNING} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers an error handler and returns a function that will restore the previous handler when invoked
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$severity} & P\+HP predefined error constant\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & if event of specified severity is emitted \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___error_handler_ada0bac2f96f0f9e4bd927a90c01f1132}\label{class_p_h_p_unit___util___error_handler_ada0bac2f96f0f9e4bd927a90c01f1132}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}!\$error\+Stack@{\$error\+Stack}}
+\index{\$error\+Stack@{\$error\+Stack}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Error\+Handler}}
+\subsubsection{\texorpdfstring{\$error\+Stack}{$errorStack}}
+{\footnotesize\ttfamily \$error\+Stack = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Util/\mbox{\hyperlink{_error_handler_8php}{Error\+Handler.\+php}}\end{DoxyCompactItemize}

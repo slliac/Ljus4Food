@@ -1,0 +1,124 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___and}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And Class Reference}
+\label{class_p_h_p_unit___framework___constraint___and}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_h_p_unit___framework___constraint___and}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and_aecb273becbedcf46aedb2d32075ae564}{set\+Constraints}} (array \$constraints)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and_a4c184790087f7d42c3daf0d0180fe5fb}{evaluate}} (\$other, \$description=\textquotesingle{}\textquotesingle{}, \$return\+Result=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and_a9f4fd8838aaef9b57d3fac0dbf9a7929}{\$constraints}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and_a6abdf904716bf0f0a959ded0f39bab00}{\$last\+Constraint}} = null
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Logical A\+ND. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___and_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_p_h_p_unit___framework___constraint___and_ac751e87b3d4c4bf2feb03bee8b092755}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}!count@{count}}
+\index{count@{count}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Counts the number of constraint elements.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___and_a4c184790087f7d42c3daf0d0180fe5fb}\label{class_p_h_p_unit___framework___constraint___and_a4c184790087f7d42c3daf0d0180fe5fb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily evaluate (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{}]{\$description = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$return\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Evaluates the constraint for parameter \$other
+
+If \$return\+Result is set to false (the default), an exception is thrown in case of a failure. null is returned otherwise.
+
+If \$return\+Result is true, the result of the evaluation is returned as a boolean value instead\+: true in case of success, false in case of a failure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Value or object to evaluate. \\
+\hline
+string & {\em \$description} & Additional information about the test \\
+\hline
+bool & {\em \$return\+Result} & Whether to return a result or throw an exception\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___expectation_failed_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___and_aecb273becbedcf46aedb2d32075ae564}\label{class_p_h_p_unit___framework___constraint___and_aecb273becbedcf46aedb2d32075ae564}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}!set\+Constraints@{set\+Constraints}}
+\index{set\+Constraints@{set\+Constraints}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+\subsubsection{\texorpdfstring{set\+Constraints()}{setConstraints()}}
+{\footnotesize\ttfamily set\+Constraints (\begin{DoxyParamCaption}\item[{array}]{\$constraints }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\mbox{[}$\,$\mbox{]}} & \$constraints\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___and_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___constraint___and_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___and_a9f4fd8838aaef9b57d3fac0dbf9a7929}\label{class_p_h_p_unit___framework___constraint___and_a9f4fd8838aaef9b57d3fac0dbf9a7929}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}!\$constraints@{\$constraints}}
+\index{\$constraints@{\$constraints}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+\subsubsection{\texorpdfstring{\$constraints}{$constraints}}
+{\footnotesize\ttfamily \$constraints = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___and_a6abdf904716bf0f0a959ded0f39bab00}\label{class_p_h_p_unit___framework___constraint___and_a6abdf904716bf0f0a959ded0f39bab00}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}!\$last\+Constraint@{\$last\+Constraint}}
+\index{\$last\+Constraint@{\$last\+Constraint}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}}
+\subsubsection{\texorpdfstring{\$last\+Constraint}{$lastConstraint}}
+{\footnotesize\ttfamily \$last\+Constraint = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_and_8php}{And.\+php}}\end{DoxyCompactItemize}

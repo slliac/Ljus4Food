@@ -1,0 +1,105 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___exception_code}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code Class Reference}
+\label{class_p_h_p_unit___framework___constraint___exception_code}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.876712cm]{class_p_h_p_unit___framework___constraint___exception_code}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___exception_code_a4432014bcb5b5900d382abfaa34d4a31}{\+\_\+\+\_\+construct}} (\$expected)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___exception_code_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___exception_code_a9c9c337de483bbdbb9fa249a6c7c9cc5}{matches}} (\$other)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___exception_code_aaabb679273bfb812df4d81c283754a59}{failure\+Description}} (\$other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___exception_code_a2bf708f96afd761dbceedaa99e40ddd1}{\$expected\+Code}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___exception_code_a4432014bcb5b5900d382abfaa34d4a31}\label{class_p_h_p_unit___framework___constraint___exception_code_a4432014bcb5b5900d382abfaa34d4a31}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$expected }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expected} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___exception_code_aaabb679273bfb812df4d81c283754a59}\label{class_p_h_p_unit___framework___constraint___exception_code_aaabb679273bfb812df4d81c283754a59}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}!failure\+Description@{failure\+Description}}
+\index{failure\+Description@{failure\+Description}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}}
+\subsubsection{\texorpdfstring{failure\+Description()}{failureDescription()}}
+{\footnotesize\ttfamily failure\+Description (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the description of the failure
+
+The beginning of failure messages is \char`\"{}\+Failed asserting that\char`\"{} in most cases. This method should return the second part of that sentence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Evaluated value or object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___exception_code_a9c9c337de483bbdbb9fa249a6c7c9cc5}\label{class_p_h_p_unit___framework___constraint___exception_code_a9c9c337de483bbdbb9fa249a6c7c9cc5}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}!matches@{matches}}
+\index{matches@{matches}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}}
+\subsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Evaluates the constraint for parameter \$other. Returns true if the constraint is met, false otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Exception & {\em \$other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___exception_code_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___constraint___exception_code_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___exception_code_a2bf708f96afd761dbceedaa99e40ddd1}\label{class_p_h_p_unit___framework___constraint___exception_code_a2bf708f96afd761dbceedaa99e40ddd1}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}!\$expected\+Code@{\$expected\+Code}}
+\index{\$expected\+Code@{\$expected\+Code}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Exception\+Code}}
+\subsubsection{\texorpdfstring{\$expected\+Code}{$expectedCode}}
+{\footnotesize\ttfamily \$expected\+Code\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_exception_code_8php}{Exception\+Code.\+php}}\end{DoxyCompactItemize}

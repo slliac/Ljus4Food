@@ -1,0 +1,2683 @@
+\hypertarget{_functions_8php}{}\section{/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Assert/\+Functions.php File Reference}
+\label{_functions_8php}\index{/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Assert/\+Functions.\+php@{/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Assert/\+Functions.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_functions_8php_aa950afcee01981fe0485ce00ff0e8e8c}{any}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a7b7acdbecdca53ad57267d743ede7653}{anything}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_ad508cfb1870b428434bfe9bb80a1342d}{array\+Has\+Key}} (\$key)
+\item 
+\mbox{\hyperlink{_functions_8php_abaec8b6dc06207cc28e4d203ab7bef61}{assert\+Array\+Has\+Key}} (\$key, \$array, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a5a615e4c846b70941ea08a307b935a93}{assert\+Array\+Subset}} (\$subset, \$array, \$strict=false, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ae4bdb238b7d689a21c1adf1d2a137c05}{assert\+Array\+Not\+Has\+Key}} (\$key, \$array, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ad5aa1a2a5a9f15523c5703228a480ba8}{assert\+Attribute\+Contains}} (\$needle, \$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{}, \$ignore\+Case=false, \$check\+For\+Object\+Identity=true, \$check\+For\+Non\+Object\+Identity=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a8687aacb44ac1ba6dd3a3a22fa536d1f}{assert\+Attribute\+Contains\+Only}} (\$type, \$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$is\+Native\+Type=null, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ad0568e195e3929e5e67fa40f167bd11d}{assert\+Attribute\+Count}} (\$expected\+Count, \$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a1e7a75d395863664ab2a9362d0614658}{assert\+Attribute\+Empty}} (\$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aeb82d68f71035597fb7c212e56e1be1e}{assert\+Attribute\+Equals}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{}, \$delta=0.\+0, \$max\+Depth=10, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_ab8cd91a8fbc0df91623beac7c9272a3e}{assert\+Attribute\+Greater\+Than}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ac48292bd17fe899cb6ca88fc0008cc2c}{assert\+Attribute\+Greater\+Than\+Or\+Equal}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a9bba1c1f01212c165ebc2c4889d5a3d6}{assert\+Attribute\+Instance\+Of}} (\$expected, \$attribute\+Name, \$class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a552ca36da490b115182ab8964f6eb095}{assert\+Attribute\+Internal\+Type}} (\$expected, \$attribute\+Name, \$class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a5cbfa87dd5a216364ca09c012d448094}{assert\+Attribute\+Less\+Than}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aab5e4ab9077d2eeb1e01f2383477a454}{assert\+Attribute\+Less\+Than\+Or\+Equal}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_af97143ec0bd76d7469f5c1256aa6d485}{assert\+Attribute\+Not\+Contains}} (\$needle, \$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{}, \$ignore\+Case=false, \$check\+For\+Object\+Identity=true, \$check\+For\+Non\+Object\+Identity=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a20fe9e2e2fcf33eccb99f46ff7d09b81}{assert\+Attribute\+Not\+Contains\+Only}} (\$type, \$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$is\+Native\+Type=null, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ac3d017cb1f21480ba054eaa061408c62}{assert\+Attribute\+Not\+Count}} (\$expected\+Count, \$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a86ef38aef4d7024b1d2d960353b9d220}{assert\+Attribute\+Not\+Empty}} (\$haystack\+Attribute\+Name, \$haystack\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ab201ec769ee34130b5f08f74a2968121}{assert\+Attribute\+Not\+Equals}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{}, \$delta=0.\+0, \$max\+Depth=10, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_aa02f995da674cd2ec931749e698343cb}{assert\+Attribute\+Not\+Instance\+Of}} (\$expected, \$attribute\+Name, \$class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_af8606ef04ce922ccc458a4b6d0ff2a36}{assert\+Attribute\+Not\+Internal\+Type}} (\$expected, \$attribute\+Name, \$class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a11a09b5b24dc5b0e98f7479ca3278b17}{assert\+Attribute\+Not\+Same}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a30a0e035277d462a9ebfd3eef9f9c2ad}{assert\+Attribute\+Same}} (\$expected, \$actual\+Attribute\+Name, \$actual\+Class\+Or\+Object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a020f7f648e275ace00d8aecf3cce10e5}{assert\+Class\+Has\+Attribute}} (\$attribute\+Name, \$class\+Name, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aee96dd9e6810b42fbc22db1732e8aba3}{assert\+Class\+Has\+Static\+Attribute}} (\$attribute\+Name, \$class\+Name, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_afed26231955c087c24c8f44adae4ca20}{assert\+Class\+Not\+Has\+Attribute}} (\$attribute\+Name, \$class\+Name, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a89ea57c8417508bc6baee69be6ebc060}{assert\+Class\+Not\+Has\+Static\+Attribute}} (\$attribute\+Name, \$class\+Name, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a1cfe93764a351b03451c52f70117d26a}{assert\+Contains}} (\$needle, \$haystack, \$message=\textquotesingle{}\textquotesingle{}, \$ignore\+Case=false, \$check\+For\+Object\+Identity=true, \$check\+For\+Non\+Object\+Identity=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a844acff54e32f0f73a341d8b6f45b7eb}{assert\+Contains\+Only}} (\$type, \$haystack, \$is\+Native\+Type=null, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ab045412068b996519bc1bce08fdb20bc}{assert\+Contains\+Only\+Instances\+Of}} (\$classname, \$haystack, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_af5e94843432a981837016d92afadb274}{assert\+Count}} (\$expected\+Count, \$haystack, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aad72a8b4a8dcae8233307b939417857c}{assert\+Empty}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a24d5c38952d6ab4059377c640704d8a2}{assert\+Equal\+X\+M\+L\+Structure}} (D\+O\+M\+Element \$expected\+Element, D\+O\+M\+Element \$actual\+Element, \$check\+Attributes=false, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a441ec5f09711b6271edda774132eec5f}{assert\+Equals}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{}, \$delta=0.\+0, \$max\+Depth=10, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a1bd0d1a88a6cfeaef9fe36ab6f31d527}{assert\+Not\+True}} (\$condition, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a128860fa3b3f0455ec939bd3a9c9f310}{assert\+False}} (\$condition, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_abace482714c3fab036ceb8ad99b2d56a}{assert\+File\+Equals}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{}, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_ad3898bf710a1acb03b3e17683dd6dd23}{assert\+File\+Exists}} (\$filename, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a8d938168c2d2f4c5d0a160bcffc56136}{assert\+File\+Not\+Equals}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{}, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a0817fad4d3c1480e89a8b1360ac9a2ee}{assert\+File\+Not\+Exists}} (\$filename, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a7dee19b907f23a8ef39cb4514498797a}{assert\+Greater\+Than}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_af3b7e85915750fda23fc9086eed7f477}{assert\+Greater\+Than\+Or\+Equal}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a0ca0839be24ad3e51d4f4e9cf02e5a1d}{assert\+Instance\+Of}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a688bf0b1d569863bbbf042f0663364da}{assert\+Internal\+Type}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aa4ec6184c535737e1dec9b48d8617afb}{assert\+Json}} (\$actual\+Json, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_acae2f29204d6fe3692199951ee5b0c0c}{assert\+Json\+File\+Equals\+Json\+File}} (\$expected\+File, \$actual\+File, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a0d935ef2536ac8edf8c13d0a5384e21e}{assert\+Json\+File\+Not\+Equals\+Json\+File}} (\$expected\+File, \$actual\+File, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a36f310768e4214d73d80888c71d625ba}{assert\+Json\+String\+Equals\+Json\+File}} (\$expected\+File, \$actual\+Json, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a67e4f4f2b75482365c2ad4886b2bfd03}{assert\+Json\+String\+Equals\+Json\+String}} (\$expected\+Json, \$actual\+Json, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a4a099320cda71c8c309fc7e5c1e0bf58}{assert\+Json\+String\+Not\+Equals\+Json\+File}} (\$expected\+File, \$actual\+Json, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ad0f8a5657ef0a5dad50004376e149fa6}{assert\+Json\+String\+Not\+Equals\+Json\+String}} (\$expected\+Json, \$actual\+Json, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aeff8dc4011b81e0900e3da4ad49cbc4f}{assert\+Less\+Than}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a903e9496fc283879b3cbbbb5a356fbcd}{assert\+Less\+Than\+Or\+Equal}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a8917a9921e971c8cde61c1845d16e326}{assert\+Finite}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a3c819f738875d9f28abb94828d985edd}{assert\+Infinite}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a6886780078734312724429bd06e792ed}{assert\+Nan}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a6a61b83692ab545b4aac71ae27437f72}{assert\+Not\+Contains}} (\$needle, \$haystack, \$message=\textquotesingle{}\textquotesingle{}, \$ignore\+Case=false, \$check\+For\+Object\+Identity=true, \$check\+For\+Non\+Object\+Identity=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a70e611d22f646d429e16d777d6557e00}{assert\+Not\+Contains\+Only}} (\$type, \$haystack, \$is\+Native\+Type=null, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a53715028c9f2e944e5c72885caf6d577}{assert\+Not\+Count}} (\$expected\+Count, \$haystack, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a841ddb22ebbe78fd46007983051f7275}{assert\+Not\+Empty}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a8b173542fda20226a611bfafc7f25a7a}{assert\+Not\+Equals}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{}, \$delta=0.\+0, \$max\+Depth=10, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_aed1f07f58861b2876519c2881ebd62d8}{assert\+Not\+Instance\+Of}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a46c59eca3b9372703a32bf12363174a6}{assert\+Not\+Internal\+Type}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_abcdbf78d3c38e04fa94b18e71324161e}{assert\+Not\+False}} (\$condition, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ad4d6f4886ac98239030e236aa0707b2e}{assert\+Not\+Null}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a0868f00d7063ddbf09a34c9a4ab8d462}{assert\+Not\+Reg\+Exp}} (\$pattern, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a150d3c4fcea8c66eefa1959a01cbd585}{assert\+Not\+Same}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a7a040c1da3e10262995022756a403805}{assert\+Not\+Same\+Size}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ad7b79d6bea1921f7a70ed6878cc0f246}{assert\+Null}} (\$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a0c4cc883af06670a8e6544ae62c200f9}{assert\+Object\+Has\+Attribute}} (\$attribute\+Name, \$object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ada1bfafe4eeb619549e641de3f71f181}{assert\+Object\+Not\+Has\+Attribute}} (\$attribute\+Name, \$object, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a84e561a3e6b295ae36a098b2170da01c}{assert\+Reg\+Exp}} (\$pattern, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ac5f885920db6f99b78803ff527f185f4}{assert\+Same}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a6a8c63741621b0458fdf8e60347e8482}{assert\+Same\+Size}} (\$expected, \$actual, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a4d67586cf3a83e0261a2757cbaf80660}{assert\+String\+Ends\+Not\+With}} (\$suffix, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a17b4d6a9e2b1720176372965fa2f2433}{assert\+String\+Ends\+With}} (\$suffix, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_af0bfdb5d749c1a35f611b40914c98ce2}{assert\+String\+Equals\+File}} (\$expected\+File, \$actual\+String, \$message=\textquotesingle{}\textquotesingle{}, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_ae34aeb4354dbd2a41bf2a423f7817d66}{assert\+String\+Matches\+Format}} (\$format, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a50aaadb1e7c22364b730e51e81ec612b}{assert\+String\+Matches\+Format\+File}} (\$format\+File, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_adad8e94c871f6383e9abcea8af8bfcde}{assert\+String\+Not\+Equals\+File}} (\$expected\+File, \$actual\+String, \$message=\textquotesingle{}\textquotesingle{}, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_aeaa5a3ca2c1c1139727c0216ffb6fa77}{assert\+String\+Not\+Matches\+Format}} (\$format, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aade9415f0929acd2b54c35ab975ad8cd}{assert\+String\+Not\+Matches\+Format\+File}} (\$format\+File, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a0ef74d97ec4a6a2d7ae7e7f5ed08cf1e}{assert\+String\+Starts\+Not\+With}} (\$prefix, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a907e1edd408b7146e817b81ed131deda}{assert\+String\+Starts\+With}} (\$prefix, \$string, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a542e33fac4bbdadeb83922922766ea01}{assert\+That}} (\$value, \mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} \$constraint, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_aa4c28a3a11e84b789029c7c816def43c}{assert\+True}} (\$condition, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ac95f70d5d00b1a45197a6cc9c91df613}{assert\+Xml\+File\+Equals\+Xml\+File}} (\$expected\+File, \$actual\+File, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ac5c1e95227dd7eaca8d580743cde7ce5}{assert\+Xml\+File\+Not\+Equals\+Xml\+File}} (\$expected\+File, \$actual\+File, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a6a78b56b77971332459b376739d1ac1a}{assert\+Xml\+String\+Equals\+Xml\+File}} (\$expected\+File, \$actual\+Xml, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a7a51344beb9ebf1977761f7be8a1e004}{assert\+Xml\+String\+Equals\+Xml\+String}} (\$expected\+Xml, \$actual\+Xml, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_ae3a82a71a4b6c8bb8c5b4f9229dc1aa4}{assert\+Xml\+String\+Not\+Equals\+Xml\+File}} (\$expected\+File, \$actual\+Xml, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a8f9009cb494df84d4ef7b6655f95b460}{assert\+Xml\+String\+Not\+Equals\+Xml\+String}} (\$expected\+Xml, \$actual\+Xml, \$message=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{_functions_8php_a1638aacf03530a73b0a3c373471ac79b}{at}} (\$index)
+\item 
+\mbox{\hyperlink{_functions_8php_aea3eb470f1ce76a0e4f968f8324d4321}{at\+Least\+Once}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_ae0bf34a4330eb7f1f124d77cb66b2232}{attribute}} (\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} \$constraint, \$attribute\+Name)
+\item 
+\mbox{\hyperlink{_functions_8php_a4b7f52ca98a739cce5bfd4346d3c9ad9}{attribute\+Equal\+To}} (\$attribute\+Name, \$value, \$delta=0.\+0, \$max\+Depth=10, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}{callback}} (\$callback)
+\item 
+\mbox{\hyperlink{_functions_8php_a695a55a28616dd7c4d9a0aa43b7c41f6}{class\+Has\+Attribute}} (\$attribute\+Name)
+\item 
+\mbox{\hyperlink{_functions_8php_af21679dfcf7a9d56dbd96b660dda9b52}{class\+Has\+Static\+Attribute}} (\$attribute\+Name)
+\item 
+\mbox{\hyperlink{_functions_8php_a9dba79f2c57b5f522b794f8c0e029bec}{contains}} (\$value, \$check\+For\+Object\+Identity=true, \$check\+For\+Non\+Object\+Identity=false)
+\item 
+\mbox{\hyperlink{_functions_8php_a786b8e652e7517ef075f4734b6b5b159}{contains\+Only}} (\$type)
+\item 
+\mbox{\hyperlink{_functions_8php_a4ec7df260cbfd3cd90a21810031de03d}{contains\+Only\+Instances\+Of}} (\$classname)
+\item 
+\mbox{\hyperlink{_functions_8php_ac2f7f290c0baf2e861e29a1359d1b613}{count\+Of}} (\$count)
+\item 
+\mbox{\hyperlink{_functions_8php_a1df4ab1fdc5f4add626f9474b6ae37c7}{equal\+To}} (\$value, \$delta=0.\+0, \$max\+Depth=10, \$canonicalize=false, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{_functions_8php_ae7c3745d729abab68ef3f3e783b944cf}{exactly}} (\$count)
+\item 
+\mbox{\hyperlink{_functions_8php_a7e44544f8ebf95b39ff8530b0fc3f2ea}{file\+Exists}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_abce6d1e7cbce97c9725bbbcba61afb3a}{greater\+Than}} (\$value)
+\item 
+\mbox{\hyperlink{_functions_8php_ada4f837a9d31e0594303d561ea82682e}{greater\+Than\+Or\+Equal}} (\$value)
+\item 
+\mbox{\hyperlink{_functions_8php_a336a6ba8bc724c0227c728093efe2b84}{identical\+To}} (\$value)
+\item 
+\mbox{\hyperlink{_functions_8php_aedcc52b3673b8df9425e52f13accb2a1}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_ab66d633b29a2651291e004d81f262aa3}{is\+False}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_af324645a2a21de618d667cabfa622dbd}{is\+Instance\+Of}} (\$class\+Name)
+\item 
+\mbox{\hyperlink{_functions_8php_a7b5758aea973ef707d377b4eb0a29dee}{is\+Json}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a4af7cea238ab52f6e40a1eed86bdc1be}{is\+Null}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a3c9249e55831fca5b37d7afc0df9216c}{is\+True}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a72810c431795eef57c10cec4a620807a}{is\+Type}} (\$type)
+\item 
+\mbox{\hyperlink{_functions_8php_a6129cde2908aad852772b7b5ac5e1191}{less\+Than}} (\$value)
+\item 
+\mbox{\hyperlink{_functions_8php_ab1eb2e4bdbacc1ced86eb0c4cf7c266a}{less\+Than\+Or\+Equal}} (\$value)
+\item 
+\mbox{\hyperlink{_functions_8php_ae731cc8816139b076c1f231cc29628f6}{logical\+And}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a6b3abe020c7872df97f29de1e16cf485}{logical\+Not}} (\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} \$constraint)
+\item 
+\mbox{\hyperlink{_functions_8php_a9765b90f16412c9210fe50cc301eb9af}{logical\+Or}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_ab864cff8b3135268437a09c54fab34ee}{logical\+Xor}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a8968a55c84671473daa2233e6cae65b8}{matches}} (\$string)
+\item 
+\mbox{\hyperlink{_functions_8php_af2ef74284024d6308cd69bc4a2ce2df4}{matches\+Regular\+Expression}} (\$pattern)
+\item 
+\mbox{\hyperlink{_functions_8php_a5f3c11b90fed1f1f1cd123af8f802285}{never}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_aa56578de5940440fff547d12ef8c708c}{object\+Has\+Attribute}} (\$attribute\+Name)
+\item 
+\mbox{\hyperlink{_functions_8php_a9d664791c3ed0e1be32a2fc06fb8f349}{on\+Consecutive\+Calls}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_adf61c548bd057a260bb851f898749157}{once}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_a8195d1a7e82b5a06e93ac75338d4f267}{return\+Argument}} (\$argument\+Index)
+\item 
+\mbox{\hyperlink{_functions_8php_a5180e79959c104a66fdb4d790ffd2c5a}{return\+Callback}} (\$\mbox{\hyperlink{_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}{callback}})
+\item 
+\mbox{\hyperlink{_functions_8php_a90267a3fad433bb96e91c6b0c7d50a70}{return\+Self}} ()
+\item 
+\mbox{\hyperlink{_functions_8php_abde2df1d4e6445dc0068e921223f2b48}{return\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{_functions_8php_a01296977f98af86b301ee52ed691d9fa}{return\+Value\+Map}} (array \$value\+Map)
+\item 
+\mbox{\hyperlink{_functions_8php_ada7cba8fd03436d2fd206d7bb778fe83}{string\+Contains}} (\$string, \$case=true)
+\item 
+\mbox{\hyperlink{_functions_8php_a9c953f13455d2223733666f39b4e70c6}{string\+Ends\+With}} (\$suffix)
+\item 
+\mbox{\hyperlink{_functions_8php_afaa81aac86007c5317666a5b78f9d013}{string\+Starts\+With}} (\$prefix)
+\item 
+\mbox{\hyperlink{_functions_8php_afb912a3fd2baac7f6fbaea23ca792819}{throw\+Exception}} (Exception \$exception)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_functions_8php_aa950afcee01981fe0485ce00ff0e8e8c}\label{_functions_8php_aa950afcee01981fe0485ce00ff0e8e8c}} 
+\index{Functions.\+php@{Functions.\+php}!any@{any}}
+\index{any@{any}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{any()}{any()}}
+{\footnotesize\ttfamily any (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a matcher that matches when the method is executed zero or more times.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___any_invoked_count}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Any\+Invoked\+Count}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a7b7acdbecdca53ad57267d743ede7653}\label{_functions_8php_a7b7acdbecdca53ad57267d743ede7653}} 
+\index{Functions.\+php@{Functions.\+php}!anything@{anything}}
+\index{anything@{anything}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{anything()}{anything()}}
+{\footnotesize\ttfamily anything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_anything}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Anything}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_anything}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Anything}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ad508cfb1870b428434bfe9bb80a1342d}\label{_functions_8php_ad508cfb1870b428434bfe9bb80a1342d}} 
+\index{Functions.\+php@{Functions.\+php}!array\+Has\+Key@{array\+Has\+Key}}
+\index{array\+Has\+Key@{array\+Has\+Key}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{array\+Has\+Key()}{arrayHasKey()}}
+{\footnotesize\ttfamily array\+Has\+Key (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_abaec8b6dc06207cc28e4d203ab7bef61}\label{_functions_8php_abaec8b6dc06207cc28e4d203ab7bef61}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Array\+Has\+Key@{assert\+Array\+Has\+Key}}
+\index{assert\+Array\+Has\+Key@{assert\+Array\+Has\+Key}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Array\+Has\+Key()}{assertArrayHasKey()}}
+{\footnotesize\ttfamily assert\+Array\+Has\+Key (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$array,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an array has a specified key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+array | Array\+Access & {\em \$array} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ae4bdb238b7d689a21c1adf1d2a137c05}\label{_functions_8php_ae4bdb238b7d689a21c1adf1d2a137c05}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Array\+Not\+Has\+Key@{assert\+Array\+Not\+Has\+Key}}
+\index{assert\+Array\+Not\+Has\+Key@{assert\+Array\+Not\+Has\+Key}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Array\+Not\+Has\+Key()}{assertArrayNotHasKey()}}
+{\footnotesize\ttfamily assert\+Array\+Not\+Has\+Key (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$array,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an array does not have a specified key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+array | Array\+Access & {\em \$array} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a5a615e4c846b70941ea08a307b935a93}\label{_functions_8php_a5a615e4c846b70941ea08a307b935a93}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Array\+Subset@{assert\+Array\+Subset}}
+\index{assert\+Array\+Subset@{assert\+Array\+Subset}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Array\+Subset()}{assertArraySubset()}}
+{\footnotesize\ttfamily assert\+Array\+Subset (\begin{DoxyParamCaption}\item[{}]{\$subset,  }\item[{}]{\$array,  }\item[{}]{\$strict = {\ttfamily false},  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an array has a specified subset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Array\+Access & {\em \$subset} & \\
+\hline
+array | Array\+Access & {\em \$array} & \\
+\hline
+bool & {\em \$strict} & Check for object identity \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ad5aa1a2a5a9f15523c5703228a480ba8}\label{_functions_8php_ad5aa1a2a5a9f15523c5703228a480ba8}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Contains@{assert\+Attribute\+Contains}}
+\index{assert\+Attribute\+Contains@{assert\+Attribute\+Contains}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Contains()}{assertAttributeContains()}}
+{\footnotesize\ttfamily assert\+Attribute\+Contains (\begin{DoxyParamCaption}\item[{}]{\$needle,  }\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$ignore\+Case = {\ttfamily false},  }\item[{}]{\$check\+For\+Object\+Identity = {\ttfamily true},  }\item[{}]{\$check\+For\+Non\+Object\+Identity = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that a haystack that is stored in a static attribute of a class or an attribute of an object contains a needle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$needle} & \\
+\hline
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+bool & {\em \$check\+For\+Object\+Identity} & \\
+\hline
+bool & {\em \$check\+For\+Non\+Object\+Identity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a8687aacb44ac1ba6dd3a3a22fa536d1f}\label{_functions_8php_a8687aacb44ac1ba6dd3a3a22fa536d1f}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Contains\+Only@{assert\+Attribute\+Contains\+Only}}
+\index{assert\+Attribute\+Contains\+Only@{assert\+Attribute\+Contains\+Only}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Contains\+Only()}{assertAttributeContainsOnly()}}
+{\footnotesize\ttfamily assert\+Attribute\+Contains\+Only (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$is\+Native\+Type = {\ttfamily null},  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a haystack that is stored in a static attribute of a class or an attribute of an object contains only values of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+bool & {\em \$is\+Native\+Type} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ad0568e195e3929e5e67fa40f167bd11d}\label{_functions_8php_ad0568e195e3929e5e67fa40f167bd11d}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Count@{assert\+Attribute\+Count}}
+\index{assert\+Attribute\+Count@{assert\+Attribute\+Count}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Count()}{assertAttributeCount()}}
+{\footnotesize\ttfamily assert\+Attribute\+Count (\begin{DoxyParamCaption}\item[{}]{\$expected\+Count,  }\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts the number of elements of an array, Countable or Traversable that is stored in an attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expected\+Count} & \\
+\hline
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a1e7a75d395863664ab2a9362d0614658}\label{_functions_8php_a1e7a75d395863664ab2a9362d0614658}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Empty@{assert\+Attribute\+Empty}}
+\index{assert\+Attribute\+Empty@{assert\+Attribute\+Empty}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Empty()}{assertAttributeEmpty()}}
+{\footnotesize\ttfamily assert\+Attribute\+Empty (\begin{DoxyParamCaption}\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a static attribute of a class or an attribute of an object is empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aeb82d68f71035597fb7c212e56e1be1e}\label{_functions_8php_aeb82d68f71035597fb7c212e56e1be1e}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Equals@{assert\+Attribute\+Equals}}
+\index{assert\+Attribute\+Equals@{assert\+Attribute\+Equals}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Equals()}{assertAttributeEquals()}}
+{\footnotesize\ttfamily assert\+Attribute\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$max\+Depth = {\ttfamily 10},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that a variable is equal to an attribute of an object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+string & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+float & {\em \$delta} & \\
+\hline
+int & {\em \$max\+Depth} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ab8cd91a8fbc0df91623beac7c9272a3e}\label{_functions_8php_ab8cd91a8fbc0df91623beac7c9272a3e}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Greater\+Than@{assert\+Attribute\+Greater\+Than}}
+\index{assert\+Attribute\+Greater\+Than@{assert\+Attribute\+Greater\+Than}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Greater\+Than()}{assertAttributeGreaterThan()}}
+{\footnotesize\ttfamily assert\+Attribute\+Greater\+Than (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is greater than another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+string & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ac48292bd17fe899cb6ca88fc0008cc2c}\label{_functions_8php_ac48292bd17fe899cb6ca88fc0008cc2c}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Greater\+Than\+Or\+Equal@{assert\+Attribute\+Greater\+Than\+Or\+Equal}}
+\index{assert\+Attribute\+Greater\+Than\+Or\+Equal@{assert\+Attribute\+Greater\+Than\+Or\+Equal}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Greater\+Than\+Or\+Equal()}{assertAttributeGreaterThanOrEqual()}}
+{\footnotesize\ttfamily assert\+Attribute\+Greater\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is greater than or equal to another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+string & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a9bba1c1f01212c165ebc2c4889d5a3d6}\label{_functions_8php_a9bba1c1f01212c165ebc2c4889d5a3d6}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Instance\+Of@{assert\+Attribute\+Instance\+Of}}
+\index{assert\+Attribute\+Instance\+Of@{assert\+Attribute\+Instance\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Instance\+Of()}{assertAttributeInstanceOf()}}
+{\footnotesize\ttfamily assert\+Attribute\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+string & {\em \$attribute\+Name} & \\
+\hline
+mixed & {\em \$class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a552ca36da490b115182ab8964f6eb095}\label{_functions_8php_a552ca36da490b115182ab8964f6eb095}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Internal\+Type@{assert\+Attribute\+Internal\+Type}}
+\index{assert\+Attribute\+Internal\+Type@{assert\+Attribute\+Internal\+Type}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Internal\+Type()}{assertAttributeInternalType()}}
+{\footnotesize\ttfamily assert\+Attribute\+Internal\+Type (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+string & {\em \$attribute\+Name} & \\
+\hline
+mixed & {\em \$class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a5cbfa87dd5a216364ca09c012d448094}\label{_functions_8php_a5cbfa87dd5a216364ca09c012d448094}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Less\+Than@{assert\+Attribute\+Less\+Than}}
+\index{assert\+Attribute\+Less\+Than@{assert\+Attribute\+Less\+Than}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Less\+Than()}{assertAttributeLessThan()}}
+{\footnotesize\ttfamily assert\+Attribute\+Less\+Than (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is smaller than another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+string & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aab5e4ab9077d2eeb1e01f2383477a454}\label{_functions_8php_aab5e4ab9077d2eeb1e01f2383477a454}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Less\+Than\+Or\+Equal@{assert\+Attribute\+Less\+Than\+Or\+Equal}}
+\index{assert\+Attribute\+Less\+Than\+Or\+Equal@{assert\+Attribute\+Less\+Than\+Or\+Equal}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Less\+Than\+Or\+Equal()}{assertAttributeLessThanOrEqual()}}
+{\footnotesize\ttfamily assert\+Attribute\+Less\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is smaller than or equal to another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+string & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_af97143ec0bd76d7469f5c1256aa6d485}\label{_functions_8php_af97143ec0bd76d7469f5c1256aa6d485}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Contains@{assert\+Attribute\+Not\+Contains}}
+\index{assert\+Attribute\+Not\+Contains@{assert\+Attribute\+Not\+Contains}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Contains()}{assertAttributeNotContains()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Contains (\begin{DoxyParamCaption}\item[{}]{\$needle,  }\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$ignore\+Case = {\ttfamily false},  }\item[{}]{\$check\+For\+Object\+Identity = {\ttfamily true},  }\item[{}]{\$check\+For\+Non\+Object\+Identity = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that a haystack that is stored in a static attribute of a class or an attribute of an object does not contain a needle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$needle} & \\
+\hline
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+bool & {\em \$check\+For\+Object\+Identity} & \\
+\hline
+bool & {\em \$check\+For\+Non\+Object\+Identity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a20fe9e2e2fcf33eccb99f46ff7d09b81}\label{_functions_8php_a20fe9e2e2fcf33eccb99f46ff7d09b81}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Contains\+Only@{assert\+Attribute\+Not\+Contains\+Only}}
+\index{assert\+Attribute\+Not\+Contains\+Only@{assert\+Attribute\+Not\+Contains\+Only}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Contains\+Only()}{assertAttributeNotContainsOnly()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Contains\+Only (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$is\+Native\+Type = {\ttfamily null},  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a haystack that is stored in a static attribute of a class or an attribute of an object does not contain only values of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+bool & {\em \$is\+Native\+Type} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ac3d017cb1f21480ba054eaa061408c62}\label{_functions_8php_ac3d017cb1f21480ba054eaa061408c62}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Count@{assert\+Attribute\+Not\+Count}}
+\index{assert\+Attribute\+Not\+Count@{assert\+Attribute\+Not\+Count}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Count()}{assertAttributeNotCount()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Count (\begin{DoxyParamCaption}\item[{}]{\$expected\+Count,  }\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts the number of elements of an array, Countable or Traversable that is stored in an attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expected\+Count} & \\
+\hline
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a86ef38aef4d7024b1d2d960353b9d220}\label{_functions_8php_a86ef38aef4d7024b1d2d960353b9d220}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Empty@{assert\+Attribute\+Not\+Empty}}
+\index{assert\+Attribute\+Not\+Empty@{assert\+Attribute\+Not\+Empty}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Empty()}{assertAttributeNotEmpty()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Empty (\begin{DoxyParamCaption}\item[{}]{\$haystack\+Attribute\+Name,  }\item[{}]{\$haystack\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a static attribute of a class or an attribute of an object is not empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$haystack\+Attribute\+Name} & \\
+\hline
+mixed & {\em \$haystack\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ab201ec769ee34130b5f08f74a2968121}\label{_functions_8php_ab201ec769ee34130b5f08f74a2968121}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Equals@{assert\+Attribute\+Not\+Equals}}
+\index{assert\+Attribute\+Not\+Equals@{assert\+Attribute\+Not\+Equals}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Equals()}{assertAttributeNotEquals()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$max\+Depth = {\ttfamily 10},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that a variable is not equal to an attribute of an object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+string & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+float & {\em \$delta} & \\
+\hline
+int & {\em \$max\+Depth} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aa02f995da674cd2ec931749e698343cb}\label{_functions_8php_aa02f995da674cd2ec931749e698343cb}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Instance\+Of@{assert\+Attribute\+Not\+Instance\+Of}}
+\index{assert\+Attribute\+Not\+Instance\+Of@{assert\+Attribute\+Not\+Instance\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Instance\+Of()}{assertAttributeNotInstanceOf()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+string & {\em \$attribute\+Name} & \\
+\hline
+mixed & {\em \$class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_af8606ef04ce922ccc458a4b6d0ff2a36}\label{_functions_8php_af8606ef04ce922ccc458a4b6d0ff2a36}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Internal\+Type@{assert\+Attribute\+Not\+Internal\+Type}}
+\index{assert\+Attribute\+Not\+Internal\+Type@{assert\+Attribute\+Not\+Internal\+Type}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Internal\+Type()}{assertAttributeNotInternalType()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Internal\+Type (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an attribute is of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+string & {\em \$attribute\+Name} & \\
+\hline
+mixed & {\em \$class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a11a09b5b24dc5b0e98f7479ca3278b17}\label{_functions_8php_a11a09b5b24dc5b0e98f7479ca3278b17}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Not\+Same@{assert\+Attribute\+Not\+Same}}
+\index{assert\+Attribute\+Not\+Same@{assert\+Attribute\+Not\+Same}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Not\+Same()}{assertAttributeNotSame()}}
+{\footnotesize\ttfamily assert\+Attribute\+Not\+Same (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable and an attribute of an object do not have the same type and value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+object & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a30a0e035277d462a9ebfd3eef9f9c2ad}\label{_functions_8php_a30a0e035277d462a9ebfd3eef9f9c2ad}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Attribute\+Same@{assert\+Attribute\+Same}}
+\index{assert\+Attribute\+Same@{assert\+Attribute\+Same}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Attribute\+Same()}{assertAttributeSame()}}
+{\footnotesize\ttfamily assert\+Attribute\+Same (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual\+Attribute\+Name,  }\item[{}]{\$actual\+Class\+Or\+Object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable and an attribute of an object have the same type and value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+string & {\em \$actual\+Attribute\+Name} & \\
+\hline
+object & {\em \$actual\+Class\+Or\+Object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a020f7f648e275ace00d8aecf3cce10e5}\label{_functions_8php_a020f7f648e275ace00d8aecf3cce10e5}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Class\+Has\+Attribute@{assert\+Class\+Has\+Attribute}}
+\index{assert\+Class\+Has\+Attribute@{assert\+Class\+Has\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Class\+Has\+Attribute()}{assertClassHasAttribute()}}
+{\footnotesize\ttfamily assert\+Class\+Has\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Name,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a class has a specified attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+string & {\em \$class\+Name} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aee96dd9e6810b42fbc22db1732e8aba3}\label{_functions_8php_aee96dd9e6810b42fbc22db1732e8aba3}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Class\+Has\+Static\+Attribute@{assert\+Class\+Has\+Static\+Attribute}}
+\index{assert\+Class\+Has\+Static\+Attribute@{assert\+Class\+Has\+Static\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Class\+Has\+Static\+Attribute()}{assertClassHasStaticAttribute()}}
+{\footnotesize\ttfamily assert\+Class\+Has\+Static\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Name,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a class has a specified static attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+string & {\em \$class\+Name} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_afed26231955c087c24c8f44adae4ca20}\label{_functions_8php_afed26231955c087c24c8f44adae4ca20}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Class\+Not\+Has\+Attribute@{assert\+Class\+Not\+Has\+Attribute}}
+\index{assert\+Class\+Not\+Has\+Attribute@{assert\+Class\+Not\+Has\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Class\+Not\+Has\+Attribute()}{assertClassNotHasAttribute()}}
+{\footnotesize\ttfamily assert\+Class\+Not\+Has\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Name,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a class does not have a specified attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+string & {\em \$class\+Name} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a89ea57c8417508bc6baee69be6ebc060}\label{_functions_8php_a89ea57c8417508bc6baee69be6ebc060}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Class\+Not\+Has\+Static\+Attribute@{assert\+Class\+Not\+Has\+Static\+Attribute}}
+\index{assert\+Class\+Not\+Has\+Static\+Attribute@{assert\+Class\+Not\+Has\+Static\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Class\+Not\+Has\+Static\+Attribute()}{assertClassNotHasStaticAttribute()}}
+{\footnotesize\ttfamily assert\+Class\+Not\+Has\+Static\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$class\+Name,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a class does not have a specified static attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+string & {\em \$class\+Name} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a1cfe93764a351b03451c52f70117d26a}\label{_functions_8php_a1cfe93764a351b03451c52f70117d26a}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Contains@{assert\+Contains}}
+\index{assert\+Contains@{assert\+Contains}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Contains()}{assertContains()}}
+{\footnotesize\ttfamily assert\+Contains (\begin{DoxyParamCaption}\item[{}]{\$needle,  }\item[{}]{\$haystack,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$ignore\+Case = {\ttfamily false},  }\item[{}]{\$check\+For\+Object\+Identity = {\ttfamily true},  }\item[{}]{\$check\+For\+Non\+Object\+Identity = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that a haystack contains a needle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$needle} & \\
+\hline
+mixed & {\em \$haystack} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+bool & {\em \$check\+For\+Object\+Identity} & \\
+\hline
+bool & {\em \$check\+For\+Non\+Object\+Identity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a844acff54e32f0f73a341d8b6f45b7eb}\label{_functions_8php_a844acff54e32f0f73a341d8b6f45b7eb}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Contains\+Only@{assert\+Contains\+Only}}
+\index{assert\+Contains\+Only@{assert\+Contains\+Only}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Contains\+Only()}{assertContainsOnly()}}
+{\footnotesize\ttfamily assert\+Contains\+Only (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$haystack,  }\item[{}]{\$is\+Native\+Type = {\ttfamily null},  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a haystack contains only values of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+mixed & {\em \$haystack} & \\
+\hline
+bool & {\em \$is\+Native\+Type} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ab045412068b996519bc1bce08fdb20bc}\label{_functions_8php_ab045412068b996519bc1bce08fdb20bc}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Contains\+Only\+Instances\+Of@{assert\+Contains\+Only\+Instances\+Of}}
+\index{assert\+Contains\+Only\+Instances\+Of@{assert\+Contains\+Only\+Instances\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Contains\+Only\+Instances\+Of()}{assertContainsOnlyInstancesOf()}}
+{\footnotesize\ttfamily assert\+Contains\+Only\+Instances\+Of (\begin{DoxyParamCaption}\item[{}]{\$classname,  }\item[{}]{\$haystack,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a haystack contains only instances of a given classname
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$classname} & \\
+\hline
+array | Traversable & {\em \$haystack} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_af5e94843432a981837016d92afadb274}\label{_functions_8php_af5e94843432a981837016d92afadb274}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Count@{assert\+Count}}
+\index{assert\+Count@{assert\+Count}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Count()}{assertCount()}}
+{\footnotesize\ttfamily assert\+Count (\begin{DoxyParamCaption}\item[{}]{\$expected\+Count,  }\item[{}]{\$haystack,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts the number of elements of an array, Countable or Traversable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expected\+Count} & \\
+\hline
+mixed & {\em \$haystack} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aad72a8b4a8dcae8233307b939417857c}\label{_functions_8php_aad72a8b4a8dcae8233307b939417857c}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Empty@{assert\+Empty}}
+\index{assert\+Empty@{assert\+Empty}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Empty()}{assertEmpty()}}
+{\footnotesize\ttfamily assert\+Empty (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___assertion_failed_error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Assertion\+Failed\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_functions_8php_a441ec5f09711b6271edda774132eec5f}\label{_functions_8php_a441ec5f09711b6271edda774132eec5f}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}}
+{\footnotesize\ttfamily assert\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$max\+Depth = {\ttfamily 10},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that two variables are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+float & {\em \$delta} & \\
+\hline
+int & {\em \$max\+Depth} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a24d5c38952d6ab4059377c640704d8a2}\label{_functions_8php_a24d5c38952d6ab4059377c640704d8a2}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Equal\+X\+M\+L\+Structure@{assert\+Equal\+X\+M\+L\+Structure}}
+\index{assert\+Equal\+X\+M\+L\+Structure@{assert\+Equal\+X\+M\+L\+Structure}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Equal\+X\+M\+L\+Structure()}{assertEqualXMLStructure()}}
+{\footnotesize\ttfamily assert\+Equal\+X\+M\+L\+Structure (\begin{DoxyParamCaption}\item[{D\+O\+M\+Element}]{\$expected\+Element,  }\item[{D\+O\+M\+Element}]{\$actual\+Element,  }\item[{}]{\$check\+Attributes = {\ttfamily false},  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a hierarchy of D\+O\+M\+Elements matches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+D\+O\+M\+Element & {\em \$expected\+Element} & \\
+\hline
+D\+O\+M\+Element & {\em \$actual\+Element} & \\
+\hline
+bool & {\em \$check\+Attributes} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a128860fa3b3f0455ec939bd3a9c9f310}\label{_functions_8php_a128860fa3b3f0455ec939bd3a9c9f310}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+False@{assert\+False}}
+\index{assert\+False@{assert\+False}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+False()}{assertFalse()}}
+{\footnotesize\ttfamily assert\+False (\begin{DoxyParamCaption}\item[{}]{\$condition,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a condition is false.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$condition} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___assertion_failed_error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Assertion\+Failed\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_functions_8php_abace482714c3fab036ceb8ad99b2d56a}\label{_functions_8php_abace482714c3fab036ceb8ad99b2d56a}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+File\+Equals@{assert\+File\+Equals}}
+\index{assert\+File\+Equals@{assert\+File\+Equals}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+File\+Equals()}{assertFileEquals()}}
+{\footnotesize\ttfamily assert\+File\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that the contents of one file is equal to the contents of another file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+string & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ad3898bf710a1acb03b3e17683dd6dd23}\label{_functions_8php_ad3898bf710a1acb03b3e17683dd6dd23}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+File\+Exists@{assert\+File\+Exists}}
+\index{assert\+File\+Exists@{assert\+File\+Exists}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+File\+Exists()}{assertFileExists()}}
+{\footnotesize\ttfamily assert\+File\+Exists (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a file exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a8d938168c2d2f4c5d0a160bcffc56136}\label{_functions_8php_a8d938168c2d2f4c5d0a160bcffc56136}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+File\+Not\+Equals@{assert\+File\+Not\+Equals}}
+\index{assert\+File\+Not\+Equals@{assert\+File\+Not\+Equals}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+File\+Not\+Equals()}{assertFileNotEquals()}}
+{\footnotesize\ttfamily assert\+File\+Not\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that the contents of one file is not equal to the contents of another file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+string & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a0817fad4d3c1480e89a8b1360ac9a2ee}\label{_functions_8php_a0817fad4d3c1480e89a8b1360ac9a2ee}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+File\+Not\+Exists@{assert\+File\+Not\+Exists}}
+\index{assert\+File\+Not\+Exists@{assert\+File\+Not\+Exists}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+File\+Not\+Exists()}{assertFileNotExists()}}
+{\footnotesize\ttfamily assert\+File\+Not\+Exists (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a file does not exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a8917a9921e971c8cde61c1845d16e326}\label{_functions_8php_a8917a9921e971c8cde61c1845d16e326}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Finite@{assert\+Finite}}
+\index{assert\+Finite@{assert\+Finite}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Finite()}{assertFinite()}}
+{\footnotesize\ttfamily assert\+Finite (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is finite.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a7dee19b907f23a8ef39cb4514498797a}\label{_functions_8php_a7dee19b907f23a8ef39cb4514498797a}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Greater\+Than@{assert\+Greater\+Than}}
+\index{assert\+Greater\+Than@{assert\+Greater\+Than}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Greater\+Than()}{assertGreaterThan()}}
+{\footnotesize\ttfamily assert\+Greater\+Than (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a value is greater than another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_af3b7e85915750fda23fc9086eed7f477}\label{_functions_8php_af3b7e85915750fda23fc9086eed7f477}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Greater\+Than\+Or\+Equal@{assert\+Greater\+Than\+Or\+Equal}}
+\index{assert\+Greater\+Than\+Or\+Equal@{assert\+Greater\+Than\+Or\+Equal}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Greater\+Than\+Or\+Equal()}{assertGreaterThanOrEqual()}}
+{\footnotesize\ttfamily assert\+Greater\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a value is greater than or equal to another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a3c819f738875d9f28abb94828d985edd}\label{_functions_8php_a3c819f738875d9f28abb94828d985edd}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Infinite@{assert\+Infinite}}
+\index{assert\+Infinite@{assert\+Infinite}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Infinite()}{assertInfinite()}}
+{\footnotesize\ttfamily assert\+Infinite (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is infinite.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a0ca0839be24ad3e51d4f4e9cf02e5a1d}\label{_functions_8php_a0ca0839be24ad3e51d4f4e9cf02e5a1d}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Instance\+Of@{assert\+Instance\+Of}}
+\index{assert\+Instance\+Of@{assert\+Instance\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Instance\+Of()}{assertInstanceOf()}}
+{\footnotesize\ttfamily assert\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a688bf0b1d569863bbbf042f0663364da}\label{_functions_8php_a688bf0b1d569863bbbf042f0663364da}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Internal\+Type@{assert\+Internal\+Type}}
+\index{assert\+Internal\+Type@{assert\+Internal\+Type}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Internal\+Type()}{assertInternalType()}}
+{\footnotesize\ttfamily assert\+Internal\+Type (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aa4ec6184c535737e1dec9b48d8617afb}\label{_functions_8php_aa4ec6184c535737e1dec9b48d8617afb}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json@{assert\+Json}}
+\index{assert\+Json@{assert\+Json}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json()}{assertJson()}}
+{\footnotesize\ttfamily assert\+Json (\begin{DoxyParamCaption}\item[{}]{\$actual\+Json,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string is a valid J\+S\+ON string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$actual\+Json} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_acae2f29204d6fe3692199951ee5b0c0c}\label{_functions_8php_acae2f29204d6fe3692199951ee5b0c0c}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json\+File\+Equals\+Json\+File@{assert\+Json\+File\+Equals\+Json\+File}}
+\index{assert\+Json\+File\+Equals\+Json\+File@{assert\+Json\+File\+Equals\+Json\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json\+File\+Equals\+Json\+File()}{assertJsonFileEqualsJsonFile()}}
+{\footnotesize\ttfamily assert\+Json\+File\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+File,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two J\+S\+ON files are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+File} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a0d935ef2536ac8edf8c13d0a5384e21e}\label{_functions_8php_a0d935ef2536ac8edf8c13d0a5384e21e}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json\+File\+Not\+Equals\+Json\+File@{assert\+Json\+File\+Not\+Equals\+Json\+File}}
+\index{assert\+Json\+File\+Not\+Equals\+Json\+File@{assert\+Json\+File\+Not\+Equals\+Json\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json\+File\+Not\+Equals\+Json\+File()}{assertJsonFileNotEqualsJsonFile()}}
+{\footnotesize\ttfamily assert\+Json\+File\+Not\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+File,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two J\+S\+ON files are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+File} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a36f310768e4214d73d80888c71d625ba}\label{_functions_8php_a36f310768e4214d73d80888c71d625ba}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json\+String\+Equals\+Json\+File@{assert\+Json\+String\+Equals\+Json\+File}}
+\index{assert\+Json\+String\+Equals\+Json\+File@{assert\+Json\+String\+Equals\+Json\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json\+String\+Equals\+Json\+File()}{assertJsonStringEqualsJsonFile()}}
+{\footnotesize\ttfamily assert\+Json\+String\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+Json,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that the generated J\+S\+ON encoded object and the content of the given file are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+Json} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a67e4f4f2b75482365c2ad4886b2bfd03}\label{_functions_8php_a67e4f4f2b75482365c2ad4886b2bfd03}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json\+String\+Equals\+Json\+String@{assert\+Json\+String\+Equals\+Json\+String}}
+\index{assert\+Json\+String\+Equals\+Json\+String@{assert\+Json\+String\+Equals\+Json\+String}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json\+String\+Equals\+Json\+String()}{assertJsonStringEqualsJsonString()}}
+{\footnotesize\ttfamily assert\+Json\+String\+Equals\+Json\+String (\begin{DoxyParamCaption}\item[{}]{\$expected\+Json,  }\item[{}]{\$actual\+Json,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two given J\+S\+ON encoded objects or arrays are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+Json} & \\
+\hline
+string & {\em \$actual\+Json} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a4a099320cda71c8c309fc7e5c1e0bf58}\label{_functions_8php_a4a099320cda71c8c309fc7e5c1e0bf58}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json\+String\+Not\+Equals\+Json\+File@{assert\+Json\+String\+Not\+Equals\+Json\+File}}
+\index{assert\+Json\+String\+Not\+Equals\+Json\+File@{assert\+Json\+String\+Not\+Equals\+Json\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json\+String\+Not\+Equals\+Json\+File()}{assertJsonStringNotEqualsJsonFile()}}
+{\footnotesize\ttfamily assert\+Json\+String\+Not\+Equals\+Json\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+Json,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that the generated J\+S\+ON encoded object and the content of the given file are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+Json} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ad0f8a5657ef0a5dad50004376e149fa6}\label{_functions_8php_ad0f8a5657ef0a5dad50004376e149fa6}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Json\+String\+Not\+Equals\+Json\+String@{assert\+Json\+String\+Not\+Equals\+Json\+String}}
+\index{assert\+Json\+String\+Not\+Equals\+Json\+String@{assert\+Json\+String\+Not\+Equals\+Json\+String}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Json\+String\+Not\+Equals\+Json\+String()}{assertJsonStringNotEqualsJsonString()}}
+{\footnotesize\ttfamily assert\+Json\+String\+Not\+Equals\+Json\+String (\begin{DoxyParamCaption}\item[{}]{\$expected\+Json,  }\item[{}]{\$actual\+Json,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two given J\+S\+ON encoded objects or arrays are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+Json} & \\
+\hline
+string & {\em \$actual\+Json} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aeff8dc4011b81e0900e3da4ad49cbc4f}\label{_functions_8php_aeff8dc4011b81e0900e3da4ad49cbc4f}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Less\+Than@{assert\+Less\+Than}}
+\index{assert\+Less\+Than@{assert\+Less\+Than}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Less\+Than()}{assertLessThan()}}
+{\footnotesize\ttfamily assert\+Less\+Than (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a value is smaller than another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a903e9496fc283879b3cbbbb5a356fbcd}\label{_functions_8php_a903e9496fc283879b3cbbbb5a356fbcd}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Less\+Than\+Or\+Equal@{assert\+Less\+Than\+Or\+Equal}}
+\index{assert\+Less\+Than\+Or\+Equal@{assert\+Less\+Than\+Or\+Equal}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Less\+Than\+Or\+Equal()}{assertLessThanOrEqual()}}
+{\footnotesize\ttfamily assert\+Less\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a value is smaller than or equal to another value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a6886780078734312724429bd06e792ed}\label{_functions_8php_a6886780078734312724429bd06e792ed}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Nan@{assert\+Nan}}
+\index{assert\+Nan@{assert\+Nan}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Nan()}{assertNan()}}
+{\footnotesize\ttfamily assert\+Nan (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is nan.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a6a61b83692ab545b4aac71ae27437f72}\label{_functions_8php_a6a61b83692ab545b4aac71ae27437f72}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Contains@{assert\+Not\+Contains}}
+\index{assert\+Not\+Contains@{assert\+Not\+Contains}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Contains()}{assertNotContains()}}
+{\footnotesize\ttfamily assert\+Not\+Contains (\begin{DoxyParamCaption}\item[{}]{\$needle,  }\item[{}]{\$haystack,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$ignore\+Case = {\ttfamily false},  }\item[{}]{\$check\+For\+Object\+Identity = {\ttfamily true},  }\item[{}]{\$check\+For\+Non\+Object\+Identity = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that a haystack does not contain a needle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$needle} & \\
+\hline
+mixed & {\em \$haystack} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+bool & {\em \$check\+For\+Object\+Identity} & \\
+\hline
+bool & {\em \$check\+For\+Non\+Object\+Identity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a70e611d22f646d429e16d777d6557e00}\label{_functions_8php_a70e611d22f646d429e16d777d6557e00}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Contains\+Only@{assert\+Not\+Contains\+Only}}
+\index{assert\+Not\+Contains\+Only@{assert\+Not\+Contains\+Only}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Contains\+Only()}{assertNotContainsOnly()}}
+{\footnotesize\ttfamily assert\+Not\+Contains\+Only (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$haystack,  }\item[{}]{\$is\+Native\+Type = {\ttfamily null},  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a haystack does not contain only values of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+mixed & {\em \$haystack} & \\
+\hline
+bool & {\em \$is\+Native\+Type} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a53715028c9f2e944e5c72885caf6d577}\label{_functions_8php_a53715028c9f2e944e5c72885caf6d577}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Count@{assert\+Not\+Count}}
+\index{assert\+Not\+Count@{assert\+Not\+Count}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Count()}{assertNotCount()}}
+{\footnotesize\ttfamily assert\+Not\+Count (\begin{DoxyParamCaption}\item[{}]{\$expected\+Count,  }\item[{}]{\$haystack,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts the number of elements of an array, Countable or Traversable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$expected\+Count} & \\
+\hline
+mixed & {\em \$haystack} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a841ddb22ebbe78fd46007983051f7275}\label{_functions_8php_a841ddb22ebbe78fd46007983051f7275}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Empty@{assert\+Not\+Empty}}
+\index{assert\+Not\+Empty@{assert\+Not\+Empty}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Empty()}{assertNotEmpty()}}
+{\footnotesize\ttfamily assert\+Not\+Empty (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is not empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___assertion_failed_error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Assertion\+Failed\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_functions_8php_a8b173542fda20226a611bfafc7f25a7a}\label{_functions_8php_a8b173542fda20226a611bfafc7f25a7a}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Equals@{assert\+Not\+Equals}}
+\index{assert\+Not\+Equals@{assert\+Not\+Equals}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Equals()}{assertNotEquals()}}
+{\footnotesize\ttfamily assert\+Not\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$max\+Depth = {\ttfamily 10},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that two variables are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+float & {\em \$delta} & \\
+\hline
+int & {\em \$max\+Depth} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_abcdbf78d3c38e04fa94b18e71324161e}\label{_functions_8php_abcdbf78d3c38e04fa94b18e71324161e}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+False@{assert\+Not\+False}}
+\index{assert\+Not\+False@{assert\+Not\+False}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+False()}{assertNotFalse()}}
+{\footnotesize\ttfamily assert\+Not\+False (\begin{DoxyParamCaption}\item[{}]{\$condition,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a condition is not false.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$condition} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___assertion_failed_error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Assertion\+Failed\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_functions_8php_aed1f07f58861b2876519c2881ebd62d8}\label{_functions_8php_aed1f07f58861b2876519c2881ebd62d8}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Instance\+Of@{assert\+Not\+Instance\+Of}}
+\index{assert\+Not\+Instance\+Of@{assert\+Not\+Instance\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Instance\+Of()}{assertNotInstanceOf()}}
+{\footnotesize\ttfamily assert\+Not\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is not of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a46c59eca3b9372703a32bf12363174a6}\label{_functions_8php_a46c59eca3b9372703a32bf12363174a6}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Internal\+Type@{assert\+Not\+Internal\+Type}}
+\index{assert\+Not\+Internal\+Type@{assert\+Not\+Internal\+Type}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Internal\+Type()}{assertNotInternalType()}}
+{\footnotesize\ttfamily assert\+Not\+Internal\+Type (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is not of a given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ad4d6f4886ac98239030e236aa0707b2e}\label{_functions_8php_ad4d6f4886ac98239030e236aa0707b2e}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Null@{assert\+Not\+Null}}
+\index{assert\+Not\+Null@{assert\+Not\+Null}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Null()}{assertNotNull()}}
+{\footnotesize\ttfamily assert\+Not\+Null (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is not null.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a0868f00d7063ddbf09a34c9a4ab8d462}\label{_functions_8php_a0868f00d7063ddbf09a34c9a4ab8d462}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Reg\+Exp@{assert\+Not\+Reg\+Exp}}
+\index{assert\+Not\+Reg\+Exp@{assert\+Not\+Reg\+Exp}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Reg\+Exp()}{assertNotRegExp()}}
+{\footnotesize\ttfamily assert\+Not\+Reg\+Exp (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string does not match a given regular expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a150d3c4fcea8c66eefa1959a01cbd585}\label{_functions_8php_a150d3c4fcea8c66eefa1959a01cbd585}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Same@{assert\+Not\+Same}}
+\index{assert\+Not\+Same@{assert\+Not\+Same}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Same()}{assertNotSame()}}
+{\footnotesize\ttfamily assert\+Not\+Same (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two variables do not have the same type and value. Used on objects, it asserts that two variables do not reference the same object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a7a040c1da3e10262995022756a403805}\label{_functions_8php_a7a040c1da3e10262995022756a403805}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+Same\+Size@{assert\+Not\+Same\+Size}}
+\index{assert\+Not\+Same\+Size@{assert\+Not\+Same\+Size}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+Same\+Size()}{assertNotSameSize()}}
+{\footnotesize\ttfamily assert\+Not\+Same\+Size (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Assert that the size of two arrays (or {\ttfamily Countable} or {\ttfamily Traversable} objects) is not the same.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Countable | Traversable & {\em \$expected} & \\
+\hline
+array | Countable | Traversable & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a1bd0d1a88a6cfeaef9fe36ab6f31d527}\label{_functions_8php_a1bd0d1a88a6cfeaef9fe36ab6f31d527}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Not\+True@{assert\+Not\+True}}
+\index{assert\+Not\+True@{assert\+Not\+True}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Not\+True()}{assertNotTrue()}}
+{\footnotesize\ttfamily assert\+Not\+True (\begin{DoxyParamCaption}\item[{}]{\$condition,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a condition is not true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$condition} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___assertion_failed_error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Assertion\+Failed\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_functions_8php_ad7b79d6bea1921f7a70ed6878cc0f246}\label{_functions_8php_ad7b79d6bea1921f7a70ed6878cc0f246}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Null@{assert\+Null}}
+\index{assert\+Null@{assert\+Null}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Null()}{assertNull()}}
+{\footnotesize\ttfamily assert\+Null (\begin{DoxyParamCaption}\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a variable is null.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a0c4cc883af06670a8e6544ae62c200f9}\label{_functions_8php_a0c4cc883af06670a8e6544ae62c200f9}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Object\+Has\+Attribute@{assert\+Object\+Has\+Attribute}}
+\index{assert\+Object\+Has\+Attribute@{assert\+Object\+Has\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Object\+Has\+Attribute()}{assertObjectHasAttribute()}}
+{\footnotesize\ttfamily assert\+Object\+Has\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an object has a specified attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+object & {\em \$object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ada1bfafe4eeb619549e641de3f71f181}\label{_functions_8php_ada1bfafe4eeb619549e641de3f71f181}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Object\+Not\+Has\+Attribute@{assert\+Object\+Not\+Has\+Attribute}}
+\index{assert\+Object\+Not\+Has\+Attribute@{assert\+Object\+Not\+Has\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Object\+Not\+Has\+Attribute()}{assertObjectNotHasAttribute()}}
+{\footnotesize\ttfamily assert\+Object\+Not\+Has\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$object,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that an object does not have a specified attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+object & {\em \$object} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a84e561a3e6b295ae36a098b2170da01c}\label{_functions_8php_a84e561a3e6b295ae36a098b2170da01c}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Reg\+Exp@{assert\+Reg\+Exp}}
+\index{assert\+Reg\+Exp@{assert\+Reg\+Exp}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Reg\+Exp()}{assertRegExp()}}
+{\footnotesize\ttfamily assert\+Reg\+Exp (\begin{DoxyParamCaption}\item[{}]{\$pattern,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string matches a given regular expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ac5f885920db6f99b78803ff527f185f4}\label{_functions_8php_ac5f885920db6f99b78803ff527f185f4}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Same@{assert\+Same}}
+\index{assert\+Same@{assert\+Same}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Same()}{assertSame()}}
+{\footnotesize\ttfamily assert\+Same (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two variables have the same type and value. Used on objects, it asserts that two variables reference the same object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & \\
+\hline
+mixed & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a6a8c63741621b0458fdf8e60347e8482}\label{_functions_8php_a6a8c63741621b0458fdf8e60347e8482}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Same\+Size@{assert\+Same\+Size}}
+\index{assert\+Same\+Size@{assert\+Same\+Size}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Same\+Size()}{assertSameSize()}}
+{\footnotesize\ttfamily assert\+Same\+Size (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Assert that the size of two arrays (or {\ttfamily Countable} or {\ttfamily Traversable} objects) is the same.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Countable | Traversable & {\em \$expected} & \\
+\hline
+array | Countable | Traversable & {\em \$actual} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a4d67586cf3a83e0261a2757cbaf80660}\label{_functions_8php_a4d67586cf3a83e0261a2757cbaf80660}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Ends\+Not\+With@{assert\+String\+Ends\+Not\+With}}
+\index{assert\+String\+Ends\+Not\+With@{assert\+String\+Ends\+Not\+With}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Ends\+Not\+With()}{assertStringEndsNotWith()}}
+{\footnotesize\ttfamily assert\+String\+Ends\+Not\+With (\begin{DoxyParamCaption}\item[{}]{\$suffix,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string ends not with a given prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$suffix} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a17b4d6a9e2b1720176372965fa2f2433}\label{_functions_8php_a17b4d6a9e2b1720176372965fa2f2433}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Ends\+With@{assert\+String\+Ends\+With}}
+\index{assert\+String\+Ends\+With@{assert\+String\+Ends\+With}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Ends\+With()}{assertStringEndsWith()}}
+{\footnotesize\ttfamily assert\+String\+Ends\+With (\begin{DoxyParamCaption}\item[{}]{\$suffix,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string ends with a given prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$suffix} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_af0bfdb5d749c1a35f611b40914c98ce2}\label{_functions_8php_af0bfdb5d749c1a35f611b40914c98ce2}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Equals\+File@{assert\+String\+Equals\+File}}
+\index{assert\+String\+Equals\+File@{assert\+String\+Equals\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Equals\+File()}{assertStringEqualsFile()}}
+{\footnotesize\ttfamily assert\+String\+Equals\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+String,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that the contents of a string is equal to the contents of a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+String} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ae34aeb4354dbd2a41bf2a423f7817d66}\label{_functions_8php_ae34aeb4354dbd2a41bf2a423f7817d66}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Matches\+Format@{assert\+String\+Matches\+Format}}
+\index{assert\+String\+Matches\+Format@{assert\+String\+Matches\+Format}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Matches\+Format()}{assertStringMatchesFormat()}}
+{\footnotesize\ttfamily assert\+String\+Matches\+Format (\begin{DoxyParamCaption}\item[{}]{\$format,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string matches a given format string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a50aaadb1e7c22364b730e51e81ec612b}\label{_functions_8php_a50aaadb1e7c22364b730e51e81ec612b}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Matches\+Format\+File@{assert\+String\+Matches\+Format\+File}}
+\index{assert\+String\+Matches\+Format\+File@{assert\+String\+Matches\+Format\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Matches\+Format\+File()}{assertStringMatchesFormatFile()}}
+{\footnotesize\ttfamily assert\+String\+Matches\+Format\+File (\begin{DoxyParamCaption}\item[{}]{\$format\+File,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string matches a given format file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format\+File} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_adad8e94c871f6383e9abcea8af8bfcde}\label{_functions_8php_adad8e94c871f6383e9abcea8af8bfcde}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Not\+Equals\+File@{assert\+String\+Not\+Equals\+File}}
+\index{assert\+String\+Not\+Equals\+File@{assert\+String\+Not\+Equals\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Not\+Equals\+File()}{assertStringNotEqualsFile()}}
+{\footnotesize\ttfamily assert\+String\+Not\+Equals\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+String,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Asserts that the contents of a string is not equal to the contents of a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+String} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aeaa5a3ca2c1c1139727c0216ffb6fa77}\label{_functions_8php_aeaa5a3ca2c1c1139727c0216ffb6fa77}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Not\+Matches\+Format@{assert\+String\+Not\+Matches\+Format}}
+\index{assert\+String\+Not\+Matches\+Format@{assert\+String\+Not\+Matches\+Format}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Not\+Matches\+Format()}{assertStringNotMatchesFormat()}}
+{\footnotesize\ttfamily assert\+String\+Not\+Matches\+Format (\begin{DoxyParamCaption}\item[{}]{\$format,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string does not match a given format string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aade9415f0929acd2b54c35ab975ad8cd}\label{_functions_8php_aade9415f0929acd2b54c35ab975ad8cd}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Not\+Matches\+Format\+File@{assert\+String\+Not\+Matches\+Format\+File}}
+\index{assert\+String\+Not\+Matches\+Format\+File@{assert\+String\+Not\+Matches\+Format\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Not\+Matches\+Format\+File()}{assertStringNotMatchesFormatFile()}}
+{\footnotesize\ttfamily assert\+String\+Not\+Matches\+Format\+File (\begin{DoxyParamCaption}\item[{}]{\$format\+File,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string does not match a given format string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format\+File} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a0ef74d97ec4a6a2d7ae7e7f5ed08cf1e}\label{_functions_8php_a0ef74d97ec4a6a2d7ae7e7f5ed08cf1e}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Starts\+Not\+With@{assert\+String\+Starts\+Not\+With}}
+\index{assert\+String\+Starts\+Not\+With@{assert\+String\+Starts\+Not\+With}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Starts\+Not\+With()}{assertStringStartsNotWith()}}
+{\footnotesize\ttfamily assert\+String\+Starts\+Not\+With (\begin{DoxyParamCaption}\item[{}]{\$prefix,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string starts not with a given prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a907e1edd408b7146e817b81ed131deda}\label{_functions_8php_a907e1edd408b7146e817b81ed131deda}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+String\+Starts\+With@{assert\+String\+Starts\+With}}
+\index{assert\+String\+Starts\+With@{assert\+String\+Starts\+With}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+String\+Starts\+With()}{assertStringStartsWith()}}
+{\footnotesize\ttfamily assert\+String\+Starts\+With (\begin{DoxyParamCaption}\item[{}]{\$prefix,  }\item[{}]{\$string,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a string starts with a given prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a542e33fac4bbdadeb83922922766ea01}\label{_functions_8php_a542e33fac4bbdadeb83922922766ea01}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+That@{assert\+That}}
+\index{assert\+That@{assert\+That}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+That()}{assertThat()}}
+{\footnotesize\ttfamily assert\+That (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}}}]{\$constraint,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Evaluates a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} & {\em \$constraint} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_aa4c28a3a11e84b789029c7c816def43c}\label{_functions_8php_aa4c28a3a11e84b789029c7c816def43c}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+True@{assert\+True}}
+\index{assert\+True@{assert\+True}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+True()}{assertTrue()}}
+{\footnotesize\ttfamily assert\+True (\begin{DoxyParamCaption}\item[{}]{\$condition,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that a condition is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$condition} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___assertion_failed_error}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Assertion\+Failed\+Error}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_functions_8php_ac95f70d5d00b1a45197a6cc9c91df613}\label{_functions_8php_ac95f70d5d00b1a45197a6cc9c91df613}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Xml\+File\+Equals\+Xml\+File@{assert\+Xml\+File\+Equals\+Xml\+File}}
+\index{assert\+Xml\+File\+Equals\+Xml\+File@{assert\+Xml\+File\+Equals\+Xml\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Xml\+File\+Equals\+Xml\+File()}{assertXmlFileEqualsXmlFile()}}
+{\footnotesize\ttfamily assert\+Xml\+File\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+File,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two X\+ML files are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+File} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ac5c1e95227dd7eaca8d580743cde7ce5}\label{_functions_8php_ac5c1e95227dd7eaca8d580743cde7ce5}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Xml\+File\+Not\+Equals\+Xml\+File@{assert\+Xml\+File\+Not\+Equals\+Xml\+File}}
+\index{assert\+Xml\+File\+Not\+Equals\+Xml\+File@{assert\+Xml\+File\+Not\+Equals\+Xml\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Xml\+File\+Not\+Equals\+Xml\+File()}{assertXmlFileNotEqualsXmlFile()}}
+{\footnotesize\ttfamily assert\+Xml\+File\+Not\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+File,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two X\+ML files are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+File} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a6a78b56b77971332459b376739d1ac1a}\label{_functions_8php_a6a78b56b77971332459b376739d1ac1a}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Xml\+String\+Equals\+Xml\+File@{assert\+Xml\+String\+Equals\+Xml\+File}}
+\index{assert\+Xml\+String\+Equals\+Xml\+File@{assert\+Xml\+String\+Equals\+Xml\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Xml\+String\+Equals\+Xml\+File()}{assertXmlStringEqualsXmlFile()}}
+{\footnotesize\ttfamily assert\+Xml\+String\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+Xml,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two X\+ML documents are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+Xml} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a7a51344beb9ebf1977761f7be8a1e004}\label{_functions_8php_a7a51344beb9ebf1977761f7be8a1e004}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Xml\+String\+Equals\+Xml\+String@{assert\+Xml\+String\+Equals\+Xml\+String}}
+\index{assert\+Xml\+String\+Equals\+Xml\+String@{assert\+Xml\+String\+Equals\+Xml\+String}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Xml\+String\+Equals\+Xml\+String()}{assertXmlStringEqualsXmlString()}}
+{\footnotesize\ttfamily assert\+Xml\+String\+Equals\+Xml\+String (\begin{DoxyParamCaption}\item[{}]{\$expected\+Xml,  }\item[{}]{\$actual\+Xml,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two X\+ML documents are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+Xml} & \\
+\hline
+string & {\em \$actual\+Xml} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_ae3a82a71a4b6c8bb8c5b4f9229dc1aa4}\label{_functions_8php_ae3a82a71a4b6c8bb8c5b4f9229dc1aa4}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Xml\+String\+Not\+Equals\+Xml\+File@{assert\+Xml\+String\+Not\+Equals\+Xml\+File}}
+\index{assert\+Xml\+String\+Not\+Equals\+Xml\+File@{assert\+Xml\+String\+Not\+Equals\+Xml\+File}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Xml\+String\+Not\+Equals\+Xml\+File()}{assertXmlStringNotEqualsXmlFile()}}
+{\footnotesize\ttfamily assert\+Xml\+String\+Not\+Equals\+Xml\+File (\begin{DoxyParamCaption}\item[{}]{\$expected\+File,  }\item[{}]{\$actual\+Xml,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two X\+ML documents are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+File} & \\
+\hline
+string & {\em \$actual\+Xml} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a8f9009cb494df84d4ef7b6655f95b460}\label{_functions_8php_a8f9009cb494df84d4ef7b6655f95b460}} 
+\index{Functions.\+php@{Functions.\+php}!assert\+Xml\+String\+Not\+Equals\+Xml\+String@{assert\+Xml\+String\+Not\+Equals\+Xml\+String}}
+\index{assert\+Xml\+String\+Not\+Equals\+Xml\+String@{assert\+Xml\+String\+Not\+Equals\+Xml\+String}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{assert\+Xml\+String\+Not\+Equals\+Xml\+String()}{assertXmlStringNotEqualsXmlString()}}
+{\footnotesize\ttfamily assert\+Xml\+String\+Not\+Equals\+Xml\+String (\begin{DoxyParamCaption}\item[{}]{\$expected\+Xml,  }\item[{}]{\$actual\+Xml,  }\item[{}]{\$message = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Asserts that two X\+ML documents are not equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expected\+Xml} & \\
+\hline
+string & {\em \$actual\+Xml} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_functions_8php_a1638aacf03530a73b0a3c373471ac79b}\label{_functions_8php_a1638aacf03530a73b0a3c373471ac79b}} 
+\index{Functions.\+php@{Functions.\+php}!at@{at}}
+\index{at@{at}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily at (\begin{DoxyParamCaption}\item[{}]{\$index }\end{DoxyParamCaption})}
+
+Returns a matcher that matches when the method is executed at the given \$index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___invoked_at_index}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invoked\+At\+Index}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_aea3eb470f1ce76a0e4f968f8324d4321}\label{_functions_8php_aea3eb470f1ce76a0e4f968f8324d4321}} 
+\index{Functions.\+php@{Functions.\+php}!at\+Least\+Once@{at\+Least\+Once}}
+\index{at\+Least\+Once@{at\+Least\+Once}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{at\+Least\+Once()}{atLeastOnce()}}
+{\footnotesize\ttfamily at\+Least\+Once (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a matcher that matches when the method is executed at least once.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___invoked_at_least_once}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invoked\+At\+Least\+Once}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ae0bf34a4330eb7f1f124d77cb66b2232}\label{_functions_8php_ae0bf34a4330eb7f1f124d77cb66b2232}} 
+\index{Functions.\+php@{Functions.\+php}!attribute@{attribute}}
+\index{attribute@{attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{attribute()}{attribute()}}
+{\footnotesize\ttfamily attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}}}]{\$constraint,  }\item[{}]{\$attribute\+Name }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} & {\em \$constraint} & \\
+\hline
+string & {\em \$attribute\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a4b7f52ca98a739cce5bfd4346d3c9ad9}\label{_functions_8php_a4b7f52ca98a739cce5bfd4346d3c9ad9}} 
+\index{Functions.\+php@{Functions.\+php}!attribute\+Equal\+To@{attribute\+Equal\+To}}
+\index{attribute\+Equal\+To@{attribute\+Equal\+To}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{attribute\+Equal\+To()}{attributeEqualTo()}}
+{\footnotesize\ttfamily attribute\+Equal\+To (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name,  }\item[{}]{\$value,  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$max\+Depth = {\ttfamily 10},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_equal}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Equal}} matcher object that is wrapped in a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+float & {\em \$delta} & \\
+\hline
+int & {\em \$max\+Depth} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Attribute}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}\label{_functions_8php_ae2242eb47799ca6a822b022dc1bd1ac9}} 
+\index{Functions.\+php@{Functions.\+php}!callback@{callback}}
+\index{callback@{callback}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily callback (\begin{DoxyParamCaption}\item[{}]{\$callback }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___callback}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Callback}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___callback}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Callback}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a695a55a28616dd7c4d9a0aa43b7c41f6}\label{_functions_8php_a695a55a28616dd7c4d9a0aa43b7c41f6}} 
+\index{Functions.\+php@{Functions.\+php}!class\+Has\+Attribute@{class\+Has\+Attribute}}
+\index{class\+Has\+Attribute@{class\+Has\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{class\+Has\+Attribute()}{classHasAttribute()}}
+{\footnotesize\ttfamily class\+Has\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___class_has_attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Class\+Has\+Attribute}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___class_has_attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Class\+Has\+Attribute}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_af21679dfcf7a9d56dbd96b660dda9b52}\label{_functions_8php_af21679dfcf7a9d56dbd96b660dda9b52}} 
+\index{Functions.\+php@{Functions.\+php}!class\+Has\+Static\+Attribute@{class\+Has\+Static\+Attribute}}
+\index{class\+Has\+Static\+Attribute@{class\+Has\+Static\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{class\+Has\+Static\+Attribute()}{classHasStaticAttribute()}}
+{\footnotesize\ttfamily class\+Has\+Static\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___class_has_static_attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Class\+Has\+Static\+Attribute}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___class_has_static_attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Class\+Has\+Static\+Attribute}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a9dba79f2c57b5f522b794f8c0e029bec}\label{_functions_8php_a9dba79f2c57b5f522b794f8c0e029bec}} 
+\index{Functions.\+php@{Functions.\+php}!contains@{contains}}
+\index{contains@{contains}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily contains (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$check\+For\+Object\+Identity = {\ttfamily true},  }\item[{}]{\$check\+For\+Non\+Object\+Identity = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+bool & {\em \$check\+For\+Object\+Identity} & \\
+\hline
+bool & {\em \$check\+For\+Non\+Object\+Identity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a786b8e652e7517ef075f4734b6b5b159}\label{_functions_8php_a786b8e652e7517ef075f4734b6b5b159}} 
+\index{Functions.\+php@{Functions.\+php}!contains\+Only@{contains\+Only}}
+\index{contains\+Only@{contains\+Only}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{contains\+Only()}{containsOnly()}}
+{\footnotesize\ttfamily contains\+Only (\begin{DoxyParamCaption}\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a4ec7df260cbfd3cd90a21810031de03d}\label{_functions_8php_a4ec7df260cbfd3cd90a21810031de03d}} 
+\index{Functions.\+php@{Functions.\+php}!contains\+Only\+Instances\+Of@{contains\+Only\+Instances\+Of}}
+\index{contains\+Only\+Instances\+Of@{contains\+Only\+Instances\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{contains\+Only\+Instances\+Of()}{containsOnlyInstancesOf()}}
+{\footnotesize\ttfamily contains\+Only\+Instances\+Of (\begin{DoxyParamCaption}\item[{}]{\$classname }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$classname} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ac2f7f290c0baf2e861e29a1359d1b613}\label{_functions_8php_ac2f7f290c0baf2e861e29a1359d1b613}} 
+\index{Functions.\+php@{Functions.\+php}!count\+Of@{count\+Of}}
+\index{count\+Of@{count\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{count\+Of()}{countOf()}}
+{\footnotesize\ttfamily count\+Of (\begin{DoxyParamCaption}\item[{}]{\$count }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___count}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Count}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a1df4ab1fdc5f4add626f9474b6ae37c7}\label{_functions_8php_a1df4ab1fdc5f4add626f9474b6ae37c7}} 
+\index{Functions.\+php@{Functions.\+php}!equal\+To@{equal\+To}}
+\index{equal\+To@{equal\+To}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{equal\+To()}{equalTo()}}
+{\footnotesize\ttfamily equal\+To (\begin{DoxyParamCaption}\item[{}]{\$value,  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$max\+Depth = {\ttfamily 10},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_equal}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Equal}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+float & {\em \$delta} & \\
+\hline
+int & {\em \$max\+Depth} & \\
+\hline
+bool & {\em \$canonicalize} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_equal}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Equal}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ae7c3745d729abab68ef3f3e783b944cf}\label{_functions_8php_ae7c3745d729abab68ef3f3e783b944cf}} 
+\index{Functions.\+php@{Functions.\+php}!exactly@{exactly}}
+\index{exactly@{exactly}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{exactly()}{exactly()}}
+{\footnotesize\ttfamily exactly (\begin{DoxyParamCaption}\item[{}]{\$count }\end{DoxyParamCaption})}
+
+Returns a matcher that matches when the method is executed exactly \$count times.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___invoked_count}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invoked\+Count}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a7e44544f8ebf95b39ff8530b0fc3f2ea}\label{_functions_8php_a7e44544f8ebf95b39ff8530b0fc3f2ea}} 
+\index{Functions.\+php@{Functions.\+php}!file\+Exists@{file\+Exists}}
+\index{file\+Exists@{file\+Exists}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{file\+Exists()}{fileExists()}}
+{\footnotesize\ttfamily file\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___file_exists}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+File\+Exists}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___file_exists}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+File\+Exists}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_abce6d1e7cbce97c9725bbbcba61afb3a}\label{_functions_8php_abce6d1e7cbce97c9725bbbcba61afb3a}} 
+\index{Functions.\+php@{Functions.\+php}!greater\+Than@{greater\+Than}}
+\index{greater\+Than@{greater\+Than}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{greater\+Than()}{greaterThan()}}
+{\footnotesize\ttfamily greater\+Than (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___greater_than}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Greater\+Than}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___greater_than}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Greater\+Than}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ada4f837a9d31e0594303d561ea82682e}\label{_functions_8php_ada4f837a9d31e0594303d561ea82682e}} 
+\index{Functions.\+php@{Functions.\+php}!greater\+Than\+Or\+Equal@{greater\+Than\+Or\+Equal}}
+\index{greater\+Than\+Or\+Equal@{greater\+Than\+Or\+Equal}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{greater\+Than\+Or\+Equal()}{greaterThanOrEqual()}}
+{\footnotesize\ttfamily greater\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___or}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Or}} matcher object that wraps a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_equal}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Equal}} and a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___greater_than}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Greater\+Than}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___or}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Or}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a336a6ba8bc724c0227c728093efe2b84}\label{_functions_8php_a336a6ba8bc724c0227c728093efe2b84}} 
+\index{Functions.\+php@{Functions.\+php}!identical\+To@{identical\+To}}
+\index{identical\+To@{identical\+To}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{identical\+To()}{identicalTo()}}
+{\footnotesize\ttfamily identical\+To (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_identical}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Identical}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_identical}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Identical}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_aedcc52b3673b8df9425e52f13accb2a1}\label{_functions_8php_aedcc52b3673b8df9425e52f13accb2a1}} 
+\index{Functions.\+php@{Functions.\+php}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_empty}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Empty}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_empty}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Empty}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ab66d633b29a2651291e004d81f262aa3}\label{_functions_8php_ab66d633b29a2651291e004d81f262aa3}} 
+\index{Functions.\+php@{Functions.\+php}!is\+False@{is\+False}}
+\index{is\+False@{is\+False}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+False()}{isFalse()}}
+{\footnotesize\ttfamily is\+False (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_false}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+False}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_false}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+False}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_af324645a2a21de618d667cabfa622dbd}\label{_functions_8php_af324645a2a21de618d667cabfa622dbd}} 
+\index{Functions.\+php@{Functions.\+php}!is\+Instance\+Of@{is\+Instance\+Of}}
+\index{is\+Instance\+Of@{is\+Instance\+Of}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+Instance\+Of()}{isInstanceOf()}}
+{\footnotesize\ttfamily is\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$class\+Name }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_instance_of}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Instance\+Of}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_instance_of}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Instance\+Of}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a7b5758aea973ef707d377b4eb0a29dee}\label{_functions_8php_a7b5758aea973ef707d377b4eb0a29dee}} 
+\index{Functions.\+php@{Functions.\+php}!is\+Json@{is\+Json}}
+\index{is\+Json@{is\+Json}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+Json()}{isJson()}}
+{\footnotesize\ttfamily is\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_json}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Json}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_json}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Json}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a4af7cea238ab52f6e40a1eed86bdc1be}\label{_functions_8php_a4af7cea238ab52f6e40a1eed86bdc1be}} 
+\index{Functions.\+php@{Functions.\+php}!is\+Null@{is\+Null}}
+\index{is\+Null@{is\+Null}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+Null()}{isNull()}}
+{\footnotesize\ttfamily is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_null}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Null}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_null}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Null}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a3c9249e55831fca5b37d7afc0df9216c}\label{_functions_8php_a3c9249e55831fca5b37d7afc0df9216c}} 
+\index{Functions.\+php@{Functions.\+php}!is\+True@{is\+True}}
+\index{is\+True@{is\+True}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+True()}{isTrue()}}
+{\footnotesize\ttfamily is\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_true}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+True}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_true}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+True}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a72810c431795eef57c10cec4a620807a}\label{_functions_8php_a72810c431795eef57c10cec4a620807a}} 
+\index{Functions.\+php@{Functions.\+php}!is\+Type@{is\+Type}}
+\index{is\+Type@{is\+Type}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{is\+Type()}{isType()}}
+{\footnotesize\ttfamily is\+Type (\begin{DoxyParamCaption}\item[{}]{\$type }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_type}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Type}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_type}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Type}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a6129cde2908aad852772b7b5ac5e1191}\label{_functions_8php_a6129cde2908aad852772b7b5ac5e1191}} 
+\index{Functions.\+php@{Functions.\+php}!less\+Than@{less\+Than}}
+\index{less\+Than@{less\+Than}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{less\+Than()}{lessThan()}}
+{\footnotesize\ttfamily less\+Than (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___less_than}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Less\+Than}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___less_than}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Less\+Than}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ab1eb2e4bdbacc1ced86eb0c4cf7c266a}\label{_functions_8php_ab1eb2e4bdbacc1ced86eb0c4cf7c266a}} 
+\index{Functions.\+php@{Functions.\+php}!less\+Than\+Or\+Equal@{less\+Than\+Or\+Equal}}
+\index{less\+Than\+Or\+Equal@{less\+Than\+Or\+Equal}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{less\+Than\+Or\+Equal()}{lessThanOrEqual()}}
+{\footnotesize\ttfamily less\+Than\+Or\+Equal (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___or}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Or}} matcher object that wraps a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___is_equal}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Is\+Equal}} and a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___less_than}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Less\+Than}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___or}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Or}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ae731cc8816139b076c1f231cc29628f6}\label{_functions_8php_ae731cc8816139b076c1f231cc29628f6}} 
+\index{Functions.\+php@{Functions.\+php}!logical\+And@{logical\+And}}
+\index{logical\+And@{logical\+And}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{logical\+And()}{logicalAnd()}}
+{\footnotesize\ttfamily logical\+And (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___and}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+And}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a6b3abe020c7872df97f29de1e16cf485}\label{_functions_8php_a6b3abe020c7872df97f29de1e16cf485}} 
+\index{Functions.\+php@{Functions.\+php}!logical\+Not@{logical\+Not}}
+\index{logical\+Not@{logical\+Not}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{logical\+Not()}{logicalNot()}}
+{\footnotesize\ttfamily logical\+Not (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}}}]{\$constraint }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___not}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Not}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint}} & {\em \$constraint} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___not}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Not}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a9765b90f16412c9210fe50cc301eb9af}\label{_functions_8php_a9765b90f16412c9210fe50cc301eb9af}} 
+\index{Functions.\+php@{Functions.\+php}!logical\+Or@{logical\+Or}}
+\index{logical\+Or@{logical\+Or}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{logical\+Or()}{logicalOr()}}
+{\footnotesize\ttfamily logical\+Or (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___or}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Or}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___or}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Or}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ab864cff8b3135268437a09c54fab34ee}\label{_functions_8php_ab864cff8b3135268437a09c54fab34ee}} 
+\index{Functions.\+php@{Functions.\+php}!logical\+Xor@{logical\+Xor}}
+\index{logical\+Xor@{logical\+Xor}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{logical\+Xor()}{logicalXor()}}
+{\footnotesize\ttfamily logical\+Xor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___xor}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Xor}} matcher object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___xor}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Xor}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a8968a55c84671473daa2233e6cae65b8}\label{_functions_8php_a8968a55c84671473daa2233e6cae65b8}} 
+\index{Functions.\+php@{Functions.\+php}!matches@{matches}}
+\index{matches@{matches}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_matches}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Matches}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_matches}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Matches}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_af2ef74284024d6308cd69bc4a2ce2df4}\label{_functions_8php_af2ef74284024d6308cd69bc4a2ce2df4}} 
+\index{Functions.\+php@{Functions.\+php}!matches\+Regular\+Expression@{matches\+Regular\+Expression}}
+\index{matches\+Regular\+Expression@{matches\+Regular\+Expression}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{matches\+Regular\+Expression()}{matchesRegularExpression()}}
+{\footnotesize\ttfamily matches\+Regular\+Expression (\begin{DoxyParamCaption}\item[{}]{\$pattern }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___p_c_r_e_match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+P\+C\+R\+E\+Match}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___p_c_r_e_match}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+P\+C\+R\+E\+Match}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a5f3c11b90fed1f1f1cd123af8f802285}\label{_functions_8php_a5f3c11b90fed1f1f1cd123af8f802285}} 
+\index{Functions.\+php@{Functions.\+php}!never@{never}}
+\index{never@{never}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{never()}{never()}}
+{\footnotesize\ttfamily never (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a matcher that matches when the method is never executed.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___invoked_count}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invoked\+Count}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_aa56578de5940440fff547d12ef8c708c}\label{_functions_8php_aa56578de5940440fff547d12ef8c708c}} 
+\index{Functions.\+php@{Functions.\+php}!object\+Has\+Attribute@{object\+Has\+Attribute}}
+\index{object\+Has\+Attribute@{object\+Has\+Attribute}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{object\+Has\+Attribute()}{objectHasAttribute()}}
+{\footnotesize\ttfamily object\+Has\+Attribute (\begin{DoxyParamCaption}\item[{}]{\$attribute\+Name }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___object_has_attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Object\+Has\+Attribute}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___object_has_attribute}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Object\+Has\+Attribute}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_adf61c548bd057a260bb851f898749157}\label{_functions_8php_adf61c548bd057a260bb851f898749157}} 
+\index{Functions.\+php@{Functions.\+php}!once@{once}}
+\index{once@{once}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{once()}{once()}}
+{\footnotesize\ttfamily once (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a matcher that matches when the method is executed exactly once.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___invoked_count}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invoked\+Count}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a9d664791c3ed0e1be32a2fc06fb8f349}\label{_functions_8php_a9d664791c3ed0e1be32a2fc06fb8f349}} 
+\index{Functions.\+php@{Functions.\+php}!on\+Consecutive\+Calls@{on\+Consecutive\+Calls}}
+\index{on\+Consecutive\+Calls@{on\+Consecutive\+Calls}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{on\+Consecutive\+Calls()}{onConsecutiveCalls()}}
+{\footnotesize\ttfamily on\+Consecutive\+Calls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value,...} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___consecutive_calls}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Consecutive\+Calls}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a8195d1a7e82b5a06e93ac75338d4f267}\label{_functions_8php_a8195d1a7e82b5a06e93ac75338d4f267}} 
+\index{Functions.\+php@{Functions.\+php}!return\+Argument@{return\+Argument}}
+\index{return\+Argument@{return\+Argument}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{return\+Argument()}{returnArgument()}}
+{\footnotesize\ttfamily return\+Argument (\begin{DoxyParamCaption}\item[{}]{\$argument\+Index }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$argument\+Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___return_argument}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Return\+Argument}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a5180e79959c104a66fdb4d790ffd2c5a}\label{_functions_8php_a5180e79959c104a66fdb4d790ffd2c5a}} 
+\index{Functions.\+php@{Functions.\+php}!return\+Callback@{return\+Callback}}
+\index{return\+Callback@{return\+Callback}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{return\+Callback()}{returnCallback()}}
+{\footnotesize\ttfamily return\+Callback (\begin{DoxyParamCaption}\item[{}]{\$callback }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___return_callback}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Return\+Callback}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a90267a3fad433bb96e91c6b0c7d50a70}\label{_functions_8php_a90267a3fad433bb96e91c6b0c7d50a70}} 
+\index{Functions.\+php@{Functions.\+php}!return\+Self@{return\+Self}}
+\index{return\+Self@{return\+Self}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{return\+Self()}{returnSelf()}}
+{\footnotesize\ttfamily return\+Self (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current object.
+
+This method is useful when mocking a fluent interface.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___return_self}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Return\+Self}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_abde2df1d4e6445dc0068e921223f2b48}\label{_functions_8php_abde2df1d4e6445dc0068e921223f2b48}} 
+\index{Functions.\+php@{Functions.\+php}!return\+Value@{return\+Value}}
+\index{return\+Value@{return\+Value}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{return\+Value()}{returnValue()}}
+{\footnotesize\ttfamily return\+Value (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___return}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Return}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a01296977f98af86b301ee52ed691d9fa}\label{_functions_8php_a01296977f98af86b301ee52ed691d9fa}} 
+\index{Functions.\+php@{Functions.\+php}!return\+Value\+Map@{return\+Value\+Map}}
+\index{return\+Value\+Map@{return\+Value\+Map}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{return\+Value\+Map()}{returnValueMap()}}
+{\footnotesize\ttfamily return\+Value\+Map (\begin{DoxyParamCaption}\item[{array}]{\$value\+Map }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$value\+Map} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___return_value_map}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Return\+Value\+Map}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_ada7cba8fd03436d2fd206d7bb778fe83}\label{_functions_8php_ada7cba8fd03436d2fd206d7bb778fe83}} 
+\index{Functions.\+php@{Functions.\+php}!string\+Contains@{string\+Contains}}
+\index{string\+Contains@{string\+Contains}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{string\+Contains()}{stringContains()}}
+{\footnotesize\ttfamily string\+Contains (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$case = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+bool & {\em \$case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_a9c953f13455d2223733666f39b4e70c6}\label{_functions_8php_a9c953f13455d2223733666f39b4e70c6}} 
+\index{Functions.\+php@{Functions.\+php}!string\+Ends\+With@{string\+Ends\+With}}
+\index{string\+Ends\+With@{string\+Ends\+With}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{string\+Ends\+With()}{stringEndsWith()}}
+{\footnotesize\ttfamily string\+Ends\+With (\begin{DoxyParamCaption}\item[{}]{\$suffix }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_ends_with}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Ends\+With}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$suffix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_ends_with}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Ends\+With}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_afaa81aac86007c5317666a5b78f9d013}\label{_functions_8php_afaa81aac86007c5317666a5b78f9d013}} 
+\index{Functions.\+php@{Functions.\+php}!string\+Starts\+With@{string\+Starts\+With}}
+\index{string\+Starts\+With@{string\+Starts\+With}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{string\+Starts\+With()}{stringStartsWith()}}
+{\footnotesize\ttfamily string\+Starts\+With (\begin{DoxyParamCaption}\item[{}]{\$prefix }\end{DoxyParamCaption})}
+
+Returns a \mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_starts_with}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Starts\+With}} matcher object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_starts_with}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Starts\+With}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_functions_8php_afb912a3fd2baac7f6fbaea23ca792819}\label{_functions_8php_afb912a3fd2baac7f6fbaea23ca792819}} 
+\index{Functions.\+php@{Functions.\+php}!throw\+Exception@{throw\+Exception}}
+\index{throw\+Exception@{throw\+Exception}!Functions.\+php@{Functions.\+php}}
+\subsubsection{\texorpdfstring{throw\+Exception()}{throwException()}}
+{\footnotesize\ttfamily throw\+Exception (\begin{DoxyParamCaption}\item[{Exception}]{\$exception }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Exception & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___stub___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Stub\+\_\+\+Exception}} 
+\end{DoxyReturn}

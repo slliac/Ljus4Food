@@ -1,0 +1,48 @@
+\href{https://travis-ci.org/sebastianbergmann/php-timer}{\tt }
+
+\section*{\mbox{\hyperlink{class_p_h_p___timer}{P\+H\+P\+\_\+\+Timer}}}
+
+Utility class for timing things, factored out of \mbox{\hyperlink{namespace_p_h_p_unit}{P\+H\+P\+Unit}} into a stand-\/alone component.
+
+\subsection*{Installation}
+
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\tt Composer}\+: \begin{DoxyVerb}composer require phpunit/php-timer
+\end{DoxyVerb}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+: \begin{DoxyVerb}composer require --dev phpunit/php-timer
+\end{DoxyVerb}
+
+
+\subsection*{Usage}
+
+\subsubsection*{Basic Timing}
+
+
+\begin{DoxyCode}
+\mbox{\hyperlink{class_p_h_p___timer_a146085d0f3a9d17bdcd7f3d4081d8c0d}{PHP\_Timer::start}}();
+
+\textcolor{comment}{// ...}
+
+$time = \mbox{\hyperlink{class_p_h_p___timer_a00c3c0c2fc53579e9d1ac28a52623450}{PHP\_Timer::stop}}();
+var\_dump($time);
+
+print \mbox{\hyperlink{class_p_h_p___timer_a953a729d77565c65fae1c2db93bd7566}{PHP\_Timer::secondsToTimeString}}($time);
+\end{DoxyCode}
+
+
+The code above yields the output below\+: \begin{DoxyVerb}double(1.0967254638672E-5)
+0 ms
+\end{DoxyVerb}
+
+
+\subsubsection*{Resource Consumption Since P\+HP Startup}
+
+
+\begin{DoxyCode}
+print \mbox{\hyperlink{class_p_h_p___timer_a0497d98146ffede423c66e0c3dc401c8}{PHP\_Timer::resourceUsage}}();
+\end{DoxyCode}
+
+
+The code above yields the output below\+: \begin{DoxyVerb}Time: 0 ms, Memory: 0.50MB\end{DoxyVerb}
+ 

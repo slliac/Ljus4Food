@@ -1,0 +1,157 @@
+\hypertarget{location2_8php}{}\section{views/location2.php File Reference}
+\label{location2_8php}\index{views/location2.\+php@{views/location2.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{location2_8php_a94f49615449deadff259cd73979515b3}{card\+\_\+printing}} (\$my\+Markup\+Template, \$address\+\_\+array, \$place\+\_\+array, \$rate\+\_\+array)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{location2_8php_a8a5e05131617a16eedd7427eaf437329}{\$\+\_\+\+S\+E\+S\+S\+I\+ON}} \mbox{[}\char`\"{}address\char`\"{}\mbox{]} = \$address
+\item 
+\mbox{\hyperlink{location2_8php_a399d6844a8329f151f8fc16af8ce3f57}{\$\+\_\+\+S\+E\+S\+S\+I\+ON}} \mbox{[}\char`\"{}latitude\char`\"{}\mbox{]} = \$latitude
+\item 
+\mbox{\hyperlink{location2_8php_a92cb64f3b08cacc2f2e3eb4231d966b4}{\$\+\_\+\+S\+E\+S\+S\+I\+ON}} \mbox{[}\char`\"{}longitude\char`\"{}\mbox{]} = \$longitude
+\item 
+\mbox{\hyperlink{location2_8php_acddeaa636a9daeb46d6c3b90710b06e1}{\$\+\_\+\+S\+E\+S\+S\+I\+ON}} \mbox{[}\char`\"{}placename\char`\"{}\mbox{]} = \$placename
+\item 
+\mbox{\hyperlink{location2_8php_af0c8fc6207df0eb2b4e2b0badf84f944}{\$\+\_\+\+S\+E\+S\+S\+I\+ON}} \mbox{[}\char`\"{}rating\char`\"{}\mbox{]} = \$rating
+\item 
+\mbox{\hyperlink{location2_8php_a6155e8ce48c8718260df3f8062aacef4}{\$\+\_\+\+S\+E\+S\+S\+I\+ON}} \mbox{[}\char`\"{}outlook\char`\"{}\mbox{]} = \$outlook
+\item 
+\mbox{\hyperlink{location2_8php_a38f52f2d6c65f438e274d8664766df99}{\$long\+\_\+array}} = array()
+\item 
+\mbox{\hyperlink{location2_8php_a5ad3d8dee8a4e075b6e08f71a9126b7b}{\$lat\+\_\+array}} = array()
+\item 
+\mbox{\hyperlink{location2_8php_a82de05dbcc693b8360b6bf30353862ce}{\$place\+\_\+array}} = array()
+\item 
+\mbox{\hyperlink{location2_8php_ad3201bd3f499ce3b8c06ce5037c61678}{\$addr\+\_\+array}} = array()
+\item 
+\mbox{\hyperlink{location2_8php_a672d9707ef91db026c210f98cc601123}{endforeach}}
+\item 
+\mbox{\hyperlink{location2_8php_abc5aa76a6d1e1812e4a79fa9c461dc75}{lat}} = $<$?php echo json\+\_\+encode(\$lat\+\_\+array, J\+S\+O\+N\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+P\+R\+I\+NT)
+\item 
+Add\+Arr \mbox{\hyperlink{location2_8php_a46d39dd41e655011973f72d6e05166f8}{\$address\+\_\+array}} = array()
+\item 
+\mbox{\hyperlink{location2_8php_aa3e1691490aa8305c46d7bc7e0d7c9a4}{\$rate\+\_\+array}} = array()
+\item 
+\mbox{\hyperlink{location2_8php_ad58b7d50a3bd82ab3735f8b74fbfccd2}{\$my\+Markup\+Template}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{location2_8php_a94f49615449deadff259cd73979515b3}\label{location2_8php_a94f49615449deadff259cd73979515b3}} 
+\index{location2.\+php@{location2.\+php}!card\+\_\+printing@{card\+\_\+printing}}
+\index{card\+\_\+printing@{card\+\_\+printing}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{card\+\_\+printing()}{card\_printing()}}
+{\footnotesize\ttfamily card\+\_\+printing (\begin{DoxyParamCaption}\item[{}]{\$my\+Markup\+Template,  }\item[{}]{\$address\+\_\+array,  }\item[{}]{\$place\+\_\+array,  }\item[{}]{\$rate\+\_\+array }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{location2_8php_a8a5e05131617a16eedd7427eaf437329}\label{location2_8php_a8a5e05131617a16eedd7427eaf437329}} 
+\index{location2.\+php@{location2.\+php}!\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$\+\_\+\+S\+E\+S\+S\+I\+ON}{$\_SESSION}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}address\char`\"{}\mbox{]} = \$address}
+
+\mbox{\Hypertarget{location2_8php_a399d6844a8329f151f8fc16af8ce3f57}\label{location2_8php_a399d6844a8329f151f8fc16af8ce3f57}} 
+\index{location2.\+php@{location2.\+php}!\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$\+\_\+\+S\+E\+S\+S\+I\+ON}{$\_SESSION}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}latitude\char`\"{}\mbox{]} = \$latitude}
+
+\mbox{\Hypertarget{location2_8php_a92cb64f3b08cacc2f2e3eb4231d966b4}\label{location2_8php_a92cb64f3b08cacc2f2e3eb4231d966b4}} 
+\index{location2.\+php@{location2.\+php}!\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$\+\_\+\+S\+E\+S\+S\+I\+ON}{$\_SESSION}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}longitude\char`\"{}\mbox{]} = \$longitude}
+
+\mbox{\Hypertarget{location2_8php_acddeaa636a9daeb46d6c3b90710b06e1}\label{location2_8php_acddeaa636a9daeb46d6c3b90710b06e1}} 
+\index{location2.\+php@{location2.\+php}!\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$\+\_\+\+S\+E\+S\+S\+I\+ON}{$\_SESSION}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}placename\char`\"{}\mbox{]} = \$placename}
+
+\mbox{\Hypertarget{location2_8php_af0c8fc6207df0eb2b4e2b0badf84f944}\label{location2_8php_af0c8fc6207df0eb2b4e2b0badf84f944}} 
+\index{location2.\+php@{location2.\+php}!\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$\+\_\+\+S\+E\+S\+S\+I\+ON}{$\_SESSION}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}rating\char`\"{}\mbox{]} = \$rating}
+
+\mbox{\Hypertarget{location2_8php_a6155e8ce48c8718260df3f8062aacef4}\label{location2_8php_a6155e8ce48c8718260df3f8062aacef4}} 
+\index{location2.\+php@{location2.\+php}!\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}}
+\index{\$\+\_\+\+S\+E\+S\+S\+I\+ON@{\$\+\_\+\+S\+E\+S\+S\+I\+ON}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$\+\_\+\+S\+E\+S\+S\+I\+ON}{$\_SESSION}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \$\+\_\+\+S\+E\+S\+S\+I\+ON\mbox{[}\char`\"{}outlook\char`\"{}\mbox{]} = \$outlook}
+
+\mbox{\Hypertarget{location2_8php_ad3201bd3f499ce3b8c06ce5037c61678}\label{location2_8php_ad3201bd3f499ce3b8c06ce5037c61678}} 
+\index{location2.\+php@{location2.\+php}!\$addr\+\_\+array@{\$addr\+\_\+array}}
+\index{\$addr\+\_\+array@{\$addr\+\_\+array}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$addr\+\_\+array}{$addr\_array}}
+{\footnotesize\ttfamily \$addr\+\_\+array = array()}
+
+\mbox{\Hypertarget{location2_8php_a46d39dd41e655011973f72d6e05166f8}\label{location2_8php_a46d39dd41e655011973f72d6e05166f8}} 
+\index{location2.\+php@{location2.\+php}!\$address\+\_\+array@{\$address\+\_\+array}}
+\index{\$address\+\_\+array@{\$address\+\_\+array}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$address\+\_\+array}{$address\_array}}
+{\footnotesize\ttfamily Add\+Arr \$address\+\_\+array = array()}
+
+\mbox{\Hypertarget{location2_8php_a5ad3d8dee8a4e075b6e08f71a9126b7b}\label{location2_8php_a5ad3d8dee8a4e075b6e08f71a9126b7b}} 
+\index{location2.\+php@{location2.\+php}!\$lat\+\_\+array@{\$lat\+\_\+array}}
+\index{\$lat\+\_\+array@{\$lat\+\_\+array}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$lat\+\_\+array}{$lat\_array}}
+{\footnotesize\ttfamily \$lat\+\_\+array = array()}
+
+\mbox{\Hypertarget{location2_8php_a38f52f2d6c65f438e274d8664766df99}\label{location2_8php_a38f52f2d6c65f438e274d8664766df99}} 
+\index{location2.\+php@{location2.\+php}!\$long\+\_\+array@{\$long\+\_\+array}}
+\index{\$long\+\_\+array@{\$long\+\_\+array}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$long\+\_\+array}{$long\_array}}
+{\footnotesize\ttfamily \$long\+\_\+array = array()}
+
+\mbox{\Hypertarget{location2_8php_ad58b7d50a3bd82ab3735f8b74fbfccd2}\label{location2_8php_ad58b7d50a3bd82ab3735f8b74fbfccd2}} 
+\index{location2.\+php@{location2.\+php}!\$my\+Markup\+Template@{\$my\+Markup\+Template}}
+\index{\$my\+Markup\+Template@{\$my\+Markup\+Template}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$my\+Markup\+Template}{$myMarkupTemplate}}
+{\footnotesize\ttfamily \$my\+Markup\+Template}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'<v-card>}
+\textcolor{stringliteral}{<v-list-tile avatar><v-list-tile-content>}
+\textcolor{stringliteral}{<v-list-tile-sub-title><i class="material-icons">local\_dining</i> Name :  [\_PLACE\_]
+       </v-list-tile-sub-title>}
+\textcolor{stringliteral}{<v-list-tile-sub-title><i class="material-icons">location\_on</i> Address :
+       [\_ADDRESS\_]</v-list-tile-sub-title>}
+\textcolor{stringliteral}{<v-list-tile-sub-title><i class="material-icons">assessment</i> Rating : [\_RATING\_]
+       </v-list-tile-sub-title>}
+\textcolor{stringliteral}{</v-list-tile-content></v-list-tile></v-card>}
+\textcolor{stringliteral}{&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+       &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}
+\textcolor{stringliteral}{'}
+\end{DoxyCode}
+\mbox{\Hypertarget{location2_8php_a82de05dbcc693b8360b6bf30353862ce}\label{location2_8php_a82de05dbcc693b8360b6bf30353862ce}} 
+\index{location2.\+php@{location2.\+php}!\$place\+\_\+array@{\$place\+\_\+array}}
+\index{\$place\+\_\+array@{\$place\+\_\+array}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$place\+\_\+array}{$place\_array}}
+{\footnotesize\ttfamily \$place\+\_\+array = array()}
+
+\mbox{\Hypertarget{location2_8php_aa3e1691490aa8305c46d7bc7e0d7c9a4}\label{location2_8php_aa3e1691490aa8305c46d7bc7e0d7c9a4}} 
+\index{location2.\+php@{location2.\+php}!\$rate\+\_\+array@{\$rate\+\_\+array}}
+\index{\$rate\+\_\+array@{\$rate\+\_\+array}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{\$rate\+\_\+array}{$rate\_array}}
+{\footnotesize\ttfamily \$rate\+\_\+array = array()}
+
+\mbox{\Hypertarget{location2_8php_a672d9707ef91db026c210f98cc601123}\label{location2_8php_a672d9707ef91db026c210f98cc601123}} 
+\index{location2.\+php@{location2.\+php}!endforeach@{endforeach}}
+\index{endforeach@{endforeach}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{endforeach}{endforeach}}
+{\footnotesize\ttfamily endforeach}
+
+\mbox{\Hypertarget{location2_8php_abc5aa76a6d1e1812e4a79fa9c461dc75}\label{location2_8php_abc5aa76a6d1e1812e4a79fa9c461dc75}} 
+\index{location2.\+php@{location2.\+php}!lat@{lat}}
+\index{lat@{lat}!location2.\+php@{location2.\+php}}
+\subsubsection{\texorpdfstring{lat}{lat}}
+{\footnotesize\ttfamily lat = $<$?php echo json\+\_\+encode(\$lat\+\_\+array, J\+S\+O\+N\+\_\+\+P\+R\+E\+T\+T\+Y\+\_\+\+P\+R\+I\+NT)}
+

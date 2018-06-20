@@ -1,0 +1,202 @@
+\hypertarget{class_file___iterator}{}\section{File\+\_\+\+Iterator Class Reference}
+\label{class_file___iterator}\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+Inheritance diagram for File\+\_\+\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_file___iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file___iterator_a2b2c79c136d4bf89ff9386ea9c00bb79}{\+\_\+\+\_\+construct}} (Iterator \$iterator, array \$suffixes=array(), array \$prefixes=array(), array \$exclude=array(), \$basepath=N\+U\+LL)
+\item 
+\mbox{\hyperlink{class_file___iterator_acb64affba32059c09533892d9ded224a}{accept}} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_file___iterator_a2a00ef970c682ccf10b5376d22fa5c8a}{P\+R\+E\+F\+IX}} = 0
+\item 
+const \mbox{\hyperlink{class_file___iterator_a4c9304aab4e45943e021a2d495b546b4}{S\+U\+F\+F\+IX}} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file___iterator_af5fc60f73c711885bc29e74a37f7973c}{accept\+Path}} (\$path)
+\item 
+\mbox{\hyperlink{class_file___iterator_a3654bbc5c3c3b0500489a0b04b72ec5e}{accept\+Prefix}} (\$filename)
+\item 
+\mbox{\hyperlink{class_file___iterator_a0657a6bfd5359447b58a0c5f85eb8c27}{accept\+Suffix}} (\$filename)
+\item 
+\mbox{\hyperlink{class_file___iterator_ab44457337040c072c2992a5c71f3ca3f}{accept\+Sub\+String}} (\$filename, array \$sub\+Strings, \$type)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file___iterator_ab2b9f96bf57b5bbe59371e5917e40021}{\$suffixes}} = array()
+\item 
+\mbox{\hyperlink{class_file___iterator_a8dd2685d77e3731afd50eaa21c4f2055}{\$prefixes}} = array()
+\item 
+\mbox{\hyperlink{class_file___iterator_aa9e9e35cde2e009dabb6a066e3202c5c}{\$exclude}} = array()
+\item 
+\mbox{\hyperlink{class_file___iterator_aee22d3e80d6c5b8fd389a129b9f468e3}{\$basepath}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Filter\+Iterator implementation that filters files based on prefix(es) and/or suffix(es). Hidden files and files from hidden directories are also filtered.
+
+\begin{DoxySince}{Since}
+Class available since Release 1.\+0.\+0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_file___iterator_a2b2c79c136d4bf89ff9386ea9c00bb79}\label{class_file___iterator_a2b2c79c136d4bf89ff9386ea9c00bb79}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Iterator}]{\$iterator,  }\item[{array}]{\$suffixes = {\ttfamily array()},  }\item[{array}]{\$prefixes = {\ttfamily array()},  }\item[{array}]{\$exclude = {\ttfamily array()},  }\item[{}]{\$basepath = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Iterator & {\em \$iterator} & \\
+\hline
+array & {\em \$suffixes} & \\
+\hline
+array & {\em \$prefixes} & \\
+\hline
+array & {\em \$exclude} & \\
+\hline
+string & {\em \$basepath} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file___iterator_acb64affba32059c09533892d9ded224a}\label{class_file___iterator_acb64affba32059c09533892d9ded224a}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!accept@{accept}}
+\index{accept@{accept}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_file___iterator_af5fc60f73c711885bc29e74a37f7973c}\label{class_file___iterator_af5fc60f73c711885bc29e74a37f7973c}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!accept\+Path@{accept\+Path}}
+\index{accept\+Path@{accept\+Path}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{accept\+Path()}{acceptPath()}}
+{\footnotesize\ttfamily accept\+Path (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_file___iterator_a3654bbc5c3c3b0500489a0b04b72ec5e}\label{class_file___iterator_a3654bbc5c3c3b0500489a0b04b72ec5e}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!accept\+Prefix@{accept\+Prefix}}
+\index{accept\+Prefix@{accept\+Prefix}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{accept\+Prefix()}{acceptPrefix()}}
+{\footnotesize\ttfamily accept\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_file___iterator_ab44457337040c072c2992a5c71f3ca3f}\label{class_file___iterator_ab44457337040c072c2992a5c71f3ca3f}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!accept\+Sub\+String@{accept\+Sub\+String}}
+\index{accept\+Sub\+String@{accept\+Sub\+String}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{accept\+Sub\+String()}{acceptSubString()}}
+{\footnotesize\ttfamily accept\+Sub\+String (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{array}]{\$sub\+Strings,  }\item[{}]{\$type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+array & {\em \$sub\+Strings} & \\
+\hline
+int & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+1.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_file___iterator_a0657a6bfd5359447b58a0c5f85eb8c27}\label{class_file___iterator_a0657a6bfd5359447b58a0c5f85eb8c27}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!accept\+Suffix@{accept\+Suffix}}
+\index{accept\+Suffix@{accept\+Suffix}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{accept\+Suffix()}{acceptSuffix()}}
+{\footnotesize\ttfamily accept\+Suffix (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+Method available since Release 1.\+1.\+0 
+\end{DoxySince}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_file___iterator_aee22d3e80d6c5b8fd389a129b9f468e3}\label{class_file___iterator_aee22d3e80d6c5b8fd389a129b9f468e3}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!\$basepath@{\$basepath}}
+\index{\$basepath@{\$basepath}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{\$basepath}{$basepath}}
+{\footnotesize\ttfamily \$basepath\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_file___iterator_aa9e9e35cde2e009dabb6a066e3202c5c}\label{class_file___iterator_aa9e9e35cde2e009dabb6a066e3202c5c}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!\$exclude@{\$exclude}}
+\index{\$exclude@{\$exclude}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{\$exclude}{$exclude}}
+{\footnotesize\ttfamily \$exclude = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_file___iterator_a8dd2685d77e3731afd50eaa21c4f2055}\label{class_file___iterator_a8dd2685d77e3731afd50eaa21c4f2055}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!\$prefixes@{\$prefixes}}
+\index{\$prefixes@{\$prefixes}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{\$prefixes}{$prefixes}}
+{\footnotesize\ttfamily \$prefixes = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_file___iterator_ab2b9f96bf57b5bbe59371e5917e40021}\label{class_file___iterator_ab2b9f96bf57b5bbe59371e5917e40021}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!\$suffixes@{\$suffixes}}
+\index{\$suffixes@{\$suffixes}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{\$suffixes}{$suffixes}}
+{\footnotesize\ttfamily \$suffixes = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_file___iterator_a2a00ef970c682ccf10b5376d22fa5c8a}\label{class_file___iterator_a2a00ef970c682ccf10b5376d22fa5c8a}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!P\+R\+E\+F\+IX@{P\+R\+E\+F\+IX}}
+\index{P\+R\+E\+F\+IX@{P\+R\+E\+F\+IX}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{P\+R\+E\+F\+IX}{PREFIX}}
+{\footnotesize\ttfamily const P\+R\+E\+F\+IX = 0}
+
+\mbox{\Hypertarget{class_file___iterator_a4c9304aab4e45943e021a2d495b546b4}\label{class_file___iterator_a4c9304aab4e45943e021a2d495b546b4}} 
+\index{File\+\_\+\+Iterator@{File\+\_\+\+Iterator}!S\+U\+F\+F\+IX@{S\+U\+F\+F\+IX}}
+\index{S\+U\+F\+F\+IX@{S\+U\+F\+F\+IX}!File\+\_\+\+Iterator@{File\+\_\+\+Iterator}}
+\subsubsection{\texorpdfstring{S\+U\+F\+F\+IX}{SUFFIX}}
+{\footnotesize\ttfamily const S\+U\+F\+F\+IX = 1}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/php-\/file-\/iterator/src/\mbox{\hyperlink{php-file-iterator_2src_2_iterator_8php}{Iterator.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage =
+[
+    [ "__construct", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a94e4e6474f7c4fbff9031fd4fcb1b474", null ],
+    [ "append", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#afa3516eb63cd6982dffa681809eca301", null ],
+    [ "clear", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#aa821bec12eaa7e0f649397c9675ff505", null ],
+    [ "filter", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a8122d3c1ef2a61359b75a97363a4d89b", null ],
+    [ "getCacheTokens", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a9e4eaafba047966518cf9f6bea33178c", null ],
+    [ "getData", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a9e4f10fba0a72e8c5996f208ff0b5ff4", null ],
+    [ "getReport", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a36065960e56a8f2637e2fb05bc233c80", null ],
+    [ "getTests", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a7e247dd31cc8d37a6c97353a062a0080", null ],
+    [ "initializeData", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a8e1839f9e7441ef2a15a3f5ca8fa6f8e", null ],
+    [ "merge", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a04b35d43796663b26e700121d470fcd5", null ],
+    [ "setAddUncoveredFilesFromWhitelist", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#ad44544c8a0374f6e2f7ea5891e48482e", null ],
+    [ "setCacheTokens", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a8d6be494c0faae91a22d54ebeb5d44d6", null ],
+    [ "setCheckForMissingCoversAnnotation", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a4019571d0ffdaec6d7ed82bfc9c63a3f", null ],
+    [ "setCheckForUnexecutedCoveredCode", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a14b5d6d664720244707639128049c5a7", null ],
+    [ "setCheckForUnintentionallyCoveredCode", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#abdddd905c15d97e2ac919b4be5a2e871", null ],
+    [ "setData", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a87449bdd364c33ff024d32896342bf31", null ],
+    [ "setDisableIgnoredLines", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a8152f4cd4000263cb825a676467f73fc", null ],
+    [ "setForceCoversAnnotation", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a8dd1a5b0c1b64d4653469e29fc887cfc", null ],
+    [ "setIgnoreDeprecatedCode", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#ae3320d14992a14b02988637c2ec551d6", null ],
+    [ "setMapTestClassNameToCoveredClassName", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a881f8559d4ae2daf76b9a2bd27dd25e5", null ],
+    [ "setProcessUncoveredFilesFromWhitelist", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#ae74f3c174591e178c96db3c38b215f4e", null ],
+    [ "setTests", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a1607846b217222c6cdb30a847bdd0379", null ],
+    [ "setUnintentionallyCoveredSubclassesWhitelist", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#a80819a1fdf997603911030134fd11eba", null ],
+    [ "start", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#ada10201232dd18f2f08d15b4d97b4dbf", null ],
+    [ "stop", "class_sebastian_bergmann_1_1_code_coverage_1_1_code_coverage.html#aa2991d22848434e3ab488fbbbf803849", null ]
+];

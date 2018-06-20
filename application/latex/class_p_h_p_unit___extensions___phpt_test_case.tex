@@ -1,0 +1,141 @@
+\hypertarget{class_p_h_p_unit___extensions___phpt_test_case}{}\section{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case Class Reference}
+\label{class_p_h_p_unit___extensions___phpt_test_case}\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_h_p_unit___extensions___phpt_test_case}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_aa1f8d64ed3524f00ad87c3776060c456}{\+\_\+\+\_\+construct}} (\$filename, \$php\+Util=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_aba2e5a83092b40735a7a61c572cd6256}{run}} (\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} \$result=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_ad069d30738c82a20b6241c92e4dfa747}{parse\+Ini\+Section}} (\$content)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___phpt_test_case_a54fbac54a98251a8c37db93e67c4277f}{parse\+Env\+Section}} (\$content)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runner for P\+H\+PT test cases. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_aa1f8d64ed3524f00ad87c3776060c456}\label{class_p_h_p_unit___extensions___phpt_test_case_aa1f8d64ed3524f00ad87c3776060c456}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$filename,  }\item[{}]{\$php\+Util = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Constructs a test case with the given filename.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\mbox{\hyperlink{class_p_h_p_unit___util___p_h_p}{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+P\+HP}} & {\em \$php\+Util} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_p_h_p_unit___extensions___phpt_test_case_ac751e87b3d4c4bf2feb03bee8b092755}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!count@{count}}
+\index{count@{count}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Counts the number of test cases executed by run(\+Test\+Result result).
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_a3d0963e68bb313b163a73f2803c64600}\label{class_p_h_p_unit___extensions___phpt_test_case_a3d0963e68bb313b163a73f2803c64600}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the test case.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_a54fbac54a98251a8c37db93e67c4277f}\label{class_p_h_p_unit___extensions___phpt_test_case_a54fbac54a98251a8c37db93e67c4277f}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!parse\+Env\+Section@{parse\+Env\+Section}}
+\index{parse\+Env\+Section@{parse\+Env\+Section}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{parse\+Env\+Section()}{parseEnvSection()}}
+{\footnotesize\ttfamily parse\+Env\+Section (\begin{DoxyParamCaption}\item[{}]{\$content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_ad069d30738c82a20b6241c92e4dfa747}\label{class_p_h_p_unit___extensions___phpt_test_case_ad069d30738c82a20b6241c92e4dfa747}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!parse\+Ini\+Section@{parse\+Ini\+Section}}
+\index{parse\+Ini\+Section@{parse\+Ini\+Section}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{parse\+Ini\+Section()}{parseIniSection()}}
+{\footnotesize\ttfamily parse\+Ini\+Section (\begin{DoxyParamCaption}\item[{}]{\$content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse --I\+NI-- section key value pairs and return as array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_aba2e5a83092b40735a7a61c572cd6256}\label{class_p_h_p_unit___extensions___phpt_test_case_aba2e5a83092b40735a7a61c572cd6256}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!run@{run}}
+\index{run@{run}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}}}]{\$result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Runs a test and collects its result in a Test\+Result instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___test_aba2e5a83092b40735a7a61c572cd6256}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___phpt_test_case_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___extensions___phpt_test_case_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Phpt\+Test\+Case}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the test case.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Extensions/\mbox{\hyperlink{_phpt_test_case_8php}{Phpt\+Test\+Case.\+php}}\end{DoxyCompactItemize}

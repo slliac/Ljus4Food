@@ -1,0 +1,93 @@
+\hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_array__}{}\section{Array\+\_\+ Class Reference}
+\label{classphp_documentor_1_1_reflection_1_1_types_1_1_array__}\index{Array\+\_\+@{Array\+\_\+}}
+Inheritance diagram for Array\+\_\+\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classphp_documentor_1_1_reflection_1_1_types_1_1_array__}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a9acd936edf9b2db3830804345a804f68}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} \$value\+Type=null, \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} \$key\+Type=null)
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a2997a81ff329b8d8031c1a13b12cc5f6}{get\+Key\+Type}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a54471d3ffde79f0dd0f32938c36f75df}{get\+Value\+Type}} ()
+\item 
+\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an array type as described in the P\+S\+R-\/5, the P\+H\+P\+Doc Standard.
+
+An array can be represented in two forms\+:
+
+
+\begin{DoxyEnumerate}
+\item Untyped ({\ttfamily array}), where the key and value type is unknown and hence classified as \textquotesingle{}\mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_types_1_1_mixed__}{Mixed\+\_\+}}\textquotesingle{}.
+\item \mbox{\hyperlink{namespacephp_documentor_1_1_reflection_1_1_types}{Types}} ({\ttfamily string\mbox{[}\mbox{]}}), where the value type is provided by preceding an opening and closing square bracket with a type name. 
+\end{DoxyEnumerate}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a9acd936edf9b2db3830804345a804f68}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a9acd936edf9b2db3830804345a804f68}} 
+\index{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}}}]{\$value\+Type = {\ttfamily null},  }\item[{\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}}}]{\$key\+Type = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Initializes this representation of an array with the given \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} or \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_fqsen}{Fqsen}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} & {\em \$value\+Type} & \\
+\hline
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} & {\em \$key\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a7516ca30af0db3cdbf9a7739b48ce91d}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a7516ca30af0db3cdbf9a7739b48ce91d}} 
+\index{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
+\index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+to\+String()}{\_\_toString()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a rendered output of the \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} as it would be used in a \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block}{Doc\+Block}}.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type_a7516ca30af0db3cdbf9a7739b48ce91d}{Type}}.
+
+\mbox{\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a2997a81ff329b8d8031c1a13b12cc5f6}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a2997a81ff329b8d8031c1a13b12cc5f6}} 
+\index{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}!get\+Key\+Type@{get\+Key\+Type}}
+\index{get\+Key\+Type@{get\+Key\+Type}!php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}}
+\subsubsection{\texorpdfstring{get\+Key\+Type()}{getKeyType()}}
+{\footnotesize\ttfamily get\+Key\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the type for the keys of this array.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a54471d3ffde79f0dd0f32938c36f75df}\label{classphp_documentor_1_1_reflection_1_1_types_1_1_array___a54471d3ffde79f0dd0f32938c36f75df}} 
+\index{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}!get\+Value\+Type@{get\+Value\+Type}}
+\index{get\+Value\+Type@{get\+Value\+Type}!php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+@{php\+Documentor\+::\+Reflection\+::\+Types\+::\+Array\+\_\+}}
+\subsubsection{\texorpdfstring{get\+Value\+Type()}{getValueType()}}
+{\footnotesize\ttfamily get\+Value\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the value for the keys of this array.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interfacephp_documentor_1_1_reflection_1_1_type}{Type}} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpdocumentor/type-\/resolver/src/\+Types/\mbox{\hyperlink{_array___8php}{Array\+\_\+.\+php}}\end{DoxyCompactItemize}

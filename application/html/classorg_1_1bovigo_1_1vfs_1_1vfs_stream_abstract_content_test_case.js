@@ -1,0 +1,25 @@
+var classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case =
+[
+    [ "allPermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a1fb7908975f38de32ec26d317d4ebcd7", null ],
+    [ "allPermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a43a6b8d1e8dd9650953d53ca46549a33", null ],
+    [ "allPermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#abe6d91fa637aaf11277c22ef12935612", null ],
+    [ "executeAndWritePermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a9212832cd8e60da82b4d08079bcde560", null ],
+    [ "executeAndWritePermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a66a8fcf70a2001f507b27c994e27ad63", null ],
+    [ "executeAndWritePermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a3e6420eb16eaac8a2b0a12a38fabc5ba", null ],
+    [ "executePermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#aa015010ab7c2925cbeca2bb9552ca074", null ],
+    [ "executePermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a359862ff710493907048752989121f99", null ],
+    [ "executePermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#ab0d9bdbc593bb5932f52beb36ba6edad", null ],
+    [ "noPermissionsForEveryone", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a2016c9159e4db38000f3cf997f03c34e", null ],
+    [ "readAndExecutePermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a71329dcd89c006768739acc965b2b334", null ],
+    [ "readAndExecutePermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a713e1698c5988a8b6007256ea2604a66", null ],
+    [ "readAndExecutePermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a95c84b0a7e998181eb475256a0a67273", null ],
+    [ "readAndWritePermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a2cddeac13c503780132c9957b376b82e", null ],
+    [ "readAndWritePermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a8d9bdccf7ce2359ba4473923f3ab0428", null ],
+    [ "readAndWritePermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a2b170c63c965dc3ccb045f7feb69c2a8", null ],
+    [ "readPermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a2c0c308a36f38375735c2a4eb4061f17", null ],
+    [ "readPermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a24f7bb4f8eb515d166b44be50e279b92", null ],
+    [ "readPermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a6a585ca4a3a191fc218037adc0a54aa2", null ],
+    [ "writePermissionsForGroup", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a29f571f4170ff2d0eb63dbdf25b0b145", null ],
+    [ "writePermissionsForOther", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#aea2f7673dc8b0d80145425e23134192b", null ],
+    [ "writePermissionsForUser", "classorg_1_1bovigo_1_1vfs_1_1vfs_stream_abstract_content_test_case.html#a7814ee134ab1929732647be7584beef3", null ]
+];

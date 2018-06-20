@@ -1,0 +1,96 @@
+\hypertarget{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters Class Reference}
+\label{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.758621cm]{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a9d55c6db3fa333f0119501e3a70f452d}{\+\_\+\+\_\+construct}} (array \$parameter\+Groups)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a4988c6fa11e275302172d0a4ae32dd3a}{matches}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} \$invocation)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_aa33600b6a1b28d0c4dfe4d468272aaa4}{verify}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Invocation matcher which looks for sets of specific parameters in the invocations.
+
+Checks the parameters of the incoming invocations, the parameter list is checked against the defined constraints in \$parameters. If the constraint is met it will return true in \mbox{\hyperlink{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a4988c6fa11e275302172d0a4ae32dd3a}{matches()}}.
+
+It takes a list of match groups and and increases a call index after each invocation. So the first invocation uses the first group of constraints, the second the next and so on. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a9d55c6db3fa333f0119501e3a70f452d}\label{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a9d55c6db3fa333f0119501e3a70f452d}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$parameter\+Groups }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameter\+Groups} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a4988c6fa11e275302172d0a4ae32dd3a}\label{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a4988c6fa11e275302172d0a4ae32dd3a}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}!matches@{matches}}
+\index{matches@{matches}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}}
+\subsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}}}]{\$invocation }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___invocation}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Invocation}} & {\em \$invocation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___matcher___invocation_a4988c6fa11e275302172d0a4ae32dd3a}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Invocation}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_aa33600b6a1b28d0c4dfe4d468272aaa4}\label{class_p_h_p_unit___framework___mock_object___matcher___consecutive_parameters_aa33600b6a1b28d0c4dfe4d468272aaa4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}!verify@{verify}}
+\index{verify@{verify}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Matcher\+\_\+\+Consecutive\+Parameters}}
+\subsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily verify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Verifies that the current expectation is valid. If everything is OK the code should just return, if not it must throw an exception.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___expectation_failed_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___mock_object___verifiable_aa33600b6a1b28d0c4dfe4d468272aaa4}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Mock\+Object\+\_\+\+Verifiable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit-\/mock-\/objects/src/\+Framework/\+Mock\+Object/\+Matcher/\mbox{\hyperlink{_consecutive_parameters_8php}{Consecutive\+Parameters.\+php}}\end{DoxyCompactItemize}

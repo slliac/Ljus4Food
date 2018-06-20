@@ -1,0 +1,111 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___traversable_contains_only}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only Class Reference}
+\label{class_p_h_p_unit___framework___constraint___traversable_contains_only}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.393162cm]{class_p_h_p_unit___framework___constraint___traversable_contains_only}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only_abd41f377485d8ee29f44da7ed819cf6d}{\+\_\+\+\_\+construct}} (\$type, \$is\+Native\+Type=true)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only_a4c184790087f7d42c3daf0d0180fe5fb}{evaluate}} (\$other, \$description=\textquotesingle{}\textquotesingle{}, \$return\+Result=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only_a50d9f10107fdcde72e77c91a07d654cd}{\$constraint}}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___traversable_contains_only_a9a4a6fba2208984cabb3afacadf33919}{\$type}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Constraint that asserts that the Traversable it is applied to contains only values of a given type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___traversable_contains_only_abd41f377485d8ee29f44da7ed819cf6d}\label{class_p_h_p_unit___framework___constraint___traversable_contains_only_abd41f377485d8ee29f44da7ed819cf6d}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$type,  }\item[{}]{\$is\+Native\+Type = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+bool & {\em \$is\+Native\+Type} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___traversable_contains_only_a4c184790087f7d42c3daf0d0180fe5fb}\label{class_p_h_p_unit___framework___constraint___traversable_contains_only_a4c184790087f7d42c3daf0d0180fe5fb}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}}
+\subsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily evaluate (\begin{DoxyParamCaption}\item[{}]{\$other,  }\item[{}]{\$description = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$return\+Result = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Evaluates the constraint for parameter \$other
+
+If \$return\+Result is set to false (the default), an exception is thrown in case of a failure. null is returned otherwise.
+
+If \$return\+Result is true, the result of the evaluation is returned as a boolean value instead\+: true in case of success, false in case of a failure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Value or object to evaluate. \\
+\hline
+string & {\em \$description} & Additional information about the test \\
+\hline
+bool & {\em \$return\+Result} & Whether to return a result or throw an exception\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___expectation_failed_exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Expectation\+Failed\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___traversable_contains_only_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___constraint___traversable_contains_only_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___traversable_contains_only_a50d9f10107fdcde72e77c91a07d654cd}\label{class_p_h_p_unit___framework___constraint___traversable_contains_only_a50d9f10107fdcde72e77c91a07d654cd}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}!\$constraint@{\$constraint}}
+\index{\$constraint@{\$constraint}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}}
+\subsubsection{\texorpdfstring{\$constraint}{$constraint}}
+{\footnotesize\ttfamily \$constraint\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___traversable_contains_only_a9a4a6fba2208984cabb3afacadf33919}\label{class_p_h_p_unit___framework___constraint___traversable_contains_only_a9a4a6fba2208984cabb3afacadf33919}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}!\$type@{\$type}}
+\index{\$type@{\$type}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Traversable\+Contains\+Only}}
+\subsubsection{\texorpdfstring{\$type}{$type}}
+{\footnotesize\ttfamily \$type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_traversable_contains_only_8php}{Traversable\+Contains\+Only.\+php}}\end{DoxyCompactItemize}

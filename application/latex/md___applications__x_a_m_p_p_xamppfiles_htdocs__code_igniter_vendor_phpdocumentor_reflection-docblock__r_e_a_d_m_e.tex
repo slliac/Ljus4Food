@@ -1,0 +1,56 @@
+\subsection*{Introduction }
+
+The Reflection\+Doc\+Block component of \mbox{\hyperlink{namespacephp_documentor}{php\+Documentor}} provides a Doc\+Block parser that is 100\% compatible with the \href{http://phpdoc.org/docs/latest}{\tt P\+H\+P\+Doc standard}.
+
+With this component, a library can provide support for annotations via Doc\+Blocks or otherwise retrieve information that is embedded in a Doc\+Block.
+
+\subsection*{Installation }
+
+
+\begin{DoxyCode}
+composer require phpdocumentor/reflection-docblock
+\end{DoxyCode}
+
+
+\subsection*{Usage }
+
+In order to parse the Doc\+Block one needs a Doc\+Block\+Factory that can be instantiated using its {\ttfamily create\+Instance} factory method like this\+:
+
+
+\begin{DoxyCode}
+$factory  = \mbox{\hyperlink{classphp_documentor_1_1_reflection_1_1_doc_block_factory_a220aa312016b6fa0c9a6c4bf61a7ead4}{\(\backslash\)phpDocumentor\(\backslash\)Reflection\(\backslash\)DocBlockFactory::createInstance}}
+      ();
+\end{DoxyCode}
+
+
+Then we can use the {\ttfamily create} method of the factory to interpret the Doc\+Block. Please note that it is also possible to provide a class that has the {\ttfamily get\+Doc\+Comment()} method, such as an object of type {\ttfamily Reflection\+Class}, the create method will read that if it exists.
+
+
+\begin{DoxyCode}
+$docComment = <<<DOCCOMMENT
+DOCCOMMENT;
+
+$docblock = $factory->create($docComment);
+\end{DoxyCode}
+
+
+The {\ttfamily create} method will yield an object of type {\ttfamily \textbackslash{}\mbox{\hyperlink{namespacephp_documentor}{php\+Documentor}}\textbackslash{}Reflection\textbackslash{}Doc\+Block} whose methods can be queried\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Contains the summary for this DocBlock}
+$summary = $docblock->getSummary();
+
+\textcolor{comment}{// Contains \(\backslash\)phpDocumentor\(\backslash\)Reflection\(\backslash\)DocBlock\(\backslash\)Description object}
+$description = $docblock->getDescription();
+
+\textcolor{comment}{// You can either cast it to string}
+$description = (string) $docblock->getDescription();
+
+\textcolor{comment}{// Or use the render method to get a string representation of the Description.}
+$description = $docblock->getDescription()->render();
+\end{DoxyCode}
+
+
+\begin{quote}
+For more examples it would be best to review the scripts in the \href{/examples}{\tt {\ttfamily /examples} folder}.\end{quote}

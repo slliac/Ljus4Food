@@ -1,0 +1,136 @@
+\hypertarget{class_p_h_p_unit___util___printer}{}\section{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer Class Reference}
+\label{class_p_h_p_unit___util___printer}\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.916031cm]{class_p_h_p_unit___util___printer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_a058d0261b18ee18c9fad1ffb1d08775c}{\+\_\+\+\_\+construct}} (\$out=null)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_a7751f77b5263bcf940ece6e824a05b38}{flush}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_acf90e383b291bfaaccee1014f70fe3dc}{incremental\+Flush}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_ab3c1b3a323cbbf707c55cc3cd3efd811}{write}} (\$buffer)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_a7f7730a383eca33e065cd8e709f5de12}{get\+Auto\+Flush}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_a5513242b573a539641e99f27182b7623}{set\+Auto\+Flush}} (\$auto\+Flush)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_aef8c7c76f1d8d3bce4c43e7e6d736f3a}{\$auto\+Flush}} = false
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_a48cb304902320d173a4eaa41543327b9}{\$out}}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___util___printer_a4b838464425ac549611cb6b833f65793}{\$out\+Target}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class that can print to S\+T\+D\+O\+UT or write to a file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_a058d0261b18ee18c9fad1ffb1d08775c}\label{class_p_h_p_unit___util___printer_a058d0261b18ee18c9fad1ffb1d08775c}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$out = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$out} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_p_h_p_unit___framework___exception}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Exception}}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_a7751f77b5263bcf940ece6e824a05b38}\label{class_p_h_p_unit___util___printer_a7751f77b5263bcf940ece6e824a05b38}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!flush@{flush}}
+\index{flush@{flush}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Flush buffer and close output if it\textquotesingle{}s not to a P\+HP stream \mbox{\Hypertarget{class_p_h_p_unit___util___printer_a7f7730a383eca33e065cd8e709f5de12}\label{class_p_h_p_unit___util___printer_a7f7730a383eca33e065cd8e709f5de12}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!get\+Auto\+Flush@{get\+Auto\+Flush}}
+\index{get\+Auto\+Flush@{get\+Auto\+Flush}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{get\+Auto\+Flush()}{getAutoFlush()}}
+{\footnotesize\ttfamily get\+Auto\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check auto-\/flush mode.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_acf90e383b291bfaaccee1014f70fe3dc}\label{class_p_h_p_unit___util___printer_acf90e383b291bfaaccee1014f70fe3dc}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!incremental\+Flush@{incremental\+Flush}}
+\index{incremental\+Flush@{incremental\+Flush}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{incremental\+Flush()}{incrementalFlush()}}
+{\footnotesize\ttfamily incremental\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performs a safe, incremental flush.
+
+Do not confuse this function with the \mbox{\hyperlink{class_p_h_p_unit___util___printer_a7751f77b5263bcf940ece6e824a05b38}{flush()}} function of this class, since the \mbox{\hyperlink{class_p_h_p_unit___util___printer_a7751f77b5263bcf940ece6e824a05b38}{flush()}} function may close the file being written to, rendering the current object no longer usable. \mbox{\Hypertarget{class_p_h_p_unit___util___printer_a5513242b573a539641e99f27182b7623}\label{class_p_h_p_unit___util___printer_a5513242b573a539641e99f27182b7623}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!set\+Auto\+Flush@{set\+Auto\+Flush}}
+\index{set\+Auto\+Flush@{set\+Auto\+Flush}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{set\+Auto\+Flush()}{setAutoFlush()}}
+{\footnotesize\ttfamily set\+Auto\+Flush (\begin{DoxyParamCaption}\item[{}]{\$auto\+Flush }\end{DoxyParamCaption})}
+
+Set auto-\/flushing mode.
+
+If set, {\itshape incremental} flushes will be done after each write. This should not be confused with the different effects of this class\textquotesingle{} \mbox{\hyperlink{class_p_h_p_unit___util___printer_a7751f77b5263bcf940ece6e824a05b38}{flush()}} method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$auto\+Flush} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_ab3c1b3a323cbbf707c55cc3cd3efd811}\label{class_p_h_p_unit___util___printer_ab3c1b3a323cbbf707c55cc3cd3efd811}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!write@{write}}
+\index{write@{write}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily write (\begin{DoxyParamCaption}\item[{}]{\$buffer }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buffer} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_aef8c7c76f1d8d3bce4c43e7e6d736f3a}\label{class_p_h_p_unit___util___printer_aef8c7c76f1d8d3bce4c43e7e6d736f3a}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!\$auto\+Flush@{\$auto\+Flush}}
+\index{\$auto\+Flush@{\$auto\+Flush}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{\$auto\+Flush}{$autoFlush}}
+{\footnotesize\ttfamily \$auto\+Flush = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_a48cb304902320d173a4eaa41543327b9}\label{class_p_h_p_unit___util___printer_a48cb304902320d173a4eaa41543327b9}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!\$out@{\$out}}
+\index{\$out@{\$out}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{\$out}{$out}}
+{\footnotesize\ttfamily \$out\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___util___printer_a4b838464425ac549611cb6b833f65793}\label{class_p_h_p_unit___util___printer_a4b838464425ac549611cb6b833f65793}} 
+\index{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}!\$out\+Target@{\$out\+Target}}
+\index{\$out\+Target@{\$out\+Target}!P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer@{P\+H\+P\+Unit\+\_\+\+Util\+\_\+\+Printer}}
+\subsubsection{\texorpdfstring{\$out\+Target}{$outTarget}}
+{\footnotesize\ttfamily \$out\+Target\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Util/\mbox{\hyperlink{_printer_8php}{Printer.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,189 @@
+\hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter}{}\section{Filter Class Reference}
+\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter}\index{Filter@{Filter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a2bcc1c479fa74e9a5b03ad497dcb5525}{add\+Directory\+To\+Whitelist}} (\$directory, \$suffix=\textquotesingle{}.php\textquotesingle{}, \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a72c5200d3fb8588e4cce9f9b340be179}{add\+File\+To\+Whitelist}} (\$filename)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a988d1f57218a3308ba7f19f7f3fd5aa1}{add\+Files\+To\+Whitelist}} (array \$files)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a8fcc5366aa6c6772275d64b81c6f842a}{remove\+Directory\+From\+Whitelist}} (\$directory, \$suffix=\textquotesingle{}.php\textquotesingle{}, \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_aef8d8fda014043856367e415855bfe9d}{remove\+File\+From\+Whitelist}} (\$filename)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a5f37d2d0bb86f5c48409e83520c9123a}{is\+File}} (\$filename)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a9563dfa4aaa1e9be39ac4894ada00238}{is\+Filtered}} (\$filename)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a7331adeb0481414743674d2f6166565e}{get\+Whitelist}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_aca12b2d1bf5489a718869acee933d726}{has\+Whitelist}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a3ae946d06d5bcdbf648bd640f77bb0e1}{get\+Whitelisted\+Files}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a3c5b94ecdcfc786a5a593c66b0151bba}{set\+Whitelisted\+Files}} (\$whitelisted\+Files)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_code_coverage_1_1_filter}{Filter}} for whitelisting of code coverage information. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a2bcc1c479fa74e9a5b03ad497dcb5525}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a2bcc1c479fa74e9a5b03ad497dcb5525}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!add\+Directory\+To\+Whitelist@{add\+Directory\+To\+Whitelist}}
+\index{add\+Directory\+To\+Whitelist@{add\+Directory\+To\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{add\+Directory\+To\+Whitelist()}{addDirectoryToWhitelist()}}
+{\footnotesize\ttfamily add\+Directory\+To\+Whitelist (\begin{DoxyParamCaption}\item[{}]{\$directory,  }\item[{}]{\$suffix = {\ttfamily \textquotesingle{}.php\textquotesingle{}},  }\item[{}]{\$prefix = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Adds a directory to the whitelist (recursively).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+string & {\em \$suffix} & \\
+\hline
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a988d1f57218a3308ba7f19f7f3fd5aa1}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a988d1f57218a3308ba7f19f7f3fd5aa1}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!add\+Files\+To\+Whitelist@{add\+Files\+To\+Whitelist}}
+\index{add\+Files\+To\+Whitelist@{add\+Files\+To\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{add\+Files\+To\+Whitelist()}{addFilesToWhitelist()}}
+{\footnotesize\ttfamily add\+Files\+To\+Whitelist (\begin{DoxyParamCaption}\item[{array}]{\$files }\end{DoxyParamCaption})}
+
+Adds files to the whitelist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a72c5200d3fb8588e4cce9f9b340be179}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a72c5200d3fb8588e4cce9f9b340be179}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!add\+File\+To\+Whitelist@{add\+File\+To\+Whitelist}}
+\index{add\+File\+To\+Whitelist@{add\+File\+To\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{add\+File\+To\+Whitelist()}{addFileToWhitelist()}}
+{\footnotesize\ttfamily add\+File\+To\+Whitelist (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Adds a file to the whitelist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a7331adeb0481414743674d2f6166565e}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a7331adeb0481414743674d2f6166565e}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!get\+Whitelist@{get\+Whitelist}}
+\index{get\+Whitelist@{get\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{get\+Whitelist()}{getWhitelist()}}
+{\footnotesize\ttfamily get\+Whitelist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the list of whitelisted files.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a3ae946d06d5bcdbf648bd640f77bb0e1}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a3ae946d06d5bcdbf648bd640f77bb0e1}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!get\+Whitelisted\+Files@{get\+Whitelisted\+Files}}
+\index{get\+Whitelisted\+Files@{get\+Whitelisted\+Files}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{get\+Whitelisted\+Files()}{getWhitelistedFiles()}}
+{\footnotesize\ttfamily get\+Whitelisted\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the whitelisted files.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_aca12b2d1bf5489a718869acee933d726}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_aca12b2d1bf5489a718869acee933d726}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!has\+Whitelist@{has\+Whitelist}}
+\index{has\+Whitelist@{has\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{has\+Whitelist()}{hasWhitelist()}}
+{\footnotesize\ttfamily has\+Whitelist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns whether this filter has a whitelist.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a5f37d2d0bb86f5c48409e83520c9123a}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a5f37d2d0bb86f5c48409e83520c9123a}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!is\+File@{is\+File}}
+\index{is\+File@{is\+File}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{is\+File()}{isFile()}}
+{\footnotesize\ttfamily is\+File (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Checks whether a filename is a real filename.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a9563dfa4aaa1e9be39ac4894ada00238}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a9563dfa4aaa1e9be39ac4894ada00238}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!is\+Filtered@{is\+Filtered}}
+\index{is\+Filtered@{is\+Filtered}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{is\+Filtered()}{isFiltered()}}
+{\footnotesize\ttfamily is\+Filtered (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Checks whether or not a file is filtered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a8fcc5366aa6c6772275d64b81c6f842a}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a8fcc5366aa6c6772275d64b81c6f842a}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!remove\+Directory\+From\+Whitelist@{remove\+Directory\+From\+Whitelist}}
+\index{remove\+Directory\+From\+Whitelist@{remove\+Directory\+From\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{remove\+Directory\+From\+Whitelist()}{removeDirectoryFromWhitelist()}}
+{\footnotesize\ttfamily remove\+Directory\+From\+Whitelist (\begin{DoxyParamCaption}\item[{}]{\$directory,  }\item[{}]{\$suffix = {\ttfamily \textquotesingle{}.php\textquotesingle{}},  }\item[{}]{\$prefix = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
+Removes a directory from the whitelist (recursively).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+string & {\em \$suffix} & \\
+\hline
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_aef8d8fda014043856367e415855bfe9d}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_aef8d8fda014043856367e415855bfe9d}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!remove\+File\+From\+Whitelist@{remove\+File\+From\+Whitelist}}
+\index{remove\+File\+From\+Whitelist@{remove\+File\+From\+Whitelist}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{remove\+File\+From\+Whitelist()}{removeFileFromWhitelist()}}
+{\footnotesize\ttfamily remove\+File\+From\+Whitelist (\begin{DoxyParamCaption}\item[{}]{\$filename }\end{DoxyParamCaption})}
+
+Removes a file from the whitelist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a3c5b94ecdcfc786a5a593c66b0151bba}\label{class_sebastian_bergmann_1_1_code_coverage_1_1_filter_a3c5b94ecdcfc786a5a593c66b0151bba}} 
+\index{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}!set\+Whitelisted\+Files@{set\+Whitelisted\+Files}}
+\index{set\+Whitelisted\+Files@{set\+Whitelisted\+Files}!Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter@{Sebastian\+Bergmann\+::\+Code\+Coverage\+::\+Filter}}
+\subsubsection{\texorpdfstring{set\+Whitelisted\+Files()}{setWhitelistedFiles()}}
+{\footnotesize\ttfamily set\+Whitelisted\+Files (\begin{DoxyParamCaption}\item[{}]{\$whitelisted\+Files }\end{DoxyParamCaption})}
+
+Sets the whitelisted files.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$whitelisted\+Files} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/php-\/code-\/coverage/src/\mbox{\hyperlink{phpunit_2php-code-coverage_2src_2_filter_8php}{Filter.\+php}}\end{DoxyCompactItemize}

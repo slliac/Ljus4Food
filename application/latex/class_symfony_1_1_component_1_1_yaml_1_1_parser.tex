@@ -1,0 +1,132 @@
+\hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser}{}\section{Parser Class Reference}
+\label{class_symfony_1_1_component_1_1_yaml_1_1_parser}\index{Parser@{Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a86235cd393547eda50a86594250d8959}{parse\+File}} (string \$filename, int \$flags=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a6e8a026bbadb3fdcd9595ae40a5baf8e}{parse}} (string \$value, int \$flags=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a090b240e69e3e8febfe592af209e5163}{get\+Last\+Line\+Number\+Before\+Deprecation}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_afed732413dcd90e7e27f15f9a693a933}{get\+Real\+Current\+Line\+Nb}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_abcde281419fa81c2742f2340fecdfaf1}{preg\+\_\+match}} (string \$pattern, string \$subject, array \&\$\mbox{\hyperlink{_functions_8php_a8968a55c84671473daa2233e6cae65b8}{matches}}=null, int \$flags=0, int \$offset=0)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_ae26b8cbd52e33c09fcaf5ccd09a21f19}{T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN}} = \textquotesingle{}(?P$<$tag$>$!\mbox{[}\textbackslash{}w!.\textbackslash{}/\+:-\/\mbox{]}+)\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser_a76585a097a4e94d76ade259db4dfdfeb}{B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN}} = \textquotesingle{}(?P$<$separator$>$\textbackslash{}$\vert$$\vert$$>$)(?P$<$modifiers$>$\textbackslash{}+$\vert$\textbackslash{}-\/$\vert$\textbackslash{}d+$\vert$\textbackslash{}+\textbackslash{}d+$\vert$\textbackslash{}-\/\textbackslash{}d+$\vert$\textbackslash{}d+\textbackslash{}+$\vert$\textbackslash{}d+\textbackslash{}-\/)?(?P$<$comments$>$ +\#.$\ast$)?\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_yaml_1_1_parser}{Parser}} parses Y\+A\+ML strings to convert them to P\+HP arrays.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a090b240e69e3e8febfe592af209e5163}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a090b240e69e3e8febfe592af209e5163}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!get\+Last\+Line\+Number\+Before\+Deprecation@{get\+Last\+Line\+Number\+Before\+Deprecation}}
+\index{get\+Last\+Line\+Number\+Before\+Deprecation@{get\+Last\+Line\+Number\+Before\+Deprecation}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{get\+Last\+Line\+Number\+Before\+Deprecation()}{getLastLineNumberBeforeDeprecation()}}
+{\footnotesize\ttfamily get\+Last\+Line\+Number\+Before\+Deprecation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_afed732413dcd90e7e27f15f9a693a933}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_afed732413dcd90e7e27f15f9a693a933}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!get\+Real\+Current\+Line\+Nb@{get\+Real\+Current\+Line\+Nb}}
+\index{get\+Real\+Current\+Line\+Nb@{get\+Real\+Current\+Line\+Nb}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{get\+Real\+Current\+Line\+Nb()}{getRealCurrentLineNb()}}
+{\footnotesize\ttfamily get\+Real\+Current\+Line\+Nb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the current line number (takes the offset into account). \mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a6e8a026bbadb3fdcd9595ae40a5baf8e}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a6e8a026bbadb3fdcd9595ae40a5baf8e}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!parse@{parse}}
+\index{parse@{parse}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily parse (\begin{DoxyParamCaption}\item[{string}]{\$value,  }\item[{int}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Parses a Y\+A\+ML string to a P\+HP value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \mbox{\hyperlink{class_a}{A}} Y\+A\+ML string \\
+\hline
+int & {\em \$flags} & \mbox{\hyperlink{class_a}{A}} bit field of P\+A\+R\+S\+E\+\_\+$\ast$ constants to customize the Y\+A\+ML parser behavior\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed \mbox{\hyperlink{class_a}{A}} P\+HP value
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & If the Y\+A\+ML is not valid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a86235cd393547eda50a86594250d8959}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a86235cd393547eda50a86594250d8959}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!parse\+File@{parse\+File}}
+\index{parse\+File@{parse\+File}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{parse\+File()}{parseFile()}}
+{\footnotesize\ttfamily parse\+File (\begin{DoxyParamCaption}\item[{string}]{\$filename,  }\item[{int}]{\$flags = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Parses a Y\+A\+ML file into a P\+HP value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & The path to the Y\+A\+ML file to be parsed \\
+\hline
+int & {\em \$flags} & \mbox{\hyperlink{class_a}{A}} bit field of P\+A\+R\+S\+E\+\_\+$\ast$ constants to customize the Y\+A\+ML parser behavior\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The Y\+A\+ML converted to a P\+HP value
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & If the file could not be read or the Y\+A\+ML is not valid \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_abcde281419fa81c2742f2340fecdfaf1}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_abcde281419fa81c2742f2340fecdfaf1}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!preg\+\_\+match@{preg\+\_\+match}}
+\index{preg\+\_\+match@{preg\+\_\+match}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{preg\+\_\+match()}{preg\_match()}}
+{\footnotesize\ttfamily static preg\+\_\+match (\begin{DoxyParamCaption}\item[{string}]{\$pattern,  }\item[{string}]{\$subject,  }\item[{array \&}]{\$matches = {\ttfamily null},  }\item[{int}]{\$flags = {\ttfamily 0},  }\item[{int}]{\$offset = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\hyperlink{class_a}{A}} local wrapper for {\ttfamily preg\+\_\+match} which will throw a Parse\+Exception if there is an internal error in the P\+C\+RE engine.
+
+This avoids us needing to check for \char`\"{}false\char`\"{} every time P\+C\+RE is used in the Y\+A\+ML engine
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & on a P\+C\+RE internal error\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+preg\+\_\+last\+\_\+error() 
+\end{DoxySeeAlso}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_a76585a097a4e94d76ade259db4dfdfeb}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_a76585a097a4e94d76ade259db4dfdfeb}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN@{B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN}}
+\index{B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN@{B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN}{BLOCK\_SCALAR\_HEADER\_PATTERN}}
+{\footnotesize\ttfamily const B\+L\+O\+C\+K\+\_\+\+S\+C\+A\+L\+A\+R\+\_\+\+H\+E\+A\+D\+E\+R\+\_\+\+P\+A\+T\+T\+E\+RN = \textquotesingle{}(?P$<$separator$>$\textbackslash{}$\vert$$\vert$$>$)(?P$<$modifiers$>$\textbackslash{}+$\vert$\textbackslash{}-\/$\vert$\textbackslash{}d+$\vert$\textbackslash{}+\textbackslash{}d+$\vert$\textbackslash{}-\/\textbackslash{}d+$\vert$\textbackslash{}d+\textbackslash{}+$\vert$\textbackslash{}d+\textbackslash{}-\/)?(?P$<$comments$>$ +\#.$\ast$)?\textquotesingle{}}
+
+\mbox{\Hypertarget{class_symfony_1_1_component_1_1_yaml_1_1_parser_ae26b8cbd52e33c09fcaf5ccd09a21f19}\label{class_symfony_1_1_component_1_1_yaml_1_1_parser_ae26b8cbd52e33c09fcaf5ccd09a21f19}} 
+\index{Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}!T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN@{T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN}}
+\index{T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN@{T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN}!Symfony\+::\+Component\+::\+Yaml\+::\+Parser@{Symfony\+::\+Component\+::\+Yaml\+::\+Parser}}
+\subsubsection{\texorpdfstring{T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN}{TAG\_PATTERN}}
+{\footnotesize\ttfamily const T\+A\+G\+\_\+\+P\+A\+T\+T\+E\+RN = \textquotesingle{}(?P$<$tag$>$!\mbox{[}\textbackslash{}w!.\textbackslash{}/\+:-\/\mbox{]}+)\textquotesingle{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/symfony/yaml/\mbox{\hyperlink{vendor_2symfony_2yaml_2_parser_8php}{Parser.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___string_contains}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains Class Reference}
+\label{class_p_h_p_unit___framework___constraint___string_contains}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.906574cm]{class_p_h_p_unit___framework___constraint___string_contains}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains_a5d3922853689b3cf95d0b56133db4710}{\+\_\+\+\_\+construct}} (\$string, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains_a9c9c337de483bbdbb9fa249a6c7c9cc5}{matches}} (\$other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains_a05bc82187ba145848edd864852f4bd37}{\$string}}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___string_contains_a76b26ca72faf8384c4f8e767390feee9}{\$ignore\+Case}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Constraint that asserts that the string it is evaluated for contains a given string.
+
+Uses mb\+\_\+strpos() to find the position of the string in the input, if not found the evaluation fails.
+
+The sub-\/string is passed in the constructor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___string_contains_a5d3922853689b3cf95d0b56133db4710}\label{class_p_h_p_unit___framework___constraint___string_contains_a5d3922853689b3cf95d0b56133db4710}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$string,  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+bool & {\em \$ignore\+Case} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___string_contains_a9c9c337de483bbdbb9fa249a6c7c9cc5}\label{class_p_h_p_unit___framework___constraint___string_contains_a9c9c337de483bbdbb9fa249a6c7c9cc5}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}!matches@{matches}}
+\index{matches@{matches}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}}
+\subsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Evaluates the constraint for parameter \$other. Returns true if the constraint is met, false otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Value or object to evaluate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___string_contains_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___constraint___string_contains_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___string_contains_a76b26ca72faf8384c4f8e767390feee9}\label{class_p_h_p_unit___framework___constraint___string_contains_a76b26ca72faf8384c4f8e767390feee9}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}!\$ignore\+Case@{\$ignore\+Case}}
+\index{\$ignore\+Case@{\$ignore\+Case}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}}
+\subsubsection{\texorpdfstring{\$ignore\+Case}{$ignoreCase}}
+{\footnotesize\ttfamily \$ignore\+Case\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___string_contains_a05bc82187ba145848edd864852f4bd37}\label{class_p_h_p_unit___framework___constraint___string_contains_a05bc82187ba145848edd864852f4bd37}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}!\$string@{\$string}}
+\index{\$string@{\$string}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+String\+Contains}}
+\subsubsection{\texorpdfstring{\$string}{$string}}
+{\footnotesize\ttfamily \$string\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_string_contains_8php}{String\+Contains.\+php}}\end{DoxyCompactItemize}

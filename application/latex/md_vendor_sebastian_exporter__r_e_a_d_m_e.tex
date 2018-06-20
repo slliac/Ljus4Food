@@ -1,0 +1,175 @@
+\href{https://travis-ci.org/sebastianbergmann/exporter}{\tt }
+
+This component provides the functionality to export P\+HP variables for visualization.
+
+\subsection*{Usage}
+
+Exporting\+:
+
+
+\begin{DoxyCode}
+<?php
+use \mbox{\hyperlink{namespace_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};
+
+$exporter = \textcolor{keyword}{new} Exporter;
+
+\textcolor{comment}{/*}
+\textcolor{comment}{Exception Object &0000000078de0f0d000000002003a261 (}
+\textcolor{comment}{    'message' => ''}
+\textcolor{comment}{    'string' => ''}
+\textcolor{comment}{    'code' => 0}
+\textcolor{comment}{    'file' => '/home/sebastianbergmann/test.php'}
+\textcolor{comment}{    'line' => 34}
+\textcolor{comment}{    'trace' => Array &0 ()}
+\textcolor{comment}{    'previous' => null}
+\textcolor{comment}{)}
+\textcolor{comment}{*/}
+
+print $exporter->export(\textcolor{keyword}{new} \mbox{\hyperlink{namespace_exception}{Exception}});
+\end{DoxyCode}
+
+
+\subsection*{Data Types}
+
+Exporting simple types\+:
+
+
+\begin{DoxyCode}
+<?php
+use \mbox{\hyperlink{namespace_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};
+
+$exporter = \textcolor{keyword}{new} Exporter;
+
+\textcolor{comment}{// 46}
+print $exporter->export(46);
+
+\textcolor{comment}{// 4.0}
+print $exporter->export(4.0);
+
+\textcolor{comment}{// 'hello, world!'}
+print $exporter->export(\textcolor{stringliteral}{'hello, world!'});
+
+\textcolor{comment}{// false}
+print $exporter->export(\textcolor{keyword}{false});
+
+\textcolor{comment}{// NAN}
+print $exporter->export(acos(8));
+
+\textcolor{comment}{// -INF}
+print $exporter->export(log(0));
+
+\textcolor{comment}{// null}
+print $exporter->export(null);
+
+\textcolor{comment}{// resource(13) of type (stream)}
+print $exporter->export(fopen(\textcolor{stringliteral}{'php://stderr'}, \textcolor{charliteral}{'w'}));
+
+\textcolor{comment}{// Binary String: 0x000102030405}
+print $exporter->export(chr(0) . chr(1) . chr(2) . chr(3) . chr(4) . chr(5));
+\end{DoxyCode}
+
+
+Exporting complex types\+:
+
+
+\begin{DoxyCode}
+<?php
+use \mbox{\hyperlink{namespace_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};
+
+$exporter = \textcolor{keyword}{new} Exporter;
+
+\textcolor{comment}{/*}
+\textcolor{comment}{Array &0 (}
+\textcolor{comment}{    0 => Array &1 (}
+\textcolor{comment}{        0 => 1}
+\textcolor{comment}{        1 => 2}
+\textcolor{comment}{        2 => 3}
+\textcolor{comment}{    )}
+\textcolor{comment}{    1 => Array &2 (}
+\textcolor{comment}{        0 => ''}
+\textcolor{comment}{        1 => 0}
+\textcolor{comment}{        2 => false}
+\textcolor{comment}{    )}
+\textcolor{comment}{)}
+\textcolor{comment}{*/}
+
+print $exporter->export(array(array(1,2,3), array(\textcolor{stringliteral}{""},0,FALSE)));
+
+\textcolor{comment}{/*}
+\textcolor{comment}{Array &0 (}
+\textcolor{comment}{    'self' => Array &1 (}
+\textcolor{comment}{        'self' => Array &1}
+\textcolor{comment}{    )}
+\textcolor{comment}{)}
+\textcolor{comment}{*/}
+
+$array = array();
+$array[\textcolor{stringliteral}{'self'}] = &$array;
+print $exporter->export($array);
+
+\textcolor{comment}{/*}
+\textcolor{comment}{stdClass Object &0000000003a66dcc0000000025e723e2 (}
+\textcolor{comment}{    'self' => stdClass Object &0000000003a66dcc0000000025e723e2}
+\textcolor{comment}{)}
+\textcolor{comment}{*/}
+
+$obj = \textcolor{keyword}{new} \mbox{\hyperlink{namespacestd_class}{stdClass}}();
+$obj->self = $obj;
+print $exporter->export($obj);
+\end{DoxyCode}
+
+
+Compact exports\+:
+
+
+\begin{DoxyCode}
+<?php
+use \mbox{\hyperlink{namespace_sebastian_bergmann_1_1_exporter_1_1_exporter}{SebastianBergmann\(\backslash\)Exporter\(\backslash\)Exporter}};
+
+$exporter = \textcolor{keyword}{new} Exporter;
+
+\textcolor{comment}{// Array ()}
+print $exporter->shortenedExport(array());
+
+\textcolor{comment}{// Array (...)}
+print $exporter->shortenedExport(array(1,2,3,4,5));
+
+\textcolor{comment}{// stdClass Object ()}
+print $exporter->shortenedExport(\textcolor{keyword}{new} \mbox{\hyperlink{namespacestd_class}{stdClass}});
+
+\textcolor{comment}{// Exception Object (...)}
+print $exporter->shortenedExport(\textcolor{keyword}{new} \mbox{\hyperlink{namespace_exception}{Exception}});
+
+\textcolor{comment}{// this\(\backslash\)nis\(\backslash\)na\(\backslash\)nsuper\(\backslash\)nlong\(\backslash\)nstring\(\backslash\)nt...\(\backslash\)nspace}
+print $exporter->shortenedExport(
+<<<LONG\_STRING
+\textcolor{keyword}{this}
+is
+\mbox{\hyperlink{interfacea}{a}}
+super
+\textcolor{keywordtype}{long}
+\textcolor{keywordtype}{string}
+that
+wraps
+\mbox{\hyperlink{interfacea}{a}}
+lot
+and
+eats
+up
+\mbox{\hyperlink{interfacea}{a}}
+lot
+of
+space
+LONG\_STRING
+);
+\end{DoxyCode}
+
+
+\subsection*{Installation}
+
+You can add this library as a local, per-\/project dependency to your project using \href{https://getcomposer.org/}{\tt Composer}\+: \begin{DoxyVerb}composer require sebastian/exporter
+\end{DoxyVerb}
+
+
+If you only need this library during development, for instance to run your project\textquotesingle{}s test suite, then you should add it as a development-\/time dependency\+: \begin{DoxyVerb}composer require --dev sebastian/exporter\end{DoxyVerb}
+ 

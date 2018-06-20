@@ -1,0 +1,69 @@
+\hypertarget{class_sebastian_bergmann_1_1_global_state_1_1_restorer}{}\section{Restorer Class Reference}
+\label{class_sebastian_bergmann_1_1_global_state_1_1_restorer}\index{Restorer@{Restorer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_restorer_aadd43cc05568c9b40339612477d82c24}{restore\+Functions}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}} \$snapshot)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_restorer_a1adc1df008a579db8c01d4605d77d605}{restore\+Global\+Variables}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}} \$snapshot)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_restorer_af31a3b378cbf1e26ce46b134064ec297}{restore\+Static\+Attributes}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}} \$snapshot)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_restorer}{Restorer}} of snapshots of global state. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_global_state_1_1_restorer_aadd43cc05568c9b40339612477d82c24}\label{class_sebastian_bergmann_1_1_global_state_1_1_restorer_aadd43cc05568c9b40339612477d82c24}} 
+\index{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer@{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer}!restore\+Functions@{restore\+Functions}}
+\index{restore\+Functions@{restore\+Functions}!Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer@{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer}}
+\subsubsection{\texorpdfstring{restore\+Functions()}{restoreFunctions()}}
+{\footnotesize\ttfamily restore\+Functions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}}}]{\$snapshot }\end{DoxyParamCaption})}
+
+Deletes function definitions that are not defined in a snapshot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}} & {\em \$snapshot} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_runtime_exception}{Runtime\+Exception}}} & when the uopz\+\_\+delete() function is not available \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/krakjoe/uopz}{\tt https\+://github.\+com/krakjoe/uopz} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_global_state_1_1_restorer_a1adc1df008a579db8c01d4605d77d605}\label{class_sebastian_bergmann_1_1_global_state_1_1_restorer_a1adc1df008a579db8c01d4605d77d605}} 
+\index{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer@{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer}!restore\+Global\+Variables@{restore\+Global\+Variables}}
+\index{restore\+Global\+Variables@{restore\+Global\+Variables}!Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer@{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer}}
+\subsubsection{\texorpdfstring{restore\+Global\+Variables()}{restoreGlobalVariables()}}
+{\footnotesize\ttfamily restore\+Global\+Variables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}}}]{\$snapshot }\end{DoxyParamCaption})}
+
+Restores all global and super-\/global variables from a snapshot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}} & {\em \$snapshot} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_global_state_1_1_restorer_af31a3b378cbf1e26ce46b134064ec297}\label{class_sebastian_bergmann_1_1_global_state_1_1_restorer_af31a3b378cbf1e26ce46b134064ec297}} 
+\index{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer@{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer}!restore\+Static\+Attributes@{restore\+Static\+Attributes}}
+\index{restore\+Static\+Attributes@{restore\+Static\+Attributes}!Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer@{Sebastian\+Bergmann\+::\+Global\+State\+::\+Restorer}}
+\subsubsection{\texorpdfstring{restore\+Static\+Attributes()}{restoreStaticAttributes()}}
+{\footnotesize\ttfamily restore\+Static\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}}}]{\$snapshot }\end{DoxyParamCaption})}
+
+Restores all static attributes in user-\/defined classes from this snapshot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_global_state_1_1_snapshot}{Snapshot}} & {\em \$snapshot} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/sebastian/global-\/state/src/\mbox{\hyperlink{_restorer_8php}{Restorer.\+php}}\end{DoxyCompactItemize}

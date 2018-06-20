@@ -1,0 +1,66 @@
+\hypertarget{class_file___iterator___facade}{}\section{File\+\_\+\+Iterator\+\_\+\+Facade Class Reference}
+\label{class_file___iterator___facade}\index{File\+\_\+\+Iterator\+\_\+\+Facade@{File\+\_\+\+Iterator\+\_\+\+Facade}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file___iterator___facade_aaf81b4c206e070aa94a9d2158adf31be}{get\+Files\+As\+Array}} (\$paths, \$suffixes=\textquotesingle{}\textquotesingle{}, \$prefixes=\textquotesingle{}\textquotesingle{}, array \$exclude=array(), \$common\+Path=F\+A\+L\+SE)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_file___iterator___facade_a46f1951082151ae12e731f3d2628a2a2}{get\+Common\+Path}} (array \$files)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Façade implementation that uses \mbox{\hyperlink{class_file___iterator___factory}{File\+\_\+\+Iterator\+\_\+\+Factory}} to create a \mbox{\hyperlink{class_file___iterator}{File\+\_\+\+Iterator}} that operates on an Append\+Iterator that contains an Recursive\+Directory\+Iterator for each given path. The list of unique files is returned as an array.
+
+\begin{DoxySince}{Since}
+Class available since Release 1.\+3.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file___iterator___facade_a46f1951082151ae12e731f3d2628a2a2}\label{class_file___iterator___facade_a46f1951082151ae12e731f3d2628a2a2}} 
+\index{File\+\_\+\+Iterator\+\_\+\+Facade@{File\+\_\+\+Iterator\+\_\+\+Facade}!get\+Common\+Path@{get\+Common\+Path}}
+\index{get\+Common\+Path@{get\+Common\+Path}!File\+\_\+\+Iterator\+\_\+\+Facade@{File\+\_\+\+Iterator\+\_\+\+Facade}}
+\subsubsection{\texorpdfstring{get\+Common\+Path()}{getCommonPath()}}
+{\footnotesize\ttfamily get\+Common\+Path (\begin{DoxyParamCaption}\item[{array}]{\$files }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the common path of a set of files.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_file___iterator___facade_aaf81b4c206e070aa94a9d2158adf31be}\label{class_file___iterator___facade_aaf81b4c206e070aa94a9d2158adf31be}} 
+\index{File\+\_\+\+Iterator\+\_\+\+Facade@{File\+\_\+\+Iterator\+\_\+\+Facade}!get\+Files\+As\+Array@{get\+Files\+As\+Array}}
+\index{get\+Files\+As\+Array@{get\+Files\+As\+Array}!File\+\_\+\+Iterator\+\_\+\+Facade@{File\+\_\+\+Iterator\+\_\+\+Facade}}
+\subsubsection{\texorpdfstring{get\+Files\+As\+Array()}{getFilesAsArray()}}
+{\footnotesize\ttfamily get\+Files\+As\+Array (\begin{DoxyParamCaption}\item[{}]{\$paths,  }\item[{}]{\$suffixes = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$prefixes = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{array}]{\$exclude = {\ttfamily array()},  }\item[{}]{\$common\+Path = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$paths} & \\
+\hline
+array | string & {\em \$suffixes} & \\
+\hline
+array | string & {\em \$prefixes} & \\
+\hline
+array & {\em \$exclude} & \\
+\hline
+bool & {\em \$common\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/php-\/file-\/iterator/src/\mbox{\hyperlink{php-file-iterator_2src_2_facade_8php}{Facade.\+php}}\end{DoxyCompactItemize}

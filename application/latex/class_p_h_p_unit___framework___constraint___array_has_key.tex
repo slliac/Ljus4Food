@@ -1,0 +1,114 @@
+\hypertarget{class_p_h_p_unit___framework___constraint___array_has_key}{}\section{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key Class Reference}
+\label{class_p_h_p_unit___framework___constraint___array_has_key}\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.957747cm]{class_p_h_p_unit___framework___constraint___array_has_key}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key_ae68e3281fdc4689e22a68b4b463c5fa9}{\+\_\+\+\_\+construct}} (\$key)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key_a9c9c337de483bbdbb9fa249a6c7c9cc5}{matches}} (\$other)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key_aaabb679273bfb812df4d81c283754a59}{failure\+Description}} (\$other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___framework___constraint___array_has_key_aa60b0284e0dfa2463495481cf11e3cf4}{\$key}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Constraint that asserts that the array it is evaluated for has a given key.
+
+Uses array\+\_\+key\+\_\+exists() to check if the key is found in the input array, if not found the evaluation fails.
+
+The array key is passed in the constructor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___array_has_key_ae68e3281fdc4689e22a68b4b463c5fa9}\label{class_p_h_p_unit___framework___constraint___array_has_key_ae68e3281fdc4689e22a68b4b463c5fa9}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$key }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___array_has_key_aaabb679273bfb812df4d81c283754a59}\label{class_p_h_p_unit___framework___constraint___array_has_key_aaabb679273bfb812df4d81c283754a59}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}!failure\+Description@{failure\+Description}}
+\index{failure\+Description@{failure\+Description}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}}
+\subsubsection{\texorpdfstring{failure\+Description()}{failureDescription()}}
+{\footnotesize\ttfamily failure\+Description (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the description of the failure
+
+The beginning of failure messages is \char`\"{}\+Failed asserting that\char`\"{} in most cases. This method should return the second part of that sentence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Evaluated value or object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___array_has_key_a9c9c337de483bbdbb9fa249a6c7c9cc5}\label{class_p_h_p_unit___framework___constraint___array_has_key_a9c9c337de483bbdbb9fa249a6c7c9cc5}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}!matches@{matches}}
+\index{matches@{matches}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}}
+\subsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily matches (\begin{DoxyParamCaption}\item[{}]{\$other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Evaluates the constraint for parameter \$other. Returns true if the constraint is met, false otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$other} & Value or object to evaluate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___array_has_key_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___framework___constraint___array_has_key_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the constraint.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___framework___constraint___array_has_key_aa60b0284e0dfa2463495481cf11e3cf4}\label{class_p_h_p_unit___framework___constraint___array_has_key_aa60b0284e0dfa2463495481cf11e3cf4}} 
+\index{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}!\$key@{\$key}}
+\index{\$key@{\$key}!P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key@{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Constraint\+\_\+\+Array\+Has\+Key}}
+\subsubsection{\texorpdfstring{\$key}{$key}}
+{\footnotesize\ttfamily \$key\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Framework/\+Constraint/\mbox{\hyperlink{_array_has_key_8php}{Array\+Has\+Key.\+php}}\end{DoxyCompactItemize}

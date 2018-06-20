@@ -1,0 +1,116 @@
+\hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{}\section{Comparator Class Reference}
+\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator}\index{Comparator@{Comparator}}
+Inheritance diagram for Comparator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.345345cm]{class_sebastian_bergmann_1_1_comparator_1_1_comparator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_acc7c763724e9827d616a324f69a211aa}{set\+Factory}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory}{Factory}} \$factory)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_ae9bdf0cba02ce3470169280656cdeb84}{accepts}} (\$expected, \$actual)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_adb3679ea06503114394431cb250ec5a4}{assert\+Equals}} (\$expected, \$actual, \$delta=0.\+0, \$canonicalize=false, \$ignore\+Case=false)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a099b374dc664ee043fffcd6ea05e3e70}{\$factory}}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator_af9b6401d3b379ed200e8fde8d4600523}{\$exporter}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class for comparators which compare values for equality. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a095c5d389db211932136b53f25f39685}\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a095c5d389db211932136b53f25f39685}} 
+\index{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator_ae9bdf0cba02ce3470169280656cdeb84}\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator_ae9bdf0cba02ce3470169280656cdeb84}} 
+\index{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}!accepts@{accepts}}
+\index{accepts@{accepts}!Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}}
+\subsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily accepts (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns whether the comparator can compare two values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & The first value to compare \\
+\hline
+mixed & {\em \$actual} & The second value to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator_adb3679ea06503114394431cb250ec5a4}\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator_adb3679ea06503114394431cb250ec5a4}} 
+\index{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}!assert\+Equals@{assert\+Equals}}
+\index{assert\+Equals@{assert\+Equals}!Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}}
+\subsubsection{\texorpdfstring{assert\+Equals()}{assertEquals()}}
+{\footnotesize\ttfamily assert\+Equals (\begin{DoxyParamCaption}\item[{}]{\$expected,  }\item[{}]{\$actual,  }\item[{}]{\$delta = {\ttfamily 0.0},  }\item[{}]{\$canonicalize = {\ttfamily false},  }\item[{}]{\$ignore\+Case = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Asserts that two values are equal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$expected} & First value to compare \\
+\hline
+mixed & {\em \$actual} & Second value to compare \\
+\hline
+float & {\em \$delta} & Allowed numerical distance between two values to consider them equal \\
+\hline
+bool & {\em \$canonicalize} & Arrays are sorted before comparison when set to true \\
+\hline
+bool & {\em \$ignore\+Case} & Case is ignored when set to true\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparison_failure}{Comparison\+Failure}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator_acc7c763724e9827d616a324f69a211aa}\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator_acc7c763724e9827d616a324f69a211aa}} 
+\index{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}!set\+Factory@{set\+Factory}}
+\index{set\+Factory@{set\+Factory}!Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}}
+\subsubsection{\texorpdfstring{set\+Factory()}{setFactory()}}
+{\footnotesize\ttfamily set\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory}{Factory}}}]{\$factory }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory}{Factory}} & {\em \$factory} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator_af9b6401d3b379ed200e8fde8d4600523}\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator_af9b6401d3b379ed200e8fde8d4600523}} 
+\index{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}!\$exporter@{\$exporter}}
+\index{\$exporter@{\$exporter}!Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}}
+\subsubsection{\texorpdfstring{\$exporter}{$exporter}}
+{\footnotesize\ttfamily \$exporter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a099b374dc664ee043fffcd6ea05e3e70}\label{class_sebastian_bergmann_1_1_comparator_1_1_comparator_a099b374dc664ee043fffcd6ea05e3e70}} 
+\index{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}!\$factory@{\$factory}}
+\index{\$factory@{\$factory}!Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator@{Sebastian\+Bergmann\+::\+Comparator\+::\+Comparator}}
+\subsubsection{\texorpdfstring{\$factory}{$factory}}
+{\footnotesize\ttfamily \$factory\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/sebastian/comparator/src/\mbox{\hyperlink{_comparator_8php}{Comparator.\+php}}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{class_p_h_p_unit___extensions___test_decorator}{}\section{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator Class Reference}
+\label{class_p_h_p_unit___extensions___test_decorator}\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+Inheritance diagram for P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.303835cm]{class_p_h_p_unit___extensions___test_decorator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_a22abccb35adabf0f3b93ecd5cbf34d19}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_p_h_p_unit___framework___test}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}} \$test)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_a12d49d0810ab4ed5519fac7f947c3da3}{basic\+Run}} (\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} \$result)
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_ac751e87b3d4c4bf2feb03bee8b092755}{count}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_a9af17f39a73d4e6194209ba95f557e0a}{get\+Test}} ()
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_aba2e5a83092b40735a7a61c572cd6256}{run}} (\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} \$result=null)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_a3f3ab385dd8747091f1bdfbb11ed6eca}{create\+Result}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_h_p_unit___extensions___test_decorator_a31daebf88fc668f410293e2c70cea3fc}{\$test}} = null
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_a}{A}} Decorator for Tests.
+
+Use Test\+Decorator as the base class for defining new test decorators. \mbox{\hyperlink{class_test}{Test}} decorator subclasses can be introduced to add behaviour before or after a test is run. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_a22abccb35adabf0f3b93ecd5cbf34d19}\label{class_p_h_p_unit___extensions___test_decorator_a22abccb35adabf0f3b93ecd5cbf34d19}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_p_h_p_unit___framework___test}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}}}]{\$test }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___test}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}} & {\em \$test} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_a12d49d0810ab4ed5519fac7f947c3da3}\label{class_p_h_p_unit___extensions___test_decorator_a12d49d0810ab4ed5519fac7f947c3da3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!basic\+Run@{basic\+Run}}
+\index{basic\+Run@{basic\+Run}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{basic\+Run()}{basicRun()}}
+{\footnotesize\ttfamily basic\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}}}]{\$result }\end{DoxyParamCaption})}
+
+Runs the test and collects the result in a Test\+Result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_ac751e87b3d4c4bf2feb03bee8b092755}\label{class_p_h_p_unit___extensions___test_decorator_ac751e87b3d4c4bf2feb03bee8b092755}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!count@{count}}
+\index{count@{count}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Counts the number of test cases that will be run by this test.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_a3f3ab385dd8747091f1bdfbb11ed6eca}\label{class_p_h_p_unit___extensions___test_decorator_a3f3ab385dd8747091f1bdfbb11ed6eca}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!create\+Result@{create\+Result}}
+\index{create\+Result@{create\+Result}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{create\+Result()}{createResult()}}
+{\footnotesize\ttfamily create\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a default Test\+Result object.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_a9af17f39a73d4e6194209ba95f557e0a}\label{class_p_h_p_unit___extensions___test_decorator_a9af17f39a73d4e6194209ba95f557e0a}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!get\+Test@{get\+Test}}
+\index{get\+Test@{get\+Test}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{get\+Test()}{getTest()}}
+{\footnotesize\ttfamily get\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the test to be run.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{interface_p_h_p_unit___framework___test}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_aba2e5a83092b40735a7a61c572cd6256}\label{class_p_h_p_unit___extensions___test_decorator_aba2e5a83092b40735a7a61c572cd6256}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!run@{run}}
+\index{run@{run}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}}}]{\$result = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Runs the decorated test and collects the result in a Test\+Result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_p_h_p_unit___framework___test_result}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test\+Result}} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___test_aba2e5a83092b40735a7a61c572cd6256}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Test}}.
+
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_a5558c5d549f41597377fa1ea8a1cefa3}\label{class_p_h_p_unit___extensions___test_decorator_a5558c5d549f41597377fa1ea8a1cefa3}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a string representation of the test.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_p_h_p_unit___framework___self_describing_a5558c5d549f41597377fa1ea8a1cefa3}{P\+H\+P\+Unit\+\_\+\+Framework\+\_\+\+Self\+Describing}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_p_h_p_unit___extensions___test_decorator_a31daebf88fc668f410293e2c70cea3fc}\label{class_p_h_p_unit___extensions___test_decorator_a31daebf88fc668f410293e2c70cea3fc}} 
+\index{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}!\$test@{\$test}}
+\index{\$test@{\$test}!P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator@{P\+H\+P\+Unit\+\_\+\+Extensions\+\_\+\+Test\+Decorator}}
+\subsubsection{\texorpdfstring{\$test}{$test}}
+{\footnotesize\ttfamily \$test = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Applications/\+X\+A\+M\+P\+P/xamppfiles/htdocs/\+Code\+Igniter/vendor/phpunit/phpunit/src/\+Extensions/\mbox{\hyperlink{_test_decorator_8php}{Test\+Decorator.\+php}}\end{DoxyCompactItemize}
