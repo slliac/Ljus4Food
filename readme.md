@@ -21,10 +21,6 @@ View                    : application/view
 
 Vue.js file(Frontend)   : js/
 
-Backend doc location    :  application/controllers/html/index.html
-
-Frontend doc location   : docs/index.html
-
 
 ##  Architecture
 
